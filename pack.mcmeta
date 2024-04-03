@@ -1,0 +1,13 @@
+{
+    "pack": {
+        "name": "Cobblemon Typed Origins",
+        "id": "poketyped",
+        "pack_format": 15,
+        "version": "0.0.1",
+        "authors": [
+            "Eleque",
+            "Gemi"
+        ],
+        "description": "An origin that make you harness the power of a cobblemon type"
+    }
+}
