@@ -1,0 +1,29 @@
+ {
+	"hidden":true,
+	"type":"origins:multiple",
+	"scale":{
+		"type":"origins:action_over_time",
+		"entity_action":{
+			"type":"origins:execute_command",
+			"command":"function poketyped:bugsize"
+		},
+		"interval":20
+	},
+	"reset":{
+		"type":"origins:action_on_callback",
+		"entity_action_lost":{
+			"type":"origins:execute_command",
+			"command":"scale reset"
+		}
+	},
+	"health":{
+    "type": "origins:attribute",
+    "modifier": {
+        "attribute": "generic.max_health",
+        "operation": "addition",
+        "value": -4,
+        "name": "bughealth"
+    },
+    "update_health": true
+	}
+} 
