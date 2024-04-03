@@ -1,0 +1,19 @@
+{
+    "display": {
+        "icon": {
+            "item": "cobblemon:lucky_egg"
+        },
+        "title": "True neutrality",
+        "description": "You've harnessed the power of the normal type",
+        "frame": "goal",
+        "show_toast": true,
+        "announce_to_chat": true,
+        "hidden": true
+    },
+    "parent": "poketyped:root",
+    "criteria": {
+        "key0": {
+            "trigger": "minecraft:impossible"
+        }
+    }
+}

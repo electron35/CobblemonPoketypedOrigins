@@ -1,0 +1,19 @@
+{
+    "display": {
+        "icon": {
+            "item": "cobblemon:metal_coat"
+        },
+        "title": "Unbreakable",
+        "description": "You've harnessed the power of the steel type",
+        "frame": "goal",
+        "show_toast": true,
+        "announce_to_chat": true,
+        "hidden": true
+    },
+    "parent": "poketyped:root",
+    "criteria": {
+        "key0": {
+            "trigger": "minecraft:impossible"
+        }
+    }
+}

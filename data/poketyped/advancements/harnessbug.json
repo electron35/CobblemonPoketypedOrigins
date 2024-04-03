@@ -1,0 +1,19 @@
+{
+    "display": {
+        "icon": {
+            "item": "cobblemon:silver_powder"
+        },
+        "title": "The small world",
+        "description": "You've harnessed the power of the bug type",
+        "frame": "goal",
+        "show_toast": true,
+        "announce_to_chat": true,
+        "hidden": true
+    },
+    "parent": "poketyped:root",
+    "criteria": {
+        "key0": {
+            "trigger": "minecraft:impossible"
+        }
+    }
+}
