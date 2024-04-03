@@ -1,0 +1,13 @@
+{
+    "name": "Flying Type",
+    "description": "You've got the power of the majestic flying type",
+    "icon": {
+        "item": "minecraft:feather"
+    },
+	"powers": [
+        "poketyped:fire_immunity",
+        "poketyped:flamethrower"
+    ],
+    "unchoosable": true,
+    "impact": 0
+}

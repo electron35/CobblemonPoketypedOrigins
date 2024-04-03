@@ -1,0 +1,13 @@
+{
+    "name": "Psychic Type",
+    "description": "You've got the power of the mindful psychic type",
+    "icon": {
+        "item": "minecraft:ender_eye"
+    },
+	"powers": [
+        "poketyped:fire_immunity",
+        "poketyped:flamethrower"
+    ],
+    "unchoosable": true,
+    "impact": 0
+}

@@ -1,0 +1,13 @@
+{
+    "name": "Fire Type",
+    "description": "you got the power of the blazing fire type",
+    "powers": [
+        "poketyped:fire_immunity",
+        "poketyped:flamethrower"
+    ],
+    "icon": {
+        "item": "minecraft:campfire"
+    },
+    "unchoosable": true,
+    "impact": 0
+}

@@ -1,0 +1,13 @@
+{
+    "name": "Grass Type",
+    "description": "You've got the power of the blooming grass type",
+    "icon": {
+        "item": "minecraft:grass"
+    },
+	"powers": [
+        "poketyped:fire_immunity",
+        "poketyped:flamethrower"
+    ],
+    "unchoosable": true,
+    "impact": 0
+}

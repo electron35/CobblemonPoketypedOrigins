@@ -1,0 +1,13 @@
+{
+    "name": "Poison Type",
+    "description": "You've got the power of the infectious poison type",
+    "icon": {
+        "item": "minecraft:rotten_flesh"
+    },
+	"powers": [
+        "poketyped:fire_immunity",
+        "poketyped:flamethrower"
+    ],
+    "unchoosable": true,
+    "impact": 0
+}

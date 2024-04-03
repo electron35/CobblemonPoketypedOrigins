@@ -1,0 +1,13 @@
+{
+    "name": "Rock Type",
+    "description": "You've got the power of the hard rock type",
+    "icon": {
+        "item": "minecraft:stone"
+    },
+	"powers": [
+        "poketyped:fire_immunity",
+        "poketyped:flamethrower"
+    ],
+    "unchoosable": true,
+    "impact": 0
+}

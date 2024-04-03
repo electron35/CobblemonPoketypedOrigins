@@ -1,0 +1,13 @@
+{
+    "name": "Fairy Type",
+    "description": "You've got the power of the mystical fairy type",
+    "icon": {
+        "item": "minecraft:poppy"
+    },
+	"powers": [
+        "poketyped:fire_immunity",
+        "poketyped:flamethrower"
+    ],
+    "unchoosable": true,
+    "impact": 0
+}

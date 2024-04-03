@@ -1,0 +1,13 @@
+{
+    "name": "Dark Type",
+    "description": "You've got the power of the villainous dark type",
+    "icon": {
+        "item": "minecraft:sculk_sensor"
+    },
+	"powers": [
+        "poketyped:fire_immunity",
+        "poketyped:flamethrower"
+    ],
+    "unchoosable": true,
+    "impact": 0
+}

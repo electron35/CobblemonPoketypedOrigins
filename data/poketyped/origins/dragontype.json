@@ -1,0 +1,13 @@
+{
+    "name": "Dragon Type",
+    "description": "You've got the power of the ferocious dragon type",
+    "icon": {
+        "item": "minecraft:dragon_egg"
+    },
+	"powers": [
+        "poketyped:fire_immunity",
+        "poketyped:flamethrower"
+    ],
+    "unchoosable": true,
+    "impact": 0
+}

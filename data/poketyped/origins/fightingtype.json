@@ -1,0 +1,13 @@
+{
+    "name": "Fighting Type",
+    "description": "You've got the power of the strong fighting type",
+    "icon": {
+        "item": "minecraft:iron_sword"
+    },
+	"powers": [
+        "poketyped:fire_immunity",
+        "poketyped:flamethrower"
+    ],
+    "unchoosable": true,
+    "impact": 0
+}

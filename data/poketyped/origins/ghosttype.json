@@ -1,0 +1,13 @@
+{
+    "name": "Ghost Type",
+    "description": "You've got the power of the scary ghost type",
+    "icon": {
+        "item": "minecraft:soul_lantern"
+    },
+	"powers": [
+        "poketyped:fire_immunity",
+        "poketyped:flamethrower"
+    ],
+    "unchoosable": true,
+    "impact": 0
+}

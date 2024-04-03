@@ -1,0 +1,13 @@
+{
+    "name": "Steel Type",
+    "description": "You've got the power of the resilient steel type",
+    "icon": {
+        "item": "minecraft:iron_ingot"
+    },
+	"powers": [
+        "poketyped:fire_immunity",
+        "poketyped:flamethrower"
+    ],
+    "unchoosable": true,
+    "impact": 0
+}

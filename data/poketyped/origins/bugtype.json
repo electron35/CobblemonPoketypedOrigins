@@ -1,0 +1,16 @@
+{
+    "name": "Bug Type",
+    "description": "You've got the power of the crawling bug type",
+    "icon": {
+        "item": "minecraft:spider_eye"
+    },
+	"powers": [
+        "poketyped:smallbug",
+		"poketyped:climbing",
+        "poketyped:bugbite",
+		"poketyped:onhitbugbite",
+		"poketyped:resources/bughunger"
+    ],
+    "unchoosable": true,
+    "impact": 2
+}

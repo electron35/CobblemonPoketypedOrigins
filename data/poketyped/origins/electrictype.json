@@ -1,0 +1,14 @@
+{
+    "name": "Electric Type",
+    "description": "You've got the power of the thunderous electric type",
+    "icon": {
+        "item": "minecraft:lightning_rod"
+    },
+	"powers": [
+        "poketyped:quickness",
+        "poketyped:lightningrod",
+		"poketyped:thunder"
+    ],
+    "unchoosable": true,
+    "impact": 0
+}

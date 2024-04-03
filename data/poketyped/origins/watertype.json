@@ -1,0 +1,13 @@
+{
+    "name": "Water Type",
+    "description": "You've got the power of the deep water type",
+    "icon": {
+        "item": "minecraft:water_bucket"
+    },
+	"powers": [
+        "poketyped:fire_immunity",
+        "poketyped:flamethrower"
+    ],
+    "unchoosable": true,
+    "impact": 0
+}

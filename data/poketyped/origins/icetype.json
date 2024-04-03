@@ -1,0 +1,13 @@
+{
+    "name": "Ice Type",
+    "description": "You've got the power of the chilling ice type",
+    "icon": {
+        "item": "minecraft:packed_ice"
+    },
+	"powers": [
+        "poketyped:fire_immunity",
+        "poketyped:flamethrower"
+    ],
+    "unchoosable": true,
+    "impact": 0
+}

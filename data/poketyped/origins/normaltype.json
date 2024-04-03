@@ -1,0 +1,13 @@
+{
+    "name": "Normal Type",
+    "description": "You've got the power of the perfect normal type",
+    "icon": {
+        "item": "minecraft:nether_star"
+    },
+	"powers": [
+        "poketyped:fire_immunity",
+        "poketyped:flamethrower"
+    ],
+    "unchoosable": true,
+    "impact": 0
+}
