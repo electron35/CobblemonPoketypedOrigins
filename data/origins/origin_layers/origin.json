@@ -1,0 +1,26 @@
+{
+    "origins": [
+        "poketyped:poketyped",
+        "poketyped:normaltype",
+        "poketyped:grasstype",
+		"poketyped:firetype",
+        "poketyped:watertype",
+		"poketyped:electrictype",
+        "poketyped:bugtype",
+		"poketyped:flyingtype",
+		"poketyped:poisontype",
+        "poketyped:fightingtype",
+		"poketyped:rocktype",
+		"poketyped:groundtype",
+		"poketyped:icetype",
+        "poketyped:psychictype",
+		"poketyped:ghosttype",
+		"poketyped:darktype",
+        "poketyped:steeltype",
+		"poketyped:fairytype",
+		"poketyped:dragontype"
+    ],
+    "enabled": true,
+    "replace": true,
+    "name": "Cobblemon typed touch"
+}
