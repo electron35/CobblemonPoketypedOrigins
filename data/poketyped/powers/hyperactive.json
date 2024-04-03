@@ -1,0 +1,10 @@
+{
+    "name": "Hyperactive",
+    "description": "You need to eat more often when sprinting",
+    "condition": {
+        "type": "origins:sprinting"
+    },
+    "type": "origins:exhaust",
+    "interval": 20,
+    "exhaustion": 1
+}

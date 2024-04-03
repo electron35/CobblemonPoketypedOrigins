@@ -1,0 +1,37 @@
+{
+    "name": "Lightning rod",
+    "description": "You are immune to lightning damage and get stronger afterward",
+    "type": "origins:multiple",
+    "electricimmunity": {
+        "type": "origins:modify_damage_taken",
+        "damage_condition": {
+            "type": "origins:name",
+            "name": "lightningBolt"
+        },
+        "modifier": {
+            "operation": "set_total",
+            "value": 0
+        },
+        "self_action": {
+            "type": "origins:apply_effect",
+            "effects": [
+                {
+                    "effect": "speed",
+                    "duration": 12000,
+                    "amplifier": 1,
+                    "is_ambient": true,
+                    "show_particles": true,
+                    "show_icon": true
+                },
+                {
+                    "effect": "strength",
+                    "duration": 12000,
+                    "amplifier": 1,
+                    "is_ambient": true,
+                    "show_particles": true,
+                    "show_icon": true
+                }
+            ]
+        }
+    }
+}
