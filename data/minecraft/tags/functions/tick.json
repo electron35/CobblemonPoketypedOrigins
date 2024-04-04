@@ -1,5 +1,7 @@
 {
- "values": [
- "poketyped:thunder"
- ]
+	"replace": false,  
+	 "values": [
+		 "poketyped:thunder",
+		 "poketyped:misty_terrain"
+	 ]
 }

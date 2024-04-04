@@ -5,8 +5,11 @@
         "item": "minecraft:poppy"
     },
 	"powers": [
-        "poketyped:fire_immunity",
-        "poketyped:flamethrower"
+        "poketyped:cutecharm",
+        "poketyped:resources/fairyenergy",
+		"poketyped:misty_terrain",
+		"poketyped:moonblast",
+		"poketyped:purity"
     ],
     "unchoosable": true,
     "impact": 0

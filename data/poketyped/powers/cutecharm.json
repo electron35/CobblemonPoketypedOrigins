@@ -1,0 +1,23 @@
+{
+    "name": "Cute Charm",
+    "description": "Entity attacking you have a 30% chance to get weakness 2 for 5s",
+    "type": "origins:action_when_hit",
+    "bientity_action": {
+        "type": "origins:chance",
+        "chance": 30,
+        "action": {
+            "type": "origins:actor_action",
+            "action": {
+                "type": "origins:apply_effect",
+                "effect": {
+                    "effect": "minecraft:weakness",
+                    "duration": 100,
+                    "amplifier": 0,
+                    "show_particles": true,
+                    "show_icon": true
+                }
+            }
+        }
+    },
+    "cooldown": 1
+}

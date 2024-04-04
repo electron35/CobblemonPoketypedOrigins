@@ -1,0 +1,2 @@
+execute at @e[type=minecraft:area_effect_cloud,tag=MistyTerrain] run resource set @a[distance=..5,limit=1] poketyped:resources/fairyenergy 10
+execute at @e[type=minecraft:area_effect_cloud,tag=MistyTerrain] run particle minecraft:dust 1 0.639 0.820 1 ~ ~ ~ 1 0.1 1 0 10
