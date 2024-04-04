@@ -3,8 +3,8 @@
         "icon": {
             "item": "cobblemon:black_sludge"
         },
-        "title": "The plague",
-        "description": "You've harnessed the power of the water type",
+        "title": "With a taste of a poison paradise",
+        "description": "You've harnessed the power of the poison type",
         "frame": "goal",
         "show_toast": true,
         "announce_to_chat": true,

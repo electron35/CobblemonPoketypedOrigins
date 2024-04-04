@@ -3,7 +3,7 @@
         "icon": {
             "item": "cobblemon:thunder_stone"
         },
-        "title": "The storm rageth",
+        "title": "Thunderstruck",
         "description": "You've harnessed the power of the electric type",
         "frame": "goal",
         "show_toast": true,

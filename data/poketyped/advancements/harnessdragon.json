@@ -3,7 +3,7 @@
         "icon": {
             "item": "cobblemon:dragon_scale"
         },
-        "title": "Hear my roar",
+        "title": "Enemy",
         "description": "You've harnessed the power of the dragon type",
         "frame": "goal",
         "show_toast": true,

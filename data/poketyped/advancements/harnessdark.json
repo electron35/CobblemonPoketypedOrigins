@@ -3,7 +3,7 @@
         "icon": {
             "item": "cobblemon:dusk_stone"
         },
-        "title": "Evil deeds",
+        "title": "A shot in the dark",
         "description": "You've harnessed the power of the dark type",
         "frame": "goal",
         "show_toast": true,

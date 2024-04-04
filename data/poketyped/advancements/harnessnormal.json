@@ -3,7 +3,7 @@
         "icon": {
             "item": "cobblemon:lucky_egg"
         },
-        "title": "True neutrality",
+        "title": "Born this way",
         "description": "You've harnessed the power of the normal type",
         "frame": "goal",
         "show_toast": true,
