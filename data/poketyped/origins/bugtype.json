@@ -9,7 +9,8 @@
 		"poketyped:climbing",
         "poketyped:bugbite",
 		"poketyped:onhitbugbite",
-		"poketyped:resources/bughunger"
+		"poketyped:resources/bughunger",
+		"poketyped:hurtsound/bughurt"
     ],
     "unchoosable": true,
     "impact": 2
