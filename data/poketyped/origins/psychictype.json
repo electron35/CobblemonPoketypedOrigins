@@ -5,9 +5,15 @@
         "item": "minecraft:ender_eye"
     },
 	"powers": [
-        "poketyped:fire_immunity",
-        "poketyped:flamethrower"
+		"poketyped:powerswap",
+		"poketyped:resources/psystance1",
+		"poketyped:resources/psystance2",
+		"poketyped:resources/psystance3",
+		"poketyped:psyshock",
+		"poketyped:teleport",
+		"poketyped:extrasensory",
+		"poketyped:weak"
     ],
     "unchoosable": true,
-    "impact": 0
+    "impact": 2
 }
