@@ -5,9 +5,10 @@
         "item": "minecraft:sculk_sensor"
     },
 	"powers": [
-        "poketyped:fire_immunity",
-        "poketyped:flamethrower"
+        "poketyped:resources/suckerready",
+        "poketyped:suckerpunch",
+		"poketyped:nightforce"
     ],
     "unchoosable": true,
-    "impact": 0
+    "impact": 1
 }

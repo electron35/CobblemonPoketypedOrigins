@@ -1,0 +1,33 @@
+{
+    "name": "Dark dweller",
+    "description": "You are stronger during the night and weaker during the day. you have night vision",
+    "type": "origins:multiple",
+    "night_vision": {
+        "type": "origins:toggle_night_vision",
+        "active_by_default": true,
+        "key": {
+            "key": "key.origins.secondary_active"
+        }
+    },
+    "strength": {
+        "condition": {
+            "inverted": true,
+            "type": "origins:daytime"
+        },
+        "type": "origins:modify_damage_dealt",
+        "modifier": {
+            "operation": "multiply_total",
+            "value": 0.2
+        }
+    },
+    "weakness": {
+        "condition": {
+            "type": "origins:daytime"
+        },
+        "type": "origins:modify_damage_dealt",
+        "modifier": {
+            "operation": "multiply_total",
+            "value": -0.4
+        }
+    }
+}
