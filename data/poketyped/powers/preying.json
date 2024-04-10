@@ -1,0 +1,71 @@
+{
+    "name": "It's time to prey",
+    "description": "Entities with low health will be revealed to you, killing them fill your revenant gauge.",
+    "type": "origins:multiple",
+    "prey": {
+        "type": "origins:entity_glow",
+        "entity_condition": {
+            "type": "origins:and",
+            "conditions": [
+                {
+                    "type": "origins:relative_health",
+                    "comparison": "<=",
+                    "compare_to": 0.2
+                },
+                {
+                    "type": "origins:living"
+                }
+            ]
+        },
+        "use_teams": false,
+        "red": 77,
+        "green": 44,
+        "blue": 77
+    },
+    "onkill": {
+        "type": "origins:self_action_on_kill",
+        "entity_action": {
+            "type": "origins:and",
+            "actions": [
+                {
+                    "type": "origins:modify_resource",
+                    "resource": "poketyped:resources/spiritform",
+                    "modifier": {
+                        "operation": "add_base_early",
+                        "value": 50
+                    }
+                },
+                {
+                    "type": "origins:spawn_particles",
+                    "particle": "minecraft:soul",
+                    "count": 50,
+                    "speed": 1,
+                    "spread": {
+                        "x": 1,
+                        "y": 1,
+                        "z": 1
+                    }
+                },
+                {
+                    "type": "origins:play_sound",
+                    "sound": "minecraft:entity.warden.death",
+                    "volume": 1,
+                    "pitch": 1
+                },
+                {
+                    "type": "origins:play_sound",
+                    "sound": "minecraft:entity.phantom.death",
+                    "volume": 1,
+                    "pitch": 1
+                },
+                {
+                    "type": "origins:play_sound",
+                    "sound": "minecraft:block.glass.break",
+                    "volume": 1,
+                    "pitch": 0.5
+                }
+            ]
+        },
+        "cooldown": 1
+    }
+}
