@@ -5,8 +5,9 @@
         "item": "minecraft:dragon_egg"
     },
 	"powers": [
-        "poketyped:fire_immunity",
-        "poketyped:flamethrower"
+        "poketyped:pressure",
+        "poketyped:dracometeor",
+		"poketyped:dragonsize"
     ],
     "unchoosable": true,
     "impact": 0

@@ -1,0 +1,32 @@
+{
+    "name": "Dragon sized",
+    "description": "You are bigger than the average player, and you need to eat more food",
+    "type": "origins:multiple",
+    "scale": {
+        "type": "origins:action_over_time",
+        "interval": 20,
+        "entity_action": {
+            "type": "origins:execute_command",
+            "command": "function poketyped:largesize"
+        }
+    },
+    "reset": {
+        "type": "origins:action_on_callback",
+        "execute_chosen_when_orb": true,
+        "entity_action_lost": {
+            "type": "origins:execute_command",
+            "command": "scale reset"
+        }
+    },
+    "largeappetite": {
+        "type": "origins:modify_food",
+        "food_modifier": {
+            "operation": "multiply_total_multiplicative",
+            "value": -0.2
+        },
+        "saturation_modifier": {
+            "operation": "multiply_total_multiplicative",
+            "value": -0.2
+        }
+    }
+}

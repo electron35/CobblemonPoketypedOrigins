@@ -1,0 +1,34 @@
+{
+    "name": "Draco meteor",
+    "description": "Strike down your foe with three powerful meteor",
+    "type": "origins:active_self",
+    "entity_action": {
+        "type": "origins:and",
+        "actions": [
+            {
+                "type": "origins:execute_command",
+                "command": "/summon area_effect_cloud ^ ^ ^4 {Particle:\"crit\",Age:-40,Tags:[\"DracoMeteor\"]}"
+            },
+            {
+                "type": "origins:execute_command",
+                "command": "/summon area_effect_cloud ^ ^ ^8 {Particle:\"crit\",Age:-60,Tags:[\"DracoMeteor\"]}"
+            },
+            {
+                "type": "origins:execute_command",
+                "command": "/summon area_effect_cloud ^ ^ ^12 {Particle:\"crit\",Age:-80,Tags:[\"DracoMeteor\"]}"
+            },
+            {
+                "type": "origins:play_sound",
+                "sound": "minecraft:entity.ender_dragon.ambient",
+                "volume": 1,
+                "pitch": 1
+            }
+        ]
+    },
+    "cooldown": 300,
+    "hud_render": {
+        "should_render": true,
+        "sprite_location": "origins:textures/gui/community/huang/resource_bar_02.png",
+        "bar_index": 7
+    }
+}

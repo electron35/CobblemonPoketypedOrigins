@@ -1,0 +1,62 @@
+{
+    "name": "Pressure",
+    "description": "Mobs around you and player attacking you get mining fatigue.",
+    "type": "origins:multiple",
+    "mob": {
+        "type": "origins:action_over_time",
+        "interval": 20,
+        "entity_action": {
+            "type": "origins:area_of_effect",
+            "radius": 5,
+            "bientity_condition": {
+                "type": "origins:target_condition",
+                "condition": {
+                    "inverted": true,
+                    "type": "origins:entity_type",
+                    "entity_type": "minecraft:player"
+                }
+            },
+            "bientity_action": {
+                "type": "origins:target_action",
+                "action": {
+                    "type": "origins:apply_effect",
+                    "effect": {
+                        "effect": "minecraft:mining_fatigue",
+                        "duration": 30,
+                        "amplifier": 1,
+                        "show_particles": true,
+                        "show_icon": true
+                    }
+                }
+            }
+        }
+    },
+    "player": {
+        "type": "origins:action_when_hit",
+        "bientity_action": {
+            "type": "origins:target_action",
+            "action": {
+                "type": "origins:apply_effect",
+                "effect": {
+                    "effect": "minecraft:mining_fatigue",
+                    "duration": 100,
+                    "amplifier": 0,
+                    "show_particles": true,
+                    "show_icon": true
+                }
+            }
+        },
+        "bientity_condition": {
+            "type": "origins:actor_condition",
+            "condition": {
+                "type": "origins:entity_type",
+                "entity_type": "minecraft:player"
+            }
+        },
+        "damage_condition": {
+            "inverted": true,
+            "type": "origins:projectile"
+        },
+        "cooldown": 1
+    }
+}

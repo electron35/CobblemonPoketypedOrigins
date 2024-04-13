@@ -1,0 +1,2 @@
+execute at @e[type=minecraft:area_effect_cloud,tag=DracoMeteor,nbt={Age:-1}] run summon firework_rocket ~ ~7 ~ {Life:0,LifeTime:60,ShotAtAngle:1b,Motion:[0.0,-1.0,0.0],FireworksItem:{id:"firework_rocket",Count:1,tag:{Fireworks:{Explosions:[{Type:1,Colors:[I;1507427],FadeColors:[I;16777215]},{Type:1,Colors:[I;1507427],FadeColors:[I;16777215]},{Type:1,Colors:[I;1507427],FadeColors:[I;16777215]}]}}}}
+execute at @e[type=minecraft:area_effect_cloud,tag=DracoMeteor] run particle minecraft:crit ~ ~ ~ 2 0.2 2 0 10
