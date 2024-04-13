@@ -31,7 +31,7 @@
                     "resource": "poketyped:resources/flamefuel",
                     "modifier": {
                         "operation": "add_base_early",
-                        "value": -1
+                        "value": -5
                     }
                 }
             ]
