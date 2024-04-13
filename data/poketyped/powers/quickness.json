@@ -1,6 +1,6 @@
 {
     "name": "Nimble",
-    "description": "You move quicker",
+    "description": "You are faster",
     "type": "origins:attribute",
     "modifier": {
         "attribute": "generic.movement_speed",

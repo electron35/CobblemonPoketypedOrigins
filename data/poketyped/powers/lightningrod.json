@@ -1,6 +1,6 @@
 {
     "name": "Lightning rod",
-    "description": "You are immune to lightning damage and get stronger afterward",
+    "description": "Lightning reinforce your strength and speed instead of doing damage",
     "type": "origins:multiple",
     "electricimmunity": {
         "type": "origins:modify_damage_taken",

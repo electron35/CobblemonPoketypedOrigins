@@ -1,5 +1,6 @@
 {
     "name": "Flamethrower",
+    "description": "Charge fire energy over time and launch it on command",
     "type": "origins:multiple",
     "flamethrower": {
         "condition": {

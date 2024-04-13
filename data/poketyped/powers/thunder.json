@@ -1,6 +1,6 @@
 {
 	"name":"Thunder",
-	"description": "mark a spot, 5 second later lightning will strike",
+	"description": "mark a spot, 5 second later, lightning will strike",
     "type": "apugli:custom_projectile",
     "texture_location": "minecraft:textures/item/redstone.png",
 	"owner_target_bientity_action_on_hit": {

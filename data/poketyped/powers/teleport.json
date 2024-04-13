@@ -1,6 +1,6 @@
 {
     "name": "Teleport",
-    "description": "Flee from the scene",
+    "description": "Throw an enderpearl",
     "condition": {
         "type": "origins:resource",
         "resource": "poketyped:resources/psystance3",

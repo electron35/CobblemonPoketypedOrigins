@@ -1,6 +1,6 @@
 {
     "name": "Many powers",
-    "description": "You can swap between three power",
+    "description": "You can swap between three power (Extrasensory -> Psyshock -> Teleport)",
     "type": "origins:multiple",
     "topsychock": {
         "type": "origins:active_self",

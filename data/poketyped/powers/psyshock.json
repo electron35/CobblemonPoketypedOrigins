@@ -1,6 +1,6 @@
 {
     "name": "Psyshock",
-    "description": "Throw a random block that deal damage",
+    "description": "Throw a random item that deal damage",
     "condition": {
         "type": "origins:resource",
         "resource": "poketyped:resources/psystance2",
