@@ -1,0 +1,17 @@
+{
+    "type": "origins:resource",
+	"min": 0,
+    "max": 300,
+    "start_value": 300,
+    "hud_render": {
+        "should_render": true,
+        "sprite_location": "origins:textures/gui/community/huang/resource_bar_01.png",
+        "bar_index": 13,
+        "condition": {
+            "type": "origins:resource",
+            "resource": "poketyped:resources/sturdycd",
+            "comparison": "<",
+            "compare_to": 300
+        }
+    }
+}

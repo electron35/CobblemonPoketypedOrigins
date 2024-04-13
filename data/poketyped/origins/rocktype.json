@@ -5,8 +5,10 @@
         "item": "minecraft:stone"
     },
 	"powers": [
-        "poketyped:fire_immunity",
-        "poketyped:flamethrower"
+        "poketyped:resources/sturdycd",
+        "poketyped:sturdy",
+		"poketyped:broken",
+		"poketyped:stealthrock"
     ],
     "unchoosable": true,
     "impact": 0
