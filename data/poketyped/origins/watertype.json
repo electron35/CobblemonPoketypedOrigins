@@ -5,9 +5,11 @@
         "item": "minecraft:water_bucket"
     },
 	"powers": [
-        "poketyped:fire_immunity",
-        "poketyped:flamethrower"
+        "poketyped:aquatic",
+        "poketyped:dryfish",
+		"poketyped:surf",
+		"poketyped:resources/surfing"
     ],
     "unchoosable": true,
-    "impact": 0
+    "impact": 1
 }

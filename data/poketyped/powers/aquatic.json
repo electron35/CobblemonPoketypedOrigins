@@ -1,0 +1,24 @@
+{
+    "name": "Sea dweller",
+    "description": "Bound to the ocean, you have water breathing and water vision",
+    "type": "origins:multiple",
+    "aquatic": {
+        "type": "origins:entity_group",
+        "group": "aquatic"
+    },
+    "conduit": {
+        "type": "origins:action_over_time",
+        "interval": 20,
+        "entity_action": {
+            "type": "origins:apply_effect",
+            "effect": {
+                "effect": "minecraft:conduit_power",
+                "duration": 40,
+                "amplifier": 0,
+                "is_ambient": true,
+                "show_particles": false,
+                "show_icon": false
+            }
+        }
+    }
+}
