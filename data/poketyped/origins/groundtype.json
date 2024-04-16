@@ -5,8 +5,11 @@
         "item": "minecraft:sand"
     },
 	"powers": [
-        "poketyped:fire_immunity",
-        "poketyped:flamethrower"
+        "poketyped:ground/dig",
+        "poketyped:ground/digtoggle",
+        "poketyped:ground/digkey",
+        "poketyped:ground/vertigo",
+		"poketyped:ground/depthpower"
     ],
     "unchoosable": true,
     "impact": 0
