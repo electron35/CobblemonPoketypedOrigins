@@ -5,9 +5,9 @@
         "item": "minecraft:nether_star"
     },
 	"powers": [
-        "poketyped:perfectbalance",
-        "poketyped:villagerfriend",
-		"poketyped:protect"
+        "poketyped:normal/perfectbalance",
+        "poketyped:normal/villagerfriend",
+		"poketyped:normal/protect"
     ],
     "unchoosable": true,
     "impact": 0
