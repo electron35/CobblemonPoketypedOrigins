@@ -1,0 +1,55 @@
+{
+    "name": "Low Sweep",
+    "description": "Throw your opponent upward",
+    "badges": [
+        {
+            "type": "origins:tooltip",
+            "text": "Use this power after a successful mach punch",
+            "sprite": "origins:textures/gui/badge/star.png"
+        }
+    ],
+    "condition": {
+        "type": "origins:resource",
+        "resource": "poketyped:resources/fightingres_lsduration",
+        "comparison": "!=",
+        "compare_to": 0
+    },
+    "type": "origins:action_on_hit",
+    "bientity_action": {
+        "type": "origins:and",
+        "actions": [
+            {
+                "type": "origins:actor_action",
+                "action": {
+                    "type": "origins:set_resource",
+                    "resource": "poketyped:resources/fightingres_lsduration",
+                    "value": 100
+                }
+            },
+            {
+                "type": "origins:target_action",
+                "action": {
+                    "type": "origins:and",
+                    "actions": [
+                        {
+                            "type": "origins:add_velocity",
+                            "y": 0.5,
+                            "space": "local_horizontal",
+                            "client": true,
+                            "server": true,
+                            "set": true
+                        },
+                        {
+                            "type": "origins:damage",
+                            "amount": 3,
+                            "source": {
+                                "name": "player"
+                            }
+                        }
+                    ]
+                }
+            }
+        ]
+    },
+    "cooldown": 1
+}

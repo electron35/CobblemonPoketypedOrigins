@@ -5,8 +5,13 @@
         "item": "minecraft:iron_sword"
     },
 	"powers": [
-        "poketyped:fire_immunity",
-        "poketyped:flamethrower"
+        "poketyped:resources/fightingres",
+        "poketyped:fighting/closecombat",
+		"poketyped:fighting/circlethrow",
+		"poketyped:fighting/machpunch",
+		"poketyped:fighting/lowsweep",
+		"poketyped:fighting/fightersize",
+		"poketyped:fighting/slowstrike"
     ],
     "unchoosable": true,
     "impact": 0

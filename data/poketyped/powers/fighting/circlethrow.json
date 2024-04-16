@@ -1,0 +1,63 @@
+{
+    "name": "Circle Throw",
+    "description": "Inflict heavy knockback to your opponent",
+    "badges": [
+        {
+            "type": "origins:tooltip",
+            "text": "Using after a successful close combat combo",
+            "sprite": "origins:textures/gui/badge/star.png"
+        }
+    ],
+    "condition": {
+        "type": "origins:resource",
+        "resource": "poketyped:resources/fightingres_ctduration",
+        "comparison": ">",
+        "compare_to": 0
+    },
+    "type": "origins:action_on_hit",
+    "bientity_action": {
+        "type": "origins:and",
+        "actions": [
+            {
+                "type": "origins:target_action",
+                "action": {
+                    "type": "origins:and",
+                    "actions": [
+                        {
+                            "type": "origins:grant_power",
+                            "power": "poketyped:debuff/propulsed",
+                            "source": "example:power_source"
+                        }
+                    ]
+                }
+            },
+            {
+                "type": "origins:actor_action",
+                "action": {
+                    "type": "origins:set_resource",
+                    "resource": "poketyped:resources/fightingres_ctduration",
+                    "value": 100
+                }
+            },
+            {
+                "type": "origins:add_velocity",
+                "y": 0.5,
+                "z": 1.5,
+                "client": true,
+                "server": true,
+                "set": true
+            }
+        ]
+    },
+    "damage_condition": {
+        "type": "origins:attacker",
+        "entity_condition": {
+            "type": "origins:equipped_item",
+            "equipment_slot": "mainhand",
+            "item_condition": {
+                "type": "origins:empty"
+            }
+        }
+    },
+    "cooldown": 1
+}

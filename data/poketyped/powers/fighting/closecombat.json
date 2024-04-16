@@ -1,0 +1,139 @@
+{
+    "name": "Close Combat",
+    "description": "Enter a fighting stance. Your next five weaponless hit will deal 7 damage. Upon hitting all attack, this power become circle throw",
+    "type": "origins:multiple",
+    "start": {
+        "type": "origins:active_self",
+        "entity_action": {
+            "type": "origins:and",
+            "actions": [
+                {
+                    "type": "origins:set_resource",
+                    "resource": "poketyped:resources/fightingres_ccstack",
+                    "value": 5
+                },
+                {
+                    "type": "origins:trigger_cooldown",
+                    "power": "poketyped:resources/fightingres_ccduration"
+                }
+            ]
+        },
+        "cooldown": 600,
+        "hud_render": {
+            "should_render": true,
+            "sprite_location": "origins:textures/gui/resource_bar.png",
+            "bar_index": 5
+        }
+    },
+    "particle": {
+        "condition": {
+            "type": "origins:resource",
+            "resource": "poketyped:resources/fightingres_ccstack",
+            "comparison": ">",
+            "compare_to": 0
+        },
+        "type": "origins:particle",
+        "particle": "crit",
+        "frequency": 20,
+        "count": 25,
+        "speed": 10,
+        "spread": {
+            "x": 0.25,
+            "y": 0.1,
+            "z": 0.25
+        },
+        "offset_y": 0,
+        "visible_in_first_person": true
+    },
+    "hit": {
+        "condition": {
+            "type": "origins:and",
+            "conditions": [
+                {
+                    "type": "origins:resource",
+                    "resource": "poketyped:resources/fightingres_ccstack",
+                    "comparison": ">",
+                    "compare_to": 0
+                }
+            ]
+        },
+        "type": "origins:action_on_hit",
+        "bientity_action": {
+            "type": "origins:and",
+            "actions": [
+                {
+                    "type": "origins:actor_action",
+                    "action": {
+                        "type": "origins:modify_resource",
+                        "resource": "poketyped:resources/fightingres_ccstack",
+                        "modifier": {
+                            "operation": "add_base_early",
+                            "value": -1
+                        }
+                    }
+                },
+                {
+                    "type": "origins:target_action",
+                    "action": {
+                        "type": "origins:and",
+                        "actions": [
+                            {
+                                "type": "origins:damage",
+                                "amount": 3,
+                                "source": {
+                                    "name": "player"
+                                }
+                            },
+                            {
+                                "type": "origins:damage",
+                                "amount": 3,
+                                "source": {
+                                    "name": "player",
+                                    "bypasses_armor": true,
+                                    "unblockable": true
+                                }
+                            },
+                            {
+                                "type": "origins:spawn_particles",
+                                "particle": "crit",
+                                "count": 10,
+                                "speed": 2,
+                                "spread": {
+                                    "x": 0,
+                                    "y": 0,
+                                    "z": 0
+                                }
+                            }
+                        ]
+                    }
+                }
+            ]
+        },
+        "damage_condition": {
+            "type": "origins:attacker",
+            "entity_condition": {
+                "type": "origins:equipped_item",
+                "equipment_slot": "mainhand",
+                "item_condition": {
+                    "type": "origins:empty"
+                }
+            }
+        },
+        "cooldown": 1
+    },
+    "end": {
+        "condition": {
+            "type": "origins:resource",
+            "resource": "poketyped:resources/fightingres_ccduration",
+            "comparison": "==",
+            "compare_to": 0
+        },
+        "type": "origins:action_over_time",
+        "interval": 1,
+        "entity_action": {
+            "type": "origins:set_resource",
+            "resource": "poketyped:resources/fightingres_ccstack",
+            "value": 0
+        }
+    }
+}

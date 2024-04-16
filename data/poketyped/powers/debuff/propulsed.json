@@ -1,0 +1,66 @@
+{
+    "name": "Propulsed",
+    "description": "You are currently pushed, and hitting a wall will hurt you",
+    "type": "origins:multiple",
+    "hittingwall": {
+        "condition": {
+            "type": "origins:or",
+            "conditions": [
+                {
+                    "type": "origins:block_collision",
+                    "offset_x": 0.1,
+                    "offset_y": 0,
+                    "offset_z": 0.1
+                },
+                {
+                    "type": "origins:block_collision",
+                    "offset_x": -0.1,
+                    "offset_y": 0,
+                    "offset_z": -0.1
+                }
+            ]
+        },
+        "type": "origins:action_over_time",
+        "interval": 1,
+        "entity_action": {
+            "type": "origins:and",
+            "actions": [
+                {
+                    "type": "origins:damage",
+                    "amount": 6,
+                    "source": {
+                        "name": "flyIntoWall",
+                        "bypasses_armor": true
+                    }
+                },
+                {
+                    "type": "origins:apply_effect",
+                    "effect": {
+                        "effect": "minecraft:slowness",
+                        "duration": 100,
+                        "amplifier": 0,
+                        "show_particles": true,
+                        "show_icon": true
+                    }
+                },
+                {
+                    "type": "origins:revoke_power",
+                    "power": "poketyped:debuff/propulsed",
+                    "source": "example:power_source"
+                }
+            ]
+        }
+    },
+    "landing": {
+        "condition": {
+            "type": "apugli:grounded"
+        },
+        "type": "origins:action_over_time",
+        "interval": 1,
+        "entity_action": {
+            "type": "origins:revoke_power",
+            "power": "poketyped:debuff/propulsed",
+            "source": "example:power_source"
+        }
+    }
+}
