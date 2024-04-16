@@ -1,0 +1,112 @@
+{
+    "hidden": true,
+    "type": "origins:multiple",
+    "decayspirit": {
+        "condition": {
+            "type": "origins:power_active",
+            "power": "poketyped:ghost/revenanttoggle"
+        },
+        "type": "origins:action_over_time",
+        "interval": 1,
+        "entity_action": {
+            "type": "origins:modify_resource",
+            "resource": "poketyped:ghost/spiritform",
+            "modifier": {
+                "operation": "add_base_early",
+                "value": -1
+            }
+        }
+    },
+    "rechargespirit": {
+        "condition": {
+            "inverted": true,
+            "type": "origins:power_active",
+            "power": "poketyped:ghost/revenanttoggle"
+        },
+        "type": "origins:action_over_time",
+        "interval": 2,
+        "entity_action": {
+            "type": "origins:modify_resource",
+            "resource": "poketyped:ghost/spiritform",
+            "modifier": {
+                "operation": "add_base_early",
+                "value": 1
+            }
+        }
+    },
+    "invisibility": {
+        "condition": {
+            "type": "origins:power_active",
+            "power": "poketyped:ghost/revenanttoggle"
+        },
+        "type": "origins:invisibility",
+        "render_armor": false,
+        "render_outline": true
+    },
+    "invulnerability": {
+        "condition": {
+            "type": "origins:power_active",
+            "power": "poketyped:ghost/revenanttoggle"
+        },
+        "type": "origins:invulnerability",
+        "damage_condition": {
+            "inverted": true,
+            "type": "origins:or",
+            "conditions": [
+                {
+                    "type": "origins:from_falling"
+                },
+                {
+                    "type": "origins:fire"
+                },
+                {
+                    "type": "origins:out_of_world"
+                }
+            ]
+        }
+    },
+    "stoprevenantonhit": {
+        "condition": {
+            "type": "origins:power_active",
+            "power": "poketyped:ghost/revenanttoggle"
+        },
+        "type": "origins:self_action_on_hit",
+        "entity_action": {
+            "type": "origins:toggle",
+            "power": "poketyped:ghost/revenanttoggle"
+        },
+        "cooldown": 1
+    },
+    "stoprevenantonshoot": {
+        "condition": {
+            "type": "origins:power_active",
+            "power": "poketyped:ghost/revenanttoggle"
+        },
+        "type": "origins:action_on_item_use",
+        "entity_action": {
+            "type": "origins:toggle",
+            "power": "poketyped:ghost/revenanttoggle"
+        },
+        "trigger": "start",
+        "priority": 0
+    },
+	"particle": {
+        "condition": {
+            "type": "origins:power_active",
+            "power": "poketyped:ghost/revenanttoggle"
+        },
+        "type": "origins:particle",
+        "particle": "minecraft:ash",
+        "frequency": 1,
+        "count": 10,
+        "speed": 1,
+        "spread": {
+            "x": 5,
+            "y": 1,
+            "z": 5
+        },
+        "offset_y": 0,
+        "visible_in_first_person": true,
+        "visible_while_invisible": true
+    }
+}

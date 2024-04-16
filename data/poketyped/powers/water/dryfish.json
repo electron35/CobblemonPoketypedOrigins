@@ -1,0 +1,33 @@
+{
+    "name": "Dry fish",
+    "description": "You are slowed while out of water",
+    "condition": {
+        "type": "origins:and",
+        "conditions": [
+            {
+                "type": "origins:fluid_height",
+                "fluid": "minecraft:water",
+                "comparison": "==",
+                "compare_to": 0
+            },
+            {
+                "inverted": true,
+                "type": "origins:in_rain"
+            },
+            {
+                "type": "origins:resource",
+                "resource": "poketyped:water/surfing",
+                "comparison": "==",
+                "compare_to": 0
+            }
+        ]
+    },
+    "type": "origins:conditioned_attribute",
+    "modifier": {
+        "attribute": "generic.movement_speed",
+        "operation": "multiply_base",
+        "value": -0.2
+    },
+    "tick_rate": 20,
+    "update_health": false
+}

@@ -10,7 +10,7 @@
     ],
     "condition": {
         "type": "origins:resource",
-        "resource": "poketyped:resources/fightingres_lsduration",
+        "resource": "poketyped:fighting/fightingres_lsduration",
         "comparison": "!=",
         "compare_to": 0
     },
@@ -22,7 +22,7 @@
                 "type": "origins:actor_action",
                 "action": {
                     "type": "origins:set_resource",
-                    "resource": "poketyped:resources/fightingres_lsduration",
+                    "resource": "poketyped:fighting/fightingres_lsduration",
                     "value": 100
                 }
             },

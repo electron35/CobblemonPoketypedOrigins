@@ -5,12 +5,12 @@
         "item": "minecraft:spider_eye"
     },
 	"powers": [
-        "poketyped:smallbug",
-		"poketyped:climbing",
-        "poketyped:bugbite",
-		"poketyped:onhitbugbite",
-		"poketyped:resources/bughunger",
-		"poketyped:hurtsound/bughurt"
+        "poketyped:bug/smallbug",
+		"poketyped:bug/climbing",
+        "poketyped:bug/bugbite",
+		"poketyped:bug/onhitbugbite",
+		"poketyped:bug/bughunger",
+		"poketyped:bug/bughurt"
     ],
     "unchoosable": true,
     "impact": 2

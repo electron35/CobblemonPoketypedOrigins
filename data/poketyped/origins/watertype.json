@@ -5,10 +5,10 @@
         "item": "minecraft:water_bucket"
     },
 	"powers": [
-        "poketyped:aquatic",
-        "poketyped:dryfish",
-		"poketyped:surf",
-		"poketyped:resources/surfing"
+        "poketyped:water/aquatic",
+        "poketyped:water/dryfish",
+		"poketyped:water/surf",
+		"poketyped:water/surfing"
     ],
     "unchoosable": true,
     "impact": 1

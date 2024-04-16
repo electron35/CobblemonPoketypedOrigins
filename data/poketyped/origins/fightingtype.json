@@ -5,7 +5,7 @@
         "item": "minecraft:iron_sword"
     },
 	"powers": [
-        "poketyped:resources/fightingres",
+        "poketyped:fighting/fightingres",
         "poketyped:fighting/closecombat",
 		"poketyped:fighting/circlethrow",
 		"poketyped:fighting/machpunch",

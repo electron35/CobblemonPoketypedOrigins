@@ -21,7 +21,7 @@
                 },
                 {
                     "type": "origins:trigger_cooldown",
-                    "power": "poketyped:resources/fightingres_mpduration"
+                    "power": "poketyped:fighting/fightingres_mpduration"
                 }
             ]
         },
@@ -38,7 +38,7 @@
     "hit": {
         "condition": {
             "type": "origins:resource",
-            "resource": "poketyped:resources/fightingres_mpduration",
+            "resource": "poketyped:fighting/fightingres_mpduration",
             "comparison": "!=",
             "compare_to": 0
         },
@@ -66,12 +66,12 @@
                                     "actions": [
                                         {
                                             "type": "origins:set_resource",
-                                            "resource": "poketyped:resources/fightingres_mpduration",
+                                            "resource": "poketyped:fighting/fightingres_mpduration",
                                             "value": 15
                                         },
                                         {
                                             "type": "origins:trigger_cooldown",
-                                            "power": "poketyped:resources/fightingres_lsduration"
+                                            "power": "poketyped:fighting/fightingres_lsduration"
                                         },
                                         {
                                             "type": "origins:play_sound",

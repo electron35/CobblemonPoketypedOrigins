@@ -5,11 +5,11 @@
         "item": "minecraft:poppy"
     },
 	"powers": [
-        "poketyped:cutecharm",
-        "poketyped:resources/fairyenergy",
-		"poketyped:misty_terrain",
-		"poketyped:moonblast",
-		"poketyped:purity"
+        "poketyped:fairy/cutecharm",
+        "poketyped:fairy/fairyenergy",
+		"poketyped:fairy/misty_terrain",
+		"poketyped:fairy/moonblast",
+		"poketyped:fairy/purity"
     ],
     "unchoosable": true,
     "impact": 1

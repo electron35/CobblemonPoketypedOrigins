@@ -1,0 +1,85 @@
+{
+    "name": "Sucker Punch",
+    "description": "Prepare yourself for a hit. If you are hit under 5s, you take less damage, teleport behind your opponent and deal damage to them",
+    "type": "origins:multiple",
+    "active": {
+        "type": "origins:active_self",
+        "entity_action": {
+            "type": "origins:set_resource",
+            "resource": "poketyped:dark/suckerready",
+            "value": 60
+        },
+        "cooldown": 600,
+        "key": {
+            "key": "key.origins.primary_active"
+        }
+    },
+    "suckerdecay": {
+        "condition": {
+            "type": "origins:resource",
+            "resource": "poketyped:dark/suckerready",
+            "comparison": ">=",
+            "compare_to": 1
+        },
+        "type": "origins:action_over_time",
+        "interval": 1,
+        "entity_action": {
+            "type": "origins:change_resource",
+            "resource": "poketyped:dark/suckerready",
+            "change": -1,
+            "operation": "add"
+        }
+    },
+    "trigger": {
+        "condition": {
+            "type": "origins:resource",
+            "resource": "poketyped:dark/suckerready",
+            "comparison": ">=",
+            "compare_to": 1
+        },
+        "type": "origins:action_when_hit",
+        "bientity_action": {
+            "type": "origins:and",
+            "actions": [
+                {
+                    "type": "origins:actor_action",
+                    "action": {
+                        "type": "origins:damage",
+                        "amount": 10,
+                        "source": {
+                            "name": "player",
+                            "bypasses_armor": true
+                        }
+                    }
+                },
+                {
+                    "type": "origins:invert",
+                    "action": {
+                        "type": "origins:mount"
+                    }
+                },
+                {
+                    "type": "origins:target_action",
+                    "action": {
+                        "type": "origins:and",
+                        "actions": [
+                            {
+                                "type": "origins:set_resource",
+                                "resource": "poketyped:dark/suckerready",
+                                "value": 0
+                            },
+                            {
+                                "type": "origins:delay",
+                                "action": {
+                                    "type": "origins:dismount"
+                                },
+                                "ticks": 2
+                            }
+                        ]
+                    }
+                }
+            ]
+        },
+        "cooldown": 1
+    }
+}

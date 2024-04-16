@@ -5,9 +5,10 @@
         "item": "minecraft:lightning_rod"
     },
 	"powers": [
-        "poketyped:quickness",
-        "poketyped:lightningrod",
-		"poketyped:thunder"
+        "poketyped:electric/quickness",
+        "poketyped:electric/lightningrod",
+        "poketyped:electric/hyperactive",
+		"poketyped:electric/thunder"
     ],
     "unchoosable": true,
     "impact": 1

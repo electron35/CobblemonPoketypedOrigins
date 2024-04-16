@@ -9,12 +9,12 @@
             "actions": [
                 {
                     "type": "origins:set_resource",
-                    "resource": "poketyped:resources/fightingres_ccstack",
+                    "resource": "poketyped:fighting/fightingres_ccstack",
                     "value": 5
                 },
                 {
                     "type": "origins:trigger_cooldown",
-                    "power": "poketyped:resources/fightingres_ccduration"
+                    "power": "poketyped:fighting/fightingres_ccduration"
                 }
             ]
         },
@@ -28,7 +28,7 @@
     "particle": {
         "condition": {
             "type": "origins:resource",
-            "resource": "poketyped:resources/fightingres_ccstack",
+            "resource": "poketyped:fighting/fightingres_ccstack",
             "comparison": ">",
             "compare_to": 0
         },
@@ -51,7 +51,7 @@
             "conditions": [
                 {
                     "type": "origins:resource",
-                    "resource": "poketyped:resources/fightingres_ccstack",
+                    "resource": "poketyped:fighting/fightingres_ccstack",
                     "comparison": ">",
                     "compare_to": 0
                 }
@@ -65,7 +65,7 @@
                     "type": "origins:actor_action",
                     "action": {
                         "type": "origins:modify_resource",
-                        "resource": "poketyped:resources/fightingres_ccstack",
+                        "resource": "poketyped:fighting/fightingres_ccstack",
                         "modifier": {
                             "operation": "add_base_early",
                             "value": -1
@@ -124,7 +124,7 @@
     "end": {
         "condition": {
             "type": "origins:resource",
-            "resource": "poketyped:resources/fightingres_ccduration",
+            "resource": "poketyped:fighting/fightingres_ccduration",
             "comparison": "==",
             "compare_to": 0
         },
@@ -132,7 +132,7 @@
         "interval": 1,
         "entity_action": {
             "type": "origins:set_resource",
-            "resource": "poketyped:resources/fightingres_ccstack",
+            "resource": "poketyped:fighting/fightingres_ccstack",
             "value": 0
         }
     }

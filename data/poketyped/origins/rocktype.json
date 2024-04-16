@@ -5,10 +5,10 @@
         "item": "minecraft:stone"
     },
 	"powers": [
-        "poketyped:resources/sturdycd",
-        "poketyped:sturdy",
-		"poketyped:broken",
-		"poketyped:stealthrock"
+        "poketyped:rock/sturdycd",
+        "poketyped:rock/sturdy",
+		"poketyped:rock/broken",
+		"poketyped:rock/stealthrock"
     ],
     "unchoosable": true,
     "impact": 0

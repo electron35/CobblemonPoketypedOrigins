@@ -1,0 +1,57 @@
+{
+    "type": "origins:action_on_hit",
+    "bientity_action": {
+        "type": "origins:and",
+        "actions": [
+            {
+                "type": "origins:damage",
+                "amount": 4,
+                "source": {
+                    "name": "player",
+                    "bypasses_armor": true,
+                    "magic": true
+                }
+            },
+            {
+                "type": "origins:actor_action",
+                "action": {
+                    "type": "origins:and",
+                    "actions": [
+                        {
+                            "type": "origins:feed",
+                            "food": 3,
+                            "saturation": 6
+                        },
+                        {
+                            "type": "origins:set_resource",
+                            "resource": "poketyped:bug/bughunger",
+                            "value": 0
+                        },
+                        {
+                            "type": "origins:play_sound",
+                            "sound": "minecraft:entity.dolphin.eat",
+                            "volume": 5,
+                            "pitch": 0.9
+                        },
+                        {
+                            "type": "origins:play_sound",
+                            "sound": "minecraft:enchant.thorns.hit",
+                            "volume": 0.7,
+                            "pitch": 1
+                        }
+                    ]
+                }
+            }
+        ]
+    },
+    "bientity_condition": {
+        "type": "origins:actor_condition",
+        "condition": {
+            "type": "origins:resource",
+            "resource": "poketyped:bug/bughunger",
+            "comparison": ">=",
+            "compare_to": 1
+        }
+    },
+    "cooldown": 1
+}

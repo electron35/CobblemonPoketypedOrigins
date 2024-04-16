@@ -1,0 +1,27 @@
+{
+    "name": "Teleport",
+    "description": "Throw an enderpearl",
+    "condition": {
+        "type": "origins:resource",
+        "resource": "poketyped:psychic/psystance3",
+        "comparison": "==",
+        "compare_to": 1
+    },
+    "type": "origins:fire_projectile",
+    "entity_type": "origins:enderian_pearl",
+    "cooldown": 600,
+    "hud_render": {
+        "should_render": true,
+        "sprite_location": "origins:textures/gui/resource_bar.png",
+        "bar_index": 6
+    },
+    "count": 1,
+    "interval": 0,
+    "start_delay": 0,
+    "speed": 3,
+    "divergence": 1,
+    "sound": "minecraft:entity.ender_pearl.throw",
+    "key": {
+        "key": "key.origins.primary_active"
+    }
+}

@@ -5,14 +5,14 @@
         "item": "minecraft:ender_eye"
     },
 	"powers": [
-		"poketyped:powerswap",
-		"poketyped:resources/psystance1",
-		"poketyped:resources/psystance2",
-		"poketyped:resources/psystance3",
-		"poketyped:psyshock",
-		"poketyped:teleport",
-		"poketyped:extrasensory",
-		"poketyped:weak"
+		"poketyped:psychic/psystance1",
+		"poketyped:psychic/psystance2",
+		"poketyped:psychic/psystance3",
+		"poketyped:psychic/powerswap",
+		"poketyped:psychic/psyshock",
+		"poketyped:psychic/teleport",
+		"poketyped:psychic/extrasensory",
+		"poketyped:psychic/weak"
     ],
     "unchoosable": true,
     "impact": 2

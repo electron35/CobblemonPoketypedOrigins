@@ -5,13 +5,13 @@
         "item": "minecraft:soul_lantern"
     },
 	"powers": [
-		"poketyped:resources/spiritform",
-		"poketyped:revenanttoggle",
-		"poketyped:revenantkey",
-		"poketyped:revenanteffect",
-		"poketyped:undead",
-		"poketyped:preying",
-		"poketyped:hurtsound/ghosthurt"
+		"poketyped:ghost/spiritform",
+		"poketyped:ghost/revenanttoggle",
+		"poketyped:ghost/revenantkey",
+		"poketyped:ghost/revenanteffect",
+		"poketyped:ghost/undead",
+		"poketyped:ghost/preying",
+		"poketyped:ghost/ghosthurt"
     ],
     "unchoosable": true,
     "impact": 1

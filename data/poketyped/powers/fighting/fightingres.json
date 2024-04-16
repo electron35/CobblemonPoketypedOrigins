@@ -1,0 +1,75 @@
+{
+    "hidden": true,
+    "type": "origins:multiple",
+    "ccstack": {
+        "type": "origins:resource",
+        "min": 0,
+        "max": 5,
+        "start_value": 0,
+        "hud_render": {
+            "should_render": true,
+            "sprite_location": "origins:textures/gui/resource_bar.png",
+            "bar_index": 5,
+            "condition": {
+                "type": "origins:resource",
+                "resource": "poketyped:fighting/fightingres_ccduration",
+                "comparison": ">",
+                "compare_to": 0
+            }
+        },
+        "min_action": {
+            "type": "origins:if_else",
+            "condition": {
+                "type": "origins:resource",
+                "resource": "poketyped:fighting/fightingres_ccduration",
+                "comparison": "!=",
+                "compare_to": 0
+            },
+            "if_action": {
+                "type": "origins:and",
+                "actions": [
+                    {
+                        "type": "origins:set_resource",
+                        "resource": "poketyped:fighting/fightingres_ccduration",
+                        "value": 0
+                    },
+                    {
+                        "type": "origins:trigger_cooldown",
+                        "power": "poketyped:fighting/fightingres_ctduration"
+                    }
+                ]
+            }
+        }
+    },
+    "ccduration": {
+        "type": "origins:cooldown",
+        "cooldown": 200
+    },
+    "ctduration": {
+        "type": "origins:cooldown",
+        "cooldown": 100,
+        "hud_render": {
+            "should_render": true,
+            "sprite_location": "origins:textures/gui/community/huang/resource_bar_02.png",
+            "bar_index": 0
+        }
+    },
+    "mpduration": {
+        "type": "origins:cooldown",
+        "cooldown": 15,
+        "hud_render": {
+            "should_render": true,
+            "sprite_location": "origins:textures/gui/resource_bar.png",
+            "bar_index": 15
+        }
+    },
+    "lsduration": {
+        "type": "origins:cooldown",
+        "cooldown": 100,
+        "hud_render": {
+            "should_render": true,
+            "sprite_location": "origins:textures/gui/community/spiderkolo/resource_bar_01.png",
+            "bar_index": 5
+        }
+    }
+}

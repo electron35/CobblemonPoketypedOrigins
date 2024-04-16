@@ -5,9 +5,9 @@
         "item": "minecraft:sculk_sensor"
     },
 	"powers": [
-        "poketyped:resources/suckerready",
-        "poketyped:suckerpunch",
-		"poketyped:nightforce"
+        "poketyped:dark/suckerready",
+        "poketyped:dark/suckerpunch",
+		"poketyped:dark/nightforce"
     ],
     "unchoosable": true,
     "impact": 1
