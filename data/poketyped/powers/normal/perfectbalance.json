@@ -1,0 +1,9 @@
+{
+    "name": "Perfectly balanced",
+    "description": "You are immune to the weakness and strength effect",
+    "type": "origins:effect_immunity",
+    "effects": [
+        "minecraft:weakness",
+        "minecraft:strength"
+    ]
+}

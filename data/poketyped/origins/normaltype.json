@@ -5,8 +5,9 @@
         "item": "minecraft:nether_star"
     },
 	"powers": [
-        "poketyped:fire_immunity",
-        "poketyped:flamethrower"
+        "poketyped:perfectbalance",
+        "poketyped:villagerfriend",
+		"poketyped:protect"
     ],
     "unchoosable": true,
     "impact": 0
