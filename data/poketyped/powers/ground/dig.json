@@ -1,0 +1,221 @@
+{
+	"hidden": true,
+    "type": "origins:multiple",
+    "gauge": {
+        "type": "origins:resource",
+        "min": 0,
+        "max": 1200,
+        "start_value": 1200,
+        "hud_render": {
+            "should_render": true,
+            "sprite_location": "origins:textures/gui/community/spiderkolo/resource_bar_02.png",
+            "bar_index": 3
+        },
+        "min_action": {
+            "type": "origins:and",
+            "actions": [
+                {
+                    "type": "origins:toggle",
+                    "power": "poketyped:ground/digtoggle"
+                },
+                {
+                    "type": "origins:trigger_cooldown",
+                    "power": "poketyped:ground/dig_cd"
+                }
+            ]
+        }
+    },
+    "cd": {
+        "type": "origins:cooldown",
+        "cooldown": 200
+    },
+    "reload": {
+        "condition": {
+            "type": "origins:and",
+            "conditions": [
+                {
+                    "type": "origins:resource",
+                    "resource": "poketyped:ground/dig_cd",
+                    "comparison": "==",
+                    "compare_to": 0
+                },
+                {
+                    "inverted": true,
+                    "type": "origins:power_active",
+                    "power": "poketyped:ground/digtoggle"
+                }
+            ]
+        },
+        "type": "origins:action_over_time",
+        "interval": 1,
+        "entity_action": {
+            "type": "origins:modify_resource",
+            "resource": "poketyped:ground/dig_gauge",
+            "modifier": {
+                "operation": "add_base_early",
+                "value": 2
+            }
+        }
+    },
+    "effect": {
+        "condition": {
+            "type": "origins:power_active",
+            "power": "poketyped:ground/digtoggle"
+        },
+        "type": "origins:action_over_time",
+        "interval": 1,
+        "entity_action": {
+            "type": "origins:and",
+            "actions": [
+                {
+                    "type": "origins:modify_resource",
+                    "resource": "poketyped:ground/dig_gauge",
+                    "modifier": {
+                        "operation": "add_base_early",
+                        "value": -1
+                    }
+                }
+            ]
+        }
+    },
+    "particle": {
+        "condition": {
+            "type": "origins:and",
+            "conditions": [
+                {
+                    "type": "origins:power_active",
+                    "power": "poketyped:ground/digtoggle"
+                },
+                {
+                    "type": "origins:moving"
+                }
+            ]
+        },
+        "type": "origins:particle",
+        "particle": {
+            "type": "minecraft:block",
+            "params": "minecraft:dirt"
+        },
+        "frequency": 1,
+        "count": 10,
+        "speed": 0,
+        "spread": {
+            "x": 0.25,
+            "y": 0.5,
+            "z": 0.25
+        },
+        "offset_y": 1,
+        "visible_in_first_person": true
+    },
+    "crunchsound": {
+        "condition": {
+            "type": "origins:and",
+            "conditions": [
+                {
+                    "inverted": true,
+                    "type": "origins:in_block",
+                    "block_condition": {
+                        "type": "origins:block",
+                        "block": "air"
+                    }
+                },
+                {
+                    "type": "origins:moving"
+                },
+                {
+                    "type": "origins:power_active",
+                    "power": "poketyped:ground/digtoggle"
+                }
+            ]
+        },
+        "type": "origins:action_over_time",
+        "interval": 10,
+        "entity_action": {
+            "type": "origins:play_sound",
+            "sound": "minecraft:block.gravel.break",
+            "volume": 1,
+            "pitch": 0.8
+        }
+    },
+    "sound": {
+        "condition": {
+            "type": "origins:power_active",
+            "power": "poketyped:ground/digtoggle"
+        },
+        "type": "origins:action_over_time",
+        "interval": 2,
+        "entity_action": {
+            "type": "origins:play_sound",
+            "sound": "minecraft:block.gravel.hit",
+            "volume": 0.5,
+            "pitch": 0.8
+        }
+    },
+    "onhit": {
+        "condition": {
+            "type": "origins:power_active",
+            "power": "poketyped:ground/digtoggle"
+        },
+        "type": "origins:modify_damage_dealt",
+        "bientity_condition": {
+            "type": "origins:actor_condition",
+            "condition": {
+                "type": "origins:in_block",
+                "block_condition": {
+                    "inverted": true,
+                    "type": "origins:block",
+                    "block": "minecraft:air"
+                }
+            }
+        },
+        "modifier": {
+            "operation": "multiply_base",
+            "value": 0.5
+        },
+        "self_action": {
+            "type": "origins:modify_resource",
+            "resource": "poketyped:ground/dig_gauge",
+            "modifier": {
+                "operation": "add_base_early",
+                "value": -400
+            }
+        }
+    },
+    "phase": {
+        "condition": {
+            "type": "origins:power_active",
+            "power": "poketyped:ground/digtoggle"
+        },
+        "type": "origins:phasing",
+        "block_condition": {
+            "type": "origins:or",
+            "conditions": [
+                {
+                    "type": "origins:in_tag",
+                    "tag": "minecraft:dirt"
+                },
+                {
+                    "type": "origins:in_tag",
+                    "tag": "origins:natural_stone"
+                },
+                {
+                    "type": "origins:in_tag",
+                    "tag": "minecraft:sand"
+                }
+            ]
+        },
+        "render_type": "blindness",
+        "view_distance": 10,
+        "phase_down_condition": {
+            "type": "origins:and",
+            "conditions": [
+                {
+                    "type": "origins:sneaking"
+                },
+                {
+                    "type": "origins:on_block"
+                }
+            ]
+        }
+    }
+}

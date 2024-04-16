@@ -1,0 +1,22 @@
+{
+    "name": "Dig",
+    "description": "You can walk through dirt and stone, gaining strength in the process.",
+    "type": "origins:active_self",
+    "entity_action": {
+        "type": "origins:and",
+        "actions": [
+            {
+                "type": "origins:toggle",
+                "power": "poketyped:ground/digtoggle"
+            },
+            {
+                "type": "origins:trigger_cooldown",
+                "power": "poketyped:ground/dig_cd"
+            }
+        ]
+    },
+    "cooldown": 20,
+    "key": {
+        "key": "key.origins.primary_active"
+    }
+}

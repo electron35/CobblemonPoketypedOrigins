@@ -1,0 +1,41 @@
+{
+    "name": "Vertigo",
+    "description": "When in altitude, you are weaker",
+    "condition": {
+        "type": "origins:or",
+        "conditions": [
+            {
+                "type": "origins:and",
+                "conditions": [
+                    {
+                        "type": "origins:distance_from_coordinates",
+                        "reference": "world_origin",
+                        "offset": {
+                            "x": 0,
+                            "y": -64,
+                            "z": 0
+                        },
+                        "ignore_x": true,
+                        "ignore_z": true,
+                        "shape": "cube",
+                        "scale_reference_to_dimension": true,
+                        "comparison": ">=",
+                        "compare_to": 144
+                    }
+                ]
+            },
+            {
+                "type": "origins:dimension",
+                "dimension": "minecraft:the_end"
+            }
+        ]
+    },
+    "type": "origins:conditioned_attribute",
+    "modifier": {
+        "attribute": "minecraft:generic.attack_damage",
+        "operation": "multiply_total",
+        "value": -0.5
+    },
+    "tick_rate": 20,
+    "update_health": true
+}
