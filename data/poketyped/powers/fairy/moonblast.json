@@ -8,15 +8,20 @@
         "compare_to": 1
     },
     "type": "apugli:custom_projectile",
-    "texture_location":"minecraft:textures/item/nether_star.png",
+    "texture_location": "minecraft:textures/item/nether_star.png",
     "cooldown": 100,
+    "hud_render": {
+        "should_render": true,
+        "sprite_location": "origins:textures/gui/community/huang/resource_bar_02.png",
+        "bar_index": 17
+    },
     "count": 1,
     "interval": 0,
     "start_delay": 0.5,
     "speed": 2,
     "divergence": 0,
-	"owner_target_bientity_action_on_hit": {
-		"type": "origins:target_action",
+    "owner_target_bientity_action_on_hit": {
+        "type": "origins:target_action",
         "action": {
             "type": "origins:and",
             "actions": [
@@ -51,38 +56,37 @@
                 }
             ]
         }
-	},
-	"entity_action_before_firing": 
-	{
-		"type": "origins:and",
+    },
+    "entity_action_before_firing": {
+        "type": "origins:and",
         "actions": [
-			{
-				"type": "origins:play_sound",
-				"sound": "minecraft:entity.allay.ambient_with_item",
-				"volume": 1,
-				"pitch": 1
-			},
-			{
-				"type": "origins:play_sound",
-				"sound": "minecraft:block.amethyst_block.step",
-				"volume": 1,
-				"pitch": 1
-			},
-			{
-				"type": "origins:spawn_particles",
-				"particle": "minecraft:end_rod",
-				"count": 100,
-				"speed": 0,
-				"spread": {
-					"x": 0.2,
-					"y": 0.05,
-					"z": 0.2
-				},
-				"offset_y": 2
-			}
+            {
+                "type": "origins:play_sound",
+                "sound": "minecraft:entity.allay.ambient_with_item",
+                "volume": 1,
+                "pitch": 1
+            },
+            {
+                "type": "origins:play_sound",
+                "sound": "minecraft:block.amethyst_block.step",
+                "volume": 1,
+                "pitch": 1
+            },
+            {
+                "type": "origins:spawn_particles",
+                "particle": "minecraft:end_rod",
+                "count": 100,
+                "speed": 0,
+                "spread": {
+                    "x": 0.2,
+                    "y": 0.05,
+                    "z": 0.2
+                },
+                "offset_y": 2
+            }
         ]
-	},
-	"key": {
+    },
+    "key": {
         "key": "key.origins.primary_active"
     }
 }
