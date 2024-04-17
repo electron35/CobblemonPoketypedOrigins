@@ -1,5 +1,6 @@
 {
-    "hidden": true,
+    "name": "Fire type",
+    "description": "With the orange gem, you shall bath in flames",
     "condition": {
         "type": "origins:and",
         "conditions": [

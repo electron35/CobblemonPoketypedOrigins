@@ -1,5 +1,6 @@
 {
-    "hidden": true,
+    "name": "Steel type",
+    "description": "Like the metal, you shall forge yourself",
     "type": "origins:modify_damage_taken",
     "bientity_condition": {
         "type": "origins:actor_condition",

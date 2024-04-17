@@ -1,21 +1,21 @@
 {
+    "name": "Rock type",
+    "description": "To a birthing crystal, the precious gem you shall gave",
     "hidden": true,
-    "condition": {
-        "type": "origins:equipped_item",
-        "equipment_slot": "mainhand",
-        "item_condition": {
-            "type": "origins:ingredient",
-            "ingredient": {
-                "item": "cobblemon:dawn_stone"
-            }
+    "type": "origins:action_on_block_use",
+    "block_condition": {
+        "type": "origins:block",
+        "block": "minecraft:budding_amethyst"
+    },
+    "item_condition": {
+        "type": "origins:ingredient",
+        "ingredient": {
+            "item": "minecraft:diamond"
         }
     },
-    "type": "origins:action_on_wake_up",
     "entity_action": {
         "type": "origins:execute_command",
-        "command": "function poketyped:gettype/getpsychic"
+        "command": "function poketyped:gettype/getrock"
     },
-    "block_condition": {
-        "type": "origins:exposed_to_sky"
-    }
+    "action_result": "pass"
 }

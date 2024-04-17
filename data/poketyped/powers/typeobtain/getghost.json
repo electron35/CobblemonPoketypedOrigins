@@ -1,5 +1,6 @@
 {
-    "hidden": true,
+    "name": "Ghost type",
+    "description": "Burning souls and dead laments will lead you on your path",
     "condition": {
         "type": "origins:and",
         "conditions": [

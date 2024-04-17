@@ -1,19 +1,19 @@
 {
-    "hidden": true,
+    "name": "Ground type",
     "type": "origins:action_on_block_use",
     "block_condition": {
         "type": "origins:block",
-        "block": "minecraft:bedrock"
+        "block": "bedrock"
     },
     "item_condition": {
         "type": "origins:ingredient",
         "ingredient": {
-            "item": "minecraft:clay_ball"
+            "item": "minecraft:clay"
         }
     },
     "entity_action": {
         "type": "origins:execute_command",
         "command": "function poketyped:gettype/getground"
     },
-    "action_result": "pass"
+    "action_result": "success"
 }

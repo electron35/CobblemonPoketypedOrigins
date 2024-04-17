@@ -1,5 +1,6 @@
 {
-    "hidden": true,
+    "name": "Dark type",
+    "description": "In the deepest shades, darkness you shall take",
     "condition": {
         "type": "origins:and",
         "conditions": [

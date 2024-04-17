@@ -1,5 +1,6 @@
 {
-    "hidden": true,
+    "name": "Poison type",
+    "description": "The white death you shall face",
     "type": "origins:modify_food",
     "item_condition": {
         "type": "origins:ingredient",

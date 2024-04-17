@@ -1,5 +1,6 @@
 {
-    "hidden": true,
+    "name": "Rock type",
+    "description": "To a birthing crystal, the precious gem you shall gave",
     "type": "origins:action_on_block_use",
     "block_condition": {
         "type": "origins:block",

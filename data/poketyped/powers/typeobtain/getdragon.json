@@ -1,5 +1,6 @@
 {
-    "hidden": true,
+    "name": "Dragon type",
+    "description": "Your enemy's child, you shall broom",
     "type": "origins:action_on_block_use",
     "block_condition": {
         "type": "origins:block",
