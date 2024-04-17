@@ -1,5 +1,53 @@
 {
-    "name": "Get Flying",
     "hidden": true,
-    "type": "origins:simple"
+    "type": "origins:multiple",
+    "isvalid": {
+        "type": "origins:resource",
+        "min": 0,
+        "max": 1
+    },
+    "detectjump": {
+        "condition": {
+            "type": "origins:distance_from_coordinates",
+            "reference": "world_origin",
+            "offset": {
+                "x": 0,
+                "y": 320,
+                "z": 0
+            },
+            "ignore_x": true,
+            "ignore_z": true,
+            "shape": "cube",
+            "scale_reference_to_dimension": true,
+            "comparison": "<",
+            "compare_to": 2
+        },
+        "type": "origins:modify_jump",
+        "entity_action": {
+            "type": "origins:set_resource",
+            "resource": "poketyped:typeobtain/getflying_isvalid",
+            "value": 1
+        }
+    },
+    "fallcheck": {
+        "condition": {
+            "type": "origins:fall_distance",
+            "comparison": ">=",
+            "compare_to": 100
+        },
+        "type": "origins:action_over_time",
+        "interval": 20,
+        "entity_action": {
+            "type": "origins:execute_command",
+            "command": "function poketyped:gettype/getflying"
+        }
+    },
+    "cancel": {
+        "type": "origins:action_on_land",
+        "entity_action": {
+            "type": "origins:set_resource",
+            "resource": "poketyped:typeobtain/getflying_isvalid",
+            "value": 0
+        }
+    }
 }

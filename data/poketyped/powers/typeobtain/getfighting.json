@@ -1,5 +1,40 @@
 {
-    "name": "Get Fighting",
     "hidden": true,
-    "type": "origins:simple"
+    "type": "origins:multiple",
+    "killcount": {
+        "type": "origins:resource",
+        "min": 0,
+        "max": 50,
+        "start_value": 0,
+        "max_action": {
+            "type": "origins:execute_command",
+            "command": "function poketyped:gettype/getfighting"
+        }
+    },
+    "killincrease": {
+        "type": "origins:self_action_on_kill",
+        "damage_condition": {
+            "type": "origins:attacker",
+            "entity_condition": {
+                "type": "origins:equipped_item",
+                "equipment_slot": "mainhand",
+                "item_condition": {
+                    "type": "origins:empty"
+                }
+            }
+        },
+        "target_condition": {
+            "type": "origins:entity_type",
+            "entity_type": "cobblemon:pokemon"
+        },
+        "entity_action": {
+            "type": "origins:modify_resource",
+            "resource": "poketyped:typeobtain/getfighting_killcount",
+            "modifier": {
+                "operation": "add_base_early",
+                "value": 1
+            }
+        },
+        "cooldown": 1
+    }
 }

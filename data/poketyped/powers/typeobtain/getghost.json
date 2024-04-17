@@ -1,5 +1,40 @@
 {
-    "name": "Get Ghost",
     "hidden": true,
-    "type": "origins:simple"
+    "condition": {
+        "type": "origins:and",
+        "conditions": [
+            {
+                "type": "origins:and",
+                "conditions": [
+                    {
+                        "type": "origins:in_block_anywhere",
+                        "block_condition": {
+                            "type": "origins:block",
+                            "block": "minecraft:soul_fire"
+                        },
+                        "comparison": ">=",
+                        "compare_to": 1
+                    },
+                    {
+                        "type": "origins:equipped_item",
+                        "equipment_slot": "mainhand",
+                        "item_condition": {
+                            "type": "origins:ingredient",
+                            "ingredient": {
+                                "item": "minecraft:ghast_tear"
+                            }
+                        }
+                    }
+                ]
+            }
+        ]
+    },
+    "type": "origins:active_self",
+    "entity_action": {
+        "type": "origins:execute_command",
+        "command": "function poketyped:gettype/getghost"
+    },
+    "key": {
+        "key": "key.use"
+    }
 }

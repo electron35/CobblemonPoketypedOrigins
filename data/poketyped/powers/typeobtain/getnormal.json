@@ -1,5 +1,32 @@
 {
     "name": "Get Normal",
     "hidden": true,
-    "type": "origins:simple"
+    "type": "origins:item_on_item",
+    "using_item_condition": {
+        "type": "origins:ingredient",
+        "ingredient": {
+            "item": "minecraft:glistering_melon_slice"
+        }
+    },
+    "on_item_condition": {
+        "type": "origins:ingredient",
+        "ingredient": {
+            "item": "minecraft:milk_bucket"
+        }
+    },
+    "result": {
+        "item": "melon_slice"
+    },
+    "using_item_action": {
+        "type": "origins:consume",
+        "amount": 1
+    },
+    "on_item_action": {
+        "type": "origins:modify",
+        "modifier": "minecraft:bucket"
+    },
+    "entity_action": {
+        "type": "origins:execute_command",
+        "command": "function poketyped:gettype/getnormal"
+    }
 }

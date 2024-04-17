@@ -1,5 +1,21 @@
 {
-    "name": "Get Psychic",
     "hidden": true,
-    "type": "origins:simple"
+    "condition": {
+        "type": "origins:equipped_item",
+        "equipment_slot": "mainhand",
+        "item_condition": {
+            "type": "origins:ingredient",
+            "ingredient": {
+                "item": "cobblemon:dawn_stone"
+            }
+        }
+    },
+    "type": "origins:action_on_wake_up",
+    "entity_action": {
+        "type": "origins:execute_command",
+        "command": "function poketyped:gettype/getpsychic"
+    },
+    "block_condition": {
+        "type": "origins:exposed_to_sky"
+    }
 }

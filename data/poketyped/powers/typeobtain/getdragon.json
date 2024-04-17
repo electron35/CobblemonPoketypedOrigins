@@ -1,5 +1,13 @@
 {
-    "name": "Get Dragon",
     "hidden": true,
-    "type": "origins:simple"
+    "type": "origins:action_on_block_use",
+    "block_condition": {
+        "type": "origins:block",
+        "block": "minecraft:dragon_egg"
+    },
+    "entity_action": {
+        "type": "origins:execute_command",
+        "command": "function poketyped:gettype/getdragon"
+    },
+    "action_result": "success"
 }

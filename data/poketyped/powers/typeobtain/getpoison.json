@@ -1,5 +1,16 @@
 {
-    "name": "Get Poison",
     "hidden": true,
-    "type": "origins:simple"
+    "type": "origins:modify_food",
+    "item_condition": {
+        "type": "origins:ingredient",
+        "ingredient": {
+            "item": "minecraft:poisonous_potato"
+        }
+    },
+    "entity_action": {
+        "type": "origins:execute_command",
+        "command": "function poketyped:gettype/getpoison"
+    },
+    "always_edible": true,
+    "prevent_effects": true
 }

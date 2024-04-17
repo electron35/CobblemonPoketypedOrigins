@@ -1,5 +1,19 @@
 {
-    "name": "Get Rock",
     "hidden": true,
-    "type": "origins:simple"
+    "type": "origins:action_on_block_use",
+    "block_condition": {
+        "type": "origins:block",
+        "block": "minecraft:budding_amethyst"
+    },
+    "item_condition": {
+        "type": "origins:ingredient",
+        "ingredient": {
+            "item": "minecraft:diamond"
+        }
+    },
+    "entity_action": {
+        "type": "origins:execute_command",
+        "command": "function poketyped:gettype/getrock"
+    },
+    "action_result": "pass"
 }

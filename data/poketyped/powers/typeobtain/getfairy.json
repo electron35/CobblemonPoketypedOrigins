@@ -1,5 +1,37 @@
 {
-    "name": "Get Fairy",
     "hidden": true,
-    "type": "origins:simple"
+    "type": "origins:action_on_entity_use",
+    "bientity_action": {
+        "type": "origins:actor_action",
+        "action": {
+            "type": "origins:execute_command",
+            "command": "function poketyped:gettype/getfairy"
+        }
+    },
+    "bientity_condition": {
+        "type": "origins:target_condition",
+        "condition": {
+            "type": "origins:entity_type",
+            "entity_type": "minecraft:allay"
+        }
+    },
+    "item_condition": {
+        "type": "origins:or",
+        "conditions": [
+            {
+                "type": "origins:ingredient",
+                "ingredient": {
+                    "item": "minecraft:torchflower"
+                }
+            },
+            {
+                "type": "origins:ingredient",
+                "ingredient": {
+                    "item": "cobblemon:vivichoke"
+                }
+            }
+        ]
+    },
+    "action_result": "success",
+    "priority": 0
 }
