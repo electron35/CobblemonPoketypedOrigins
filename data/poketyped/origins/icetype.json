@@ -5,8 +5,10 @@
         "item": "minecraft:packed_ice"
     },
 	"powers": [
-        "poketyped:fire_immunity",
-        "poketyped:flamethrower"
+        "poketyped:ice/chillingtouch",
+        "poketyped:ice/slushrush",
+		"poketyped:ice/blizzard",
+		"poketyped:ice/melting"
     ],
     "unchoosable": true,
     "impact": 0

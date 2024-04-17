@@ -1,0 +1,25 @@
+{
+    "name": "Freeze",
+    "type": "origins:multiple",
+    "effect": {
+        "type": "origins:freeze"
+    },
+    "duration": {
+        "type": "origins:resource",
+        "min": 0,
+        "max": 100,
+        "start_value": 100,
+        "min_action": {
+            "type": "origins:execute_command",
+            "command": "power remove @s poketyped:debuff/freezing"
+        }
+    },
+    "decay": {
+        "type": "origins:action_over_time",
+        "interval": 1,
+        "entity_action": {
+            "type": "origins:execute_command",
+            "command": "resource change @s poketyped:debuff/freezing_duration -1"
+        }
+    }
+}

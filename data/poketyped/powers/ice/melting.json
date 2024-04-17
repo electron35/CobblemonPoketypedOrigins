@@ -1,0 +1,40 @@
+{
+    "name": "Melting",
+    "description": "You are slowed down in hot biomes",
+    "condition": {
+        "type": "origins:and",
+        "conditions": [
+            {
+                "type": "origins:or",
+                "conditions": [
+                    {
+                        "type": "origins:biome",
+                        "condition": {
+                            "type": "origins:temperature",
+                            "comparison": ">=",
+                            "compare_to": 2
+                        }
+                    },
+                    {
+                        "type": "origins:dimension",
+                        "dimension": "minecraft:the_nether"
+                    }
+                ]
+            },
+            {
+                "type": "origins:resource",
+                "resource": "poketyped:ice/blizzard_gauge",
+                "comparison": "==",
+                "compare_to": 0
+            }
+        ]
+    },
+    "type": "origins:conditioned_attribute",
+    "modifier": {
+        "attribute": "minecraft:generic.movement_speed",
+        "operation": "addition",
+        "value": -0.02
+    },
+    "tick_rate": 20,
+    "update_health": true
+}
