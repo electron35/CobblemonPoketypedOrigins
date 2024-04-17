@@ -1,0 +1,27 @@
+{
+    "name": "Poison touch",
+    "description": "You have 30% chance to apply poison on hit",
+    "type": "origins:action_on_hit",
+    "bientity_action": {
+        "type": "origins:chance",
+        "chance": 30,
+        "action": {
+            "type": "origins:target_action",
+            "action": {
+                "type": "origins:apply_effect",
+                "effect": {
+                    "effect": "minecraft:poison",
+                    "duration": 100,
+                    "amplifier": 0,
+                    "show_particles": true,
+                    "show_icon": true
+                }
+            }
+        }
+    },
+    "damage_condition": {
+        "inverted": true,
+        "type": "origins:projectile"
+    },
+    "cooldown": 1
+}

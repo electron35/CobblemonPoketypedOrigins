@@ -5,9 +5,10 @@
         "item": "minecraft:rotten_flesh"
     },
 	"powers": [
-        "poketyped:fire_immunity",
-        "poketyped:flamethrower"
+        "poketyped:poison/corrupted",
+        "poketyped:poison/poisontouch",
+		"poketyped:poison/venoshock"
     ],
     "unchoosable": true,
-    "impact": 0
+    "impact": 1
 }

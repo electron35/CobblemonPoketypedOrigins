@@ -1,0 +1,31 @@
+{
+    "name": "Chlorophyll",
+    "description": "You walk and hit faster under the sun",
+    "condition": {
+        "type": "origins:and",
+        "conditions": [
+            {
+                "type": "origins:exposed_to_sun"
+            },
+            {
+                "inverted": true,
+                "type": "origins:in_rain"
+            }
+        ]
+    },
+    "type": "origins:conditioned_attribute",
+    "modifiers": [
+        {
+            "attribute": "minecraft:generic.movement_speed",
+            "operation": "addition",
+            "value": 0.05
+        },
+        {
+            "attribute": "minecraft:generic.attack_speed",
+            "operation": "addition",
+            "value": 0.2
+        }
+    ],
+    "tick_rate": 20,
+    "update_health": true
+}

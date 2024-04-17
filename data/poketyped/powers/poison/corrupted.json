@@ -1,0 +1,11 @@
+{
+    "name": "Corrupted",
+    "description": "You are immune to poison, regeneration, speed and strength",
+    "type": "origins:effect_immunity",
+    "effects": [
+        "minecraft:poison",
+        "minecraft:regeneration",
+        "minecraft:speed",
+        "minecraft:strength"
+    ]
+}
