@@ -1,14 +1,12 @@
 {
-    "name": "Dragon Type",
-    "description": "You've got the power of the ferocious dragon type",
+    "powers": [
+        "poketyped:dragon/dracometeor",
+        "poketyped:dragon/pressure",
+        "poketyped:dragon/dragonsize"
+    ],
     "icon": {
         "item": "minecraft:dragon_egg"
     },
-	"powers": [
-        "poketyped:dragon/pressure",
-        "poketyped:dragon/dracometeor",
-		"poketyped:dragon/dragonsize"
-    ],
     "unchoosable": true,
     "impact": 0
 }

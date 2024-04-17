@@ -1,6 +1,4 @@
 {
-    "name": "Flying type",
-    "description": "To the sky, abandon yourself",
     "type": "origins:multiple",
     "isvalid": {
         "type": "origins:resource",

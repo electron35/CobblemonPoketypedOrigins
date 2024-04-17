@@ -1,6 +1,4 @@
 {
-    "name": "Sea dweller",
-    "description": "Bound to the ocean, you have water breathing and water vision",
     "type": "origins:multiple",
     "aquatic": {
         "type": "origins:entity_group",

@@ -1,6 +1,4 @@
 {
-    "name": "Bug Bite",
-    "description": "For the next 10 seconds, your next attack will deal more damage and feed you",
     "type": "origins:multiple",
     "bugbite": {
         "type": "origins:active_self",

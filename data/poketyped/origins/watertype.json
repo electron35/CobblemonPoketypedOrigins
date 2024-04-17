@@ -1,15 +1,13 @@
 {
-    "name": "Water Type",
-    "description": "You've got the power of the deep water type",
+    "powers": [
+        "poketyped:water/surf",
+        "poketyped:water/aquatic",
+        "poketyped:water/dryfish",
+        "poketyped:water/surfing"
+    ],
     "icon": {
         "item": "minecraft:water_bucket"
     },
-	"powers": [
-        "poketyped:water/aquatic",
-        "poketyped:water/dryfish",
-		"poketyped:water/surf",
-		"poketyped:water/surfing"
-    ],
     "unchoosable": true,
     "impact": 1
 }

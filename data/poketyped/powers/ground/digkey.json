@@ -1,6 +1,4 @@
 {
-    "name": "Dig",
-    "description": "You can walk through dirt and stone, gaining strength in the process.",
     "condition": {
         "type": "origins:resource",
         "resource": "poketyped:ground/dig_gauge",

@@ -1,16 +1,14 @@
 {
-    "name": "Fairy Type",
-    "description": "You've got the power of the mystical fairy type",
+    "powers": [
+        "poketyped:fairy/mistyterrain",
+        "poketyped:fairy/cutecharm",
+        "poketyped:fairy/fairyenergy",
+        "poketyped:fairy/moonblast",
+        "poketyped:fairy/purity"
+    ],
     "icon": {
         "item": "minecraft:poppy"
     },
-	"powers": [
-        "poketyped:fairy/cutecharm",
-        "poketyped:fairy/fairyenergy",
-		"poketyped:fairy/misty_terrain",
-		"poketyped:fairy/moonblast",
-		"poketyped:fairy/purity"
-    ],
     "unchoosable": true,
     "impact": 1
 }

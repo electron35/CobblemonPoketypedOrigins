@@ -1,12 +1,10 @@
 {
-    "name": "Sucker Punch",
-    "description": "Prepare yourself for a hit. If you are hit under 5s, you take less damage, teleport behind your opponent and deal damage to them",
     "type": "origins:multiple",
     "active": {
         "type": "origins:active_self",
         "entity_action": {
             "type": "origins:set_resource",
-            "resource": "0:dark/suckerready",
+            "resource": "poketyped:dark/suckerready",
             "value": 60
         },
         "cooldown": 600,
@@ -22,7 +20,7 @@
     "suckerdecay": {
         "condition": {
             "type": "origins:resource",
-            "resource": "0:dark/suckerready",
+            "resource": "poketyped:dark/suckerready",
             "comparison": ">=",
             "compare_to": 1
         },
@@ -30,7 +28,7 @@
         "interval": 1,
         "entity_action": {
             "type": "origins:change_resource",
-            "resource": "0:dark/suckerready",
+            "resource": "poketyped:dark/suckerready",
             "change": -1,
             "operation": "add"
         }
@@ -38,7 +36,7 @@
     "trigger": {
         "condition": {
             "type": "origins:resource",
-            "resource": "0:dark/suckerready",
+            "resource": "poketyped:dark/suckerready",
             "comparison": ">=",
             "compare_to": 1
         },
@@ -70,7 +68,7 @@
                         "actions": [
                             {
                                 "type": "origins:set_resource",
-                                "resource": "0:dark/suckerready",
+                                "resource": "poketyped:dark/suckerready",
                                 "value": 0
                             },
                             {

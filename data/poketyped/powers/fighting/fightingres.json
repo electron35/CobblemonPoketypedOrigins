@@ -56,12 +56,7 @@
     },
     "mpduration": {
         "type": "origins:cooldown",
-        "cooldown": 15,
-        "hud_render": {
-            "should_render": true,
-            "sprite_location": "origins:textures/gui/resource_bar.png",
-            "bar_index": 15
-        }
+        "cooldown": 15
     },
     "lsduration": {
         "type": "origins:cooldown",

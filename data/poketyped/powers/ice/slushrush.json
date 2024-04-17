@@ -1,6 +1,4 @@
 {
-    "name": "Slush rush",
-    "description": "You are immune to freezing effect and get faster while in snow powder",
     "type": "origins:multiple",
     "frostimmun": {
         "type": "origins:invulnerability",

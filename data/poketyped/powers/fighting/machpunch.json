@@ -1,6 +1,4 @@
 {
-    "name": "Mach Punch",
-    "description": "Lunge forward and deal damage to the first enemy hit.\nIf the attack is successful, your next attack become low sweep",
     "type": "origins:multiple",
     "dash": {
         "type": "origins:active_self",

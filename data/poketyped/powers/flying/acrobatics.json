@@ -1,6 +1,4 @@
 {
-    "name": "Acrobatics",
-    "description": "Lunge forward and deal damage. This power stronger the lighter you are",
     "type": "origins:multiple",
     "active": {
         "type": "origins:active_self",

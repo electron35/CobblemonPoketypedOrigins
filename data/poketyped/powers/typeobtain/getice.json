@@ -1,6 +1,4 @@
 {
-    "name": "Ice type",
-    "description": "The coldest ice, to it's home you shall return",
     "condition": {
         "type": "origins:and",
         "conditions": [

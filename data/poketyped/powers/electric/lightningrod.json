@@ -1,6 +1,4 @@
 {
-    "name": "Lightning rod",
-    "description": "Lightning reinforce your strength and speed instead of doing damage",
     "type": "origins:multiple",
     "electricimmunity": {
         "type": "origins:modify_damage_taken",

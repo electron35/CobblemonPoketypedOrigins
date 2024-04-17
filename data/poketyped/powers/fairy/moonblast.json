@@ -1,6 +1,4 @@
 {
-    "name": "Moonblast",
-    "description": "Shoot a projectile that apply weakness on the target",
     "condition": {
         "type": "origins:resource",
         "resource": "poketyped:fairy/fairyenergy",

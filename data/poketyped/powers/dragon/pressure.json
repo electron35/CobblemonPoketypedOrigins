@@ -1,6 +1,4 @@
 {
-    "name": "Pressure",
-    "description": "Mobs around you and player attacking you get mining fatigue.",
     "type": "origins:multiple",
     "mob": {
         "type": "origins:action_over_time",

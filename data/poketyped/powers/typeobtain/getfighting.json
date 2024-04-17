@@ -1,6 +1,4 @@
 {
-    "name": "Fighting type",
-    "description": "From your hand, blood will be shed",
     "type": "origins:multiple",
     "killcount": {
         "type": "origins:resource",

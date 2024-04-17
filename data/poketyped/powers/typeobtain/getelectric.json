@@ -1,6 +1,4 @@
 {
-    "name": "Electric type",
-    "description": "In the eye of the storm, bring the thunder",
     "condition": {
         "type": "origins:and",
         "conditions": [

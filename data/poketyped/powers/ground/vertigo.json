@@ -1,6 +1,4 @@
 {
-    "name": "Vertigo",
-    "description": "When in altitude, you are weaker",
     "condition": {
         "type": "origins:or",
         "conditions": [

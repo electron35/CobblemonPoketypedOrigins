@@ -1,6 +1,4 @@
 {
-    "name": "Big and strong",
-    "description": "You are bigger than the average player.",
     "type": "origins:multiple",
     "scale": {
         "type": "origins:action_over_time",

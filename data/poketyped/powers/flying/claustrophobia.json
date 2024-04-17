@@ -1,6 +1,4 @@
 {
-    "name": "Claustrophobia",
-    "description": "You are weakened in closed space",
     "condition": {
         "type": "origins:block_collision",
         "offset_x": 0,

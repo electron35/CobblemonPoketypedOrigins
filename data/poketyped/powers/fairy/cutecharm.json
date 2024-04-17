@@ -1,6 +1,4 @@
 {
-    "name": "Cute Charm",
-    "description": "Entity attacking you have a 30% chance to get weakness 2 for 5s",
     "type": "origins:action_when_hit",
     "bientity_action": {
         "type": "origins:chance",

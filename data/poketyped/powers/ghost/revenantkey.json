@@ -1,6 +1,4 @@
 {
-    "name": "Revenant",
-	"description":"You turn invisible and intangible, while in this state, your spirit gauge is consumed",
     "condition": {
         "type": "origins:resource",
         "resource": "poketyped:ghost/spiritform",

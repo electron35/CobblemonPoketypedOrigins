@@ -1,6 +1,4 @@
 {
-	"name": "All in the mind",
-    "description": "You deal less melee damage",
     "type": "origins:modify_damage_dealt",
     "damage_condition": {
         "inverted": true,

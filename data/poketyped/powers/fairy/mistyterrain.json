@@ -1,6 +1,4 @@
 {
-    "name": "Misty Terrain",
-    "description": "Summon a misty terrain that protect you from negative effect. While in the misty terrain, you can use Moon blast",
     "type": "origins:multiple",
     "spawnterrain": {
         "condition": {
@@ -36,7 +34,7 @@
             }
         }
     },
-	"cleanse": {
+    "cleanse": {
         "condition": {
             "type": "origins:resource",
             "resource": "poketyped:fairy/fairyenergy",
@@ -58,7 +56,7 @@
                         "y": 0,
                         "z": 0.2
                     },
-					"offset_y": -0.5
+                    "offset_y": -0.5
                 },
                 {
                     "type": "origins:clear_effect",

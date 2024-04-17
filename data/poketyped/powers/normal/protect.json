@@ -1,6 +1,4 @@
 {
-	"name": "Protect",
-	"description": "Become invulnerable for a brief time",
     "type": "origins:multiple",
     "active": {
         "type": "origins:active_self",

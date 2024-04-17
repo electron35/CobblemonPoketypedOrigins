@@ -1,6 +1,4 @@
 {
-    "name": "Sturdy",
-    "description": "You can't be one-shoted. If this ability triggers, it goes on cooldown for 5 minutes. ",
     "type": "origins:multiple",
     "deathcancel": {
         "condition": {

@@ -1,6 +1,4 @@
 {
-    "name": "Grass type",
-    "description": "Deep in the forest, the mark of the leaf you shall find",
     "condition": {
         "type": "origins:and",
         "conditions": [

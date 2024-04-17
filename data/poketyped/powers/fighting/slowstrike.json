@@ -1,6 +1,4 @@
 {
-    "name": "Punch out",
-    "description": "Favoring the art of the punch, you are slower with weapon",
     "condition": {
         "type": "origins:equipped_item",
         "equipment_slot": "mainhand",

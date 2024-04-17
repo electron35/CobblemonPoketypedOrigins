@@ -1,6 +1,4 @@
 {
-    "name": "Poke Typed",
-    "description": "This origin let you harness the power of a single pokemon type, explore the world to find the way to evolve!",
     "powers": [
         "poketyped:typeobtain/getbug",
         "poketyped:typeobtain/getdark",
@@ -30,87 +28,87 @@
             "origin": "poketyped:normaltype",
             "announcement": "Embrace normality"
         },
-		{
+        {
             "condition": "poketyped:harnessgrass",
             "origin": "poketyped:grasstype",
             "announcement": "Grow bigger and bigger"
         },
-		{
+        {
             "condition": "poketyped:harnessfire",
             "origin": "poketyped:firetype",
             "announcement": "Through the fire and flame"
         },
-		{
+        {
             "condition": "poketyped:harnesswater",
             "origin": "poketyped:watertype",
             "announcement": "Deeper and deeper"
         },
-		{
+        {
             "condition": "poketyped:harnesselectric",
             "origin": "poketyped:electrictype",
             "announcement": "Feel the lightning"
         },
-		{
+        {
             "condition": "poketyped:harnesspoison",
             "origin": "poketyped:poisontype",
             "announcement": "Down with the sickness"
         },
-		{
+        {
             "condition": "poketyped:harnessbug",
             "origin": "poketyped:bugtype",
             "announcement": "Divide and conquer"
         },
-		{
+        {
             "condition": "poketyped:harnessflying",
             "origin": "poketyped:flyingtype",
             "announcement": "Soar through the sky"
         },
-		{
+        {
             "condition": "poketyped:harnessfighting",
             "origin": "poketyped:fightingtype",
             "announcement": "The eye of the tiger"
         },
-		{
+        {
             "condition": "poketyped:harnesspsychic",
             "origin": "poketyped:psychictype",
             "announcement": "See all"
         },
-		{
+        {
             "condition": "poketyped:harnessghost",
             "origin": "poketyped:ghosttype",
             "announcement": "From the dead"
         },
-		{
+        {
             "condition": "poketyped:harnessdark",
             "origin": "poketyped:darktype",
             "announcement": "Close your eyes"
         },
-		{
+        {
             "condition": "poketyped:harnessrock",
             "origin": "poketyped:rocktype",
             "announcement": "Comme un roc"
         },
-		{
+        {
             "condition": "poketyped:harnessground",
             "origin": "poketyped:groundtype",
             "announcement": "The Earth shakes"
         },
-		{
+        {
             "condition": "poketyped:harnessdragon",
             "origin": "poketyped:dragontype",
             "announcement": "Scream out"
         },
-		{
+        {
             "condition": "poketyped:harnessfairy",
             "origin": "poketyped:fairytype",
             "announcement": "Joyous cries ring free"
         },
-		{
+        {
             "condition": "poketyped:harnessice",
             "origin": "poketyped:icetype",
             "announcement": "Make them burn"
         },
-		{
+        {
             "condition": "poketyped:harnesssteel",
             "origin": "poketyped:steeltype",
             "announcement": "Unbending"

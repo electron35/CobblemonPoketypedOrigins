@@ -1,6 +1,4 @@
 {
-    "name": "Heavy",
-    "description": "You are slower",
     "type": "origins:attribute",
     "modifier": {
         "attribute": "minecraft:generic.movement_speed",

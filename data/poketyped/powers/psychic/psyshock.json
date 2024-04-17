@@ -1,6 +1,4 @@
 {
-    "name": "Psyshock",
-    "description": "Throw a random item that deal damage",
     "condition": {
         "type": "origins:resource",
         "resource": "poketyped:psychic/psystance2",
@@ -83,7 +81,7 @@
                         "count": 1,
                         "divergence": 1.1,
                         "speed": 1.5,
-						"sound": "minecraft:entity.witch.throw"
+                        "sound": "minecraft:entity.witch.throw"
                     },
                     "fail_action": {
                         "type": "origins:chance",
@@ -153,7 +151,7 @@
                             "count": 1,
                             "divergence": 1,
                             "speed": 2.5,
-							"sound": "minecraft:entity.witch.throw"
+                            "sound": "minecraft:entity.witch.throw"
                         },
                         "fail_action": {
                             "type": "apugli:custom_projectile",
@@ -218,7 +216,7 @@
                             "count": 1,
                             "divergence": 1,
                             "speed": 2.5,
-							"sound": "minecraft:entity.witch.throw"
+                            "sound": "minecraft:entity.witch.throw"
                         }
                     }
                 },
@@ -293,7 +291,7 @@
                         "count": 1,
                         "divergence": 1.5,
                         "speed": 2,
-						"sound": "minecraft:entity.witch.throw"
+                        "sound": "minecraft:entity.witch.throw"
                     },
                     "fail_action": {
                         "type": "origins:chance",
@@ -362,7 +360,7 @@
                             "count": 1,
                             "divergence": 1.5,
                             "speed": 2,
-							"sound": "minecraft:entity.witch.throw"
+                            "sound": "minecraft:entity.witch.throw"
                         },
                         "fail_action": {
                             "type": "apugli:custom_projectile",
@@ -427,7 +425,7 @@
                             "count": 1,
                             "divergence": 1.5,
                             "speed": 2,
-							"sound": "minecraft:entity.witch.throw"
+                            "sound": "minecraft:entity.witch.throw"
                         }
                     }
                 },
@@ -502,7 +500,7 @@
                         "count": 1,
                         "divergence": 2,
                         "speed": 1.5,
-						"sound": "minecraft:entity.witch.throw"
+                        "sound": "minecraft:entity.witch.throw"
                     },
                     "fail_action": {
                         "type": "origins:chance",
@@ -574,7 +572,7 @@
                             "count": 1,
                             "divergence": 2,
                             "speed": 1.5,
-							"sound": "minecraft:entity.witch.throw"
+                            "sound": "minecraft:entity.witch.throw"
                         },
                         "fail_action": {
                             "type": "apugli:custom_projectile",
@@ -642,7 +640,7 @@
                             "count": 1,
                             "divergence": 2,
                             "speed": 1.5,
-							"sound": "minecraft:entity.witch.throw"
+                            "sound": "minecraft:entity.witch.throw"
                         }
                     }
                 },

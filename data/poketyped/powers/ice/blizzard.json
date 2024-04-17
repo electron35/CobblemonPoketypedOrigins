@@ -1,7 +1,5 @@
 {
-    "name": "Blizzard",
-    "description": "Freeze people in a area around you, this power last as long you are applying freeze effect",
-    "type": "origins:multiple",
+	"type": "origins:multiple",
     "active": {
         "type": "origins:active_self",
         "entity_action": {

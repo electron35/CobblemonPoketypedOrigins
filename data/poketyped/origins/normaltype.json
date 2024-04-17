@@ -1,14 +1,12 @@
 {
-    "name": "Normal Type",
-    "description": "You've got the power of the perfect normal type",
+    "powers": [
+        "poketyped:normal/protect",
+        "poketyped:normal/villagerfriend",
+        "poketyped:normal/perfectbalance"
+    ],
     "icon": {
         "item": "minecraft:nether_star"
     },
-	"powers": [
-        "poketyped:normal/perfectbalance",
-        "poketyped:normal/villagerfriend",
-		"poketyped:normal/protect"
-    ],
     "unchoosable": true,
     "impact": 0
 }

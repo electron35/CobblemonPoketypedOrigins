@@ -1,14 +1,12 @@
 {
-    "name": "Grass Type",
-    "description": "You've got the power of the blooming grass type",
+    "powers": [
+        "poketyped:grass/gigadrain",
+        "poketyped:grass/chlorophyll",
+        "poketyped:grass/fireweakness"
+    ],
     "icon": {
         "item": "minecraft:grass"
     },
-	"powers": [
-        "poketyped:grass/chlorophyll",
-        "poketyped:grass/gigadrain",
-		"poketyped:grass/fireweakness"
-    ],
     "unchoosable": true,
     "impact": 0
 }

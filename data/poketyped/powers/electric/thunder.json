@@ -1,16 +1,14 @@
 {
-	"name":"Thunder",
-	"description": "mark a spot, 5 second later, lightning will strike",
     "type": "apugli:custom_projectile",
     "texture_location": "minecraft:textures/item/redstone.png",
-	"owner_target_bientity_action_on_hit": {
-		"type": "origins:target_action",
+    "owner_target_bientity_action_on_hit": {
+        "type": "origins:target_action",
         "action": {
-			"type": "origins:execute_command",
-			"command": "summon area_effect_cloud ~ ~ ~ {Radius:5f,RadiusPerTick:0f,RadiusOnUse:0f,Age:-100,Color:8898559,Potion:\"minecraft:empty\",Tags:[\"thunderdelay\"]}"
-		}
-	},
-	"block_action_on_hit": {
+            "type": "origins:execute_command",
+            "command": "summon area_effect_cloud ~ ~ ~ {Radius:5f,RadiusPerTick:0f,RadiusOnUse:0f,Age:-100,Color:8898559,Potion:\"minecraft:empty\",Tags:[\"thunderdelay\"]}"
+        }
+    },
+    "block_action_on_hit": {
         "type": "origins:execute_command",
         "command": "summon area_effect_cloud ~ ~ ~ {Radius:5f,RadiusPerTick:0f,RadiusOnUse:0f,Age:-100,Color:8898559,Potion:\"minecraft:empty\",Tags:[\"thunderdelay\"]}"
     },
@@ -19,7 +17,7 @@
     },
     "divergence": 0,
     "speed": 10,
-	"cooldown": 1200,
+    "cooldown": 1200,
     "hud_render": {
         "should_render": true,
         "sprite_location": "origins:textures/gui/resource_bar.png",

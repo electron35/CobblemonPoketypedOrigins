@@ -13,8 +13,6 @@
             "resource": "poketyped:psychic/psystance1",
             "comparison": "==",
             "compare_to": 1
-			
-			
         }
     }
 }

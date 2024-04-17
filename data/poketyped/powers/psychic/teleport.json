@@ -1,6 +1,4 @@
 {
-    "name": "Teleport",
-    "description": "Throw an enderpearl",
     "condition": {
         "type": "origins:resource",
         "resource": "poketyped:psychic/psystance3",

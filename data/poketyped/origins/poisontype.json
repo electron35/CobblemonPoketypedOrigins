@@ -1,14 +1,12 @@
 {
-    "name": "Poison Type",
-    "description": "You've got the power of the infectious poison type",
+    "powers": [
+        "poketyped:poison/venoshock",
+        "poketyped:poison/corrupted",
+        "poketyped:poison/poisontouch"
+    ],
     "icon": {
         "item": "minecraft:rotten_flesh"
     },
-	"powers": [
-        "poketyped:poison/corrupted",
-        "poketyped:poison/poisontouch",
-		"poketyped:poison/venoshock"
-    ],
     "unchoosable": true,
     "impact": 1
 }

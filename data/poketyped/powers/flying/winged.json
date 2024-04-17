@@ -1,6 +1,4 @@
 {
-    "name": "Winged",
-    "description": "You can fly as if you were wearing elytra. You can't do it if you wear a chestplate",
     "type": "origins:multiple",
     "fly": {
         "type": "origins:elytra_flight",

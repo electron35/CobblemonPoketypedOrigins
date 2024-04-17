@@ -1,6 +1,4 @@
 {
-    "name": "Melting",
-    "description": "You are slowed down in hot biomes",
     "condition": {
         "type": "origins:and",
         "conditions": [

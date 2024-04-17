@@ -1,19 +1,17 @@
 {
-    "name": "Psychic Type",
-    "description": "You've got the power of the mindful psychic type",
+    "powers": [
+        "poketyped:psychic/psystance1",
+        "poketyped:psychic/psystance2",
+        "poketyped:psychic/psystance3",
+        "poketyped:psychic/powerswap",
+        "poketyped:psychic/extrasensory",
+        "poketyped:psychic/psyshock",
+        "poketyped:psychic/teleport",
+        "poketyped:psychic/weak"
+    ],
     "icon": {
         "item": "minecraft:ender_eye"
     },
-	"powers": [
-		"poketyped:psychic/psystance1",
-		"poketyped:psychic/psystance2",
-		"poketyped:psychic/psystance3",
-		"poketyped:psychic/powerswap",
-		"poketyped:psychic/psyshock",
-		"poketyped:psychic/teleport",
-		"poketyped:psychic/extrasensory",
-		"poketyped:psychic/weak"
-    ],
     "unchoosable": true,
     "impact": 2
 }

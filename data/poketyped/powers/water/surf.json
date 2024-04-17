@@ -1,6 +1,4 @@
 {
-    "name": "Surf",
-    "description": "Dive forward and gain swimspeed. Dryfish does not trigger during the effect.",
     "type": "origins:multiple",
     "dash": {
         "type": "origins:active_self",

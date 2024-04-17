@@ -1,6 +1,4 @@
 {
-    "name": "Chlorophyll",
-    "description": "You walk and hit faster under the sun",
     "condition": {
         "type": "origins:and",
         "conditions": [

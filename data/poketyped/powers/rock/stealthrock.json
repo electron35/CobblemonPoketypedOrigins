@@ -1,6 +1,4 @@
 {
-    "name": "Stealth rock",
-    "description": "Drop rock around you that deal damage to foe walking on it",
     "type": "origins:multiple",
     "projectile": {
         "type": "apugli:custom_projectile",
@@ -22,8 +20,8 @@
         },
         "divergence": 600,
         "speed": 0.5,
-		"count": 5,
-		"cooldown": 200,
+        "count": 5,
+        "cooldown": 200,
         "hud_render": {
             "should_render": true,
             "sprite_location": "origins:textures/gui/community/spiderkolo/resource_bar_03.png",
@@ -45,7 +43,7 @@
                     "type": "origins:name",
                     "name": "indirectMagic"
                 },
-				{
+                {
                     "type": "origins:amount",
                     "comparison": "==",
                     "compare_to": 3

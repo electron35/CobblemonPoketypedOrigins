@@ -1,18 +1,16 @@
 {
-    "name": "Ghost Type",
-    "description": "You've got the power of the scary ghost type",
+    "powers": [
+        "poketyped:ghost/spiritform",
+        "poketyped:ghost/revenanttoggle",
+        "poketyped:ghost/revenantkey",
+        "poketyped:ghost/revenanteffect",
+        "poketyped:ghost/preying",
+        "poketyped:ghost/undead",
+        "poketyped:ghost/ghosthurt"
+    ],
     "icon": {
         "item": "minecraft:soul_lantern"
     },
-	"powers": [
-		"poketyped:ghost/spiritform",
-		"poketyped:ghost/revenanttoggle",
-		"poketyped:ghost/revenantkey",
-		"poketyped:ghost/revenanteffect",
-		"poketyped:ghost/undead",
-		"poketyped:ghost/preying",
-		"poketyped:ghost/ghosthurt"
-    ],
     "unchoosable": true,
     "impact": 1
 }

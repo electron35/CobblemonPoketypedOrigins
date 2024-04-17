@@ -90,7 +90,7 @@
         "trigger": "start",
         "priority": 0
     },
-	"particle": {
+    "particle": {
         "condition": {
             "type": "origins:power_active",
             "power": "poketyped:ghost/revenanttoggle"

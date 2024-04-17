@@ -1,14 +1,12 @@
 {
-    "name": "Dark Type",
-    "description": "You've got the power of the villainous dark type",
+    "powers": [
+        "poketyped:dark/suckerready",
+        "poketyped:dark/suckerpunch",
+        "poketyped:dark/nightforce"
+    ],
     "icon": {
         "item": "minecraft:sculk_sensor"
     },
-	"powers": [
-        "poketyped:dark/suckerready",
-        "poketyped:dark/suckerpunch",
-		"poketyped:dark/nightforce"
-    ],
     "unchoosable": true,
     "impact": 1
 }

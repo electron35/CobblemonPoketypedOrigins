@@ -1,6 +1,4 @@
 {
-    "name": "One of many",
-    "description": "You can fit anywhere, thus, villager likes you",
     "type": "origins:stacking_status_effect",
     "min_stacks": 0,
     "max_stacks": 1,

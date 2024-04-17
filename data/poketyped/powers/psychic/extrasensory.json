@@ -1,6 +1,4 @@
 {
-	"name": "Extrasensory",
-    "description": "Throw your enemy in the air",
     "condition": {
         "type": "origins:resource",
         "resource": "poketyped:psychic/psystance1",

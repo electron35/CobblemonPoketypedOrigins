@@ -1,6 +1,4 @@
 {
-    "name": "Kinda undead",
-    "description": "You take more damage from smite and don't have any natural regeneration",
     "type": "origins:multiple",
     "uhc": {
         "type": "origins:disable_regen"

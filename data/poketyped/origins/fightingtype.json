@@ -1,18 +1,16 @@
 {
-    "name": "Fighting Type",
-    "description": "You've got the power of the strong fighting type",
+    "powers": [
+        "poketyped:fighting/fightingres",
+        "poketyped:fighting/closecombat",
+        "poketyped:fighting/circlethrow",
+        "poketyped:fighting/machpunch",
+        "poketyped:fighting/lowsweep",
+        "poketyped:fighting/fightersize",
+        "poketyped:fighting/slowstrike"
+    ],
     "icon": {
         "item": "minecraft:iron_sword"
     },
-	"powers": [
-        "poketyped:fighting/fightingres",
-        "poketyped:fighting/closecombat",
-		"poketyped:fighting/circlethrow",
-		"poketyped:fighting/machpunch",
-		"poketyped:fighting/lowsweep",
-		"poketyped:fighting/fightersize",
-		"poketyped:fighting/slowstrike"
-    ],
     "unchoosable": true,
     "impact": 0
 }

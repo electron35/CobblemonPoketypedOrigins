@@ -1,11 +1,9 @@
 {
-    "name": "Fire Type",
-    "description": "you got the power of the blazing fire type",
     "powers": [
-        "poketyped:fire/fireimmunity",
         "poketyped:fire/flamethrower",
-		"poketyped:fire/hydrophobia",
-		"poketyped:fire/flamefuel"
+        "poketyped:fire/fireimmunity",
+        "poketyped:fire/hydrophobia",
+        "poketyped:fire/flamefuel"
     ],
     "icon": {
         "item": "minecraft:campfire"

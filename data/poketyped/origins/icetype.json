@@ -1,15 +1,13 @@
 {
-    "name": "Ice Type",
-    "description": "You've got the power of the chilling ice type",
+    "powers": [
+        "poketyped:ice/blizzard",
+        "poketyped:ice/chillingtouch",
+        "poketyped:ice/slushrush",
+        "poketyped:ice/melting"
+    ],
     "icon": {
         "item": "minecraft:packed_ice"
     },
-	"powers": [
-        "poketyped:ice/chillingtouch",
-        "poketyped:ice/slushrush",
-		"poketyped:ice/blizzard",
-		"poketyped:ice/melting"
-    ],
     "unchoosable": true,
     "impact": 0
 }

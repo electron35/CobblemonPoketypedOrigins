@@ -1,6 +1,4 @@
 {
-    "name": "Dragon sized",
-    "description": "You are bigger than the average player, and you need to eat more food",
     "type": "origins:multiple",
     "scale": {
         "type": "origins:action_over_time",

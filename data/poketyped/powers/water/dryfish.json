@@ -1,6 +1,4 @@
 {
-    "name": "Dry fish",
-    "description": "You are slowed while out of water",
     "condition": {
         "type": "origins:and",
         "conditions": [

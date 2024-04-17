@@ -1,6 +1,4 @@
 {
-    "name": "Normal type",
-    "description": "Like a disease, glitter you shall cleanse",
     "hidden": true,
     "type": "origins:item_on_item",
     "using_item_condition": {

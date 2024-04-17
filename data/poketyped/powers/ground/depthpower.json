@@ -1,6 +1,4 @@
 {
-    "name": "Power of the depth",
-    "description": "you are stronger underground",
     "condition": {
         "type": "origins:or",
         "conditions": [

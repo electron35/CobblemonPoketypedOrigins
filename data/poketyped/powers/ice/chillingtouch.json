@@ -1,6 +1,4 @@
 {
-    "name": "Chilling touch",
-    "description": "Your melee attack slow down your enemies",
     "type": "origins:action_on_hit",
     "bientity_action": {
         "type": "origins:target_action",

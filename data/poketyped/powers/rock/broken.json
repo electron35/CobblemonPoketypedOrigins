@@ -1,6 +1,4 @@
 {
-    "name": "Broken",
-    "description": "While your sturdy ability is on cooldown, you are weakened",
     "type": "origins:multiple",
     "particle": {
         "condition": {

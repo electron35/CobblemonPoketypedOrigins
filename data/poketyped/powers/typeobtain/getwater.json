@@ -1,6 +1,4 @@
 {
-    "name": "Water type",
-    "description": "In the depth, the blue jewel you shall embrace",
     "condition": {
         "type": "origins:and",
         "conditions": [

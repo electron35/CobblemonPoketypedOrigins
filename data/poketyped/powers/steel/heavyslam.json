@@ -1,6 +1,4 @@
 {
-    "name": "Heavy Slam",
-    "description": "Jump and then slam the ground. During the fall, you take no damage",
     "type": "origins:multiple",
     "active": {
         "type": "origins:active_self",

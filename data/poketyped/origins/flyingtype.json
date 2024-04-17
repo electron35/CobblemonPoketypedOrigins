@@ -1,15 +1,15 @@
 {
     "name": "Flying Type",
     "description": "You've got the power of the majestic flying type",
-    "icon": {
-        "item": "minecraft:feather"
-    },
-	"powers": [
+    "powers": [
         "poketyped:flying/winged",
         "poketyped:flying/acrobatics",
         "poketyped:flying/claustrophobia",
-		"poketyped:flying/brittlebones"
+        "poketyped:flying/brittlebones"
     ],
+    "icon": {
+        "item": "minecraft:feather"
+    },
     "unchoosable": true,
     "impact": 0
 }

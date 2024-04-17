@@ -1,14 +1,12 @@
 {
-    "name": "Steel Type",
-    "description": "You've got the power of the resilient steel type",
+    "powers": [
+        "poketyped:steel/heavyslam",
+        "poketyped:steel/irondefense",
+        "poketyped:steel/heavy"
+    ],
     "icon": {
         "item": "minecraft:iron_ingot"
     },
-	"powers": [
-        "poketyped:steel/irondefense",
-        "poketyped:steel/heavyslam",
-        "poketyped:steel/heavy"
-    ],
     "unchoosable": true,
     "impact": 0
 }

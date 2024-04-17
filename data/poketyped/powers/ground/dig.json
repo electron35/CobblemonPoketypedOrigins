@@ -1,5 +1,5 @@
 {
-	"hidden": true,
+    "hidden": true,
     "type": "origins:multiple",
     "gauge": {
         "type": "origins:resource",

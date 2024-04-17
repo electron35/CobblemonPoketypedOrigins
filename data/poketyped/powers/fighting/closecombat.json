@@ -1,6 +1,4 @@
 {
-    "name": "Close Combat",
-    "description": "Enter a fighting stance. Your next five weaponless hit will deal 7 damage. Upon hitting all attack, this power become circle throw",
     "type": "origins:multiple",
     "start": {
         "type": "origins:active_self",

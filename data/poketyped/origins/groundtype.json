@@ -1,16 +1,14 @@
 {
-    "name": "Ground Type",
-    "description": "You've got the power of the great ground type",
-    "icon": {
-        "item": "minecraft:sand"
-    },
-	"powers": [
+    "powers": [
         "poketyped:ground/dig",
         "poketyped:ground/digtoggle",
         "poketyped:ground/digkey",
-        "poketyped:ground/vertigo",
-		"poketyped:ground/depthpower"
+        "poketyped:ground/depthpower",
+        "poketyped:ground/vertigo"
     ],
+    "icon": {
+        "item": "minecraft:sand"
+    },
     "unchoosable": true,
     "impact": 0
 }

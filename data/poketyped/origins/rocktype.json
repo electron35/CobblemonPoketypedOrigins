@@ -1,15 +1,13 @@
 {
-    "name": "Rock Type",
-    "description": "You've got the power of the hard rock type",
+    "powers": [
+        "poketyped:rock/sturdycd",
+        "poketyped:rock/stealthrock",
+        "poketyped:rock/sturdy",
+        "poketyped:rock/broken"
+    ],
     "icon": {
         "item": "minecraft:stone"
     },
-	"powers": [
-        "poketyped:rock/sturdycd",
-        "poketyped:rock/sturdy",
-		"poketyped:rock/broken",
-		"poketyped:rock/stealthrock"
-    ],
     "unchoosable": true,
     "impact": 0
 }

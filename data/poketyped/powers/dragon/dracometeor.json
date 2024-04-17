@@ -1,6 +1,4 @@
 {
-    "name": "Draco meteor",
-    "description": "Strike down your foe with three powerful meteor",
     "type": "origins:active_self",
     "entity_action": {
         "type": "origins:and",
