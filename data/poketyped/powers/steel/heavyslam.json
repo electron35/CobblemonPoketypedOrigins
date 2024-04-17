@@ -1,6 +1,6 @@
 {
     "name": "Heavy Slam",
-    "description": "Jump and then slam the ground. During the fall, you take no fall damage, and all damage taken are halved",
+    "description": "Jump and then slam the ground. During the fall, you take no damage",
     "type": "origins:multiple",
     "active": {
         "type": "origins:active_self",
@@ -47,13 +47,17 @@
             "comparison": "==",
             "compare_to": 1
         },
-        "type": "origins:modify_damage_taken",
-        "bientity_condition": {
-            "type": "origins:and"
-        },
-        "modifier": {
-            "operation": "multiply_total",
-            "value": -0.5
+        "type": "origins:stacking_status_effect",
+        "min_stacks": 5,
+        "max_stacks": 6,
+        "duration_per_stack": 2,
+        "tick_rate": 1,
+        "effect": {
+            "effect": "minecraft:resistance",
+            "duration": 1,
+            "amplifier": 5,
+            "show_particles": true,
+            "show_icon": true
         }
     },
     "fall": {
@@ -123,7 +127,7 @@
                         "params": "minecraft:anvil"
                     },
                     "count": 100,
-					"speed": 0,
+                    "speed": 0,
                     "spread": {
                         "x": 3,
                         "y": 1,

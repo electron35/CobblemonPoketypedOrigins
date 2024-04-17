@@ -10,7 +10,7 @@
         "bar_index": 11,
         "condition": {
             "type": "origins:resource",
-            "resource": "poketyped:resources/suckerready",
+            "resource": "poketyped:dark/suckerready",
             "comparison": ">",
             "compare_to": 0
         }
