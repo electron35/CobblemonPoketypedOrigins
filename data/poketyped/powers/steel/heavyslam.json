@@ -1,0 +1,143 @@
+{
+    "name": "Heavy Slam",
+    "description": "Jump and then slam the ground. During the fall, you take no fall damage, and all damage taken are halved",
+    "type": "origins:multiple",
+    "active": {
+        "type": "origins:active_self",
+        "entity_action": {
+            "type": "origins:and",
+            "actions": [
+                {
+                    "type": "origins:add_velocity",
+                    "y": 2,
+                    "z": 0.2,
+                    "space": "local_horizontal",
+                    "client": true,
+                    "server": true,
+                    "set": true
+                },
+                {
+                    "type": "origins:delay",
+                    "action": {
+                        "type": "origins:set_resource",
+                        "resource": "poketyped:steel/heavyslam_state",
+                        "value": 1
+                    },
+                    "ticks": 5
+                }
+            ]
+        },
+        "cooldown": 600,
+        "hud_render": {
+            "should_render": true,
+            "sprite_location": "origins:textures/gui/community/spiderkolo/resource_bar_03.png",
+            "bar_index": 19
+        }
+    },
+    "state": {
+        "type": "origins:resource",
+        "min": 0,
+        "max": 1,
+        "start_value": 0
+    },
+    "dr": {
+        "condition": {
+            "type": "origins:resource",
+            "resource": "poketyped:steel/heavyslam_state",
+            "comparison": "==",
+            "compare_to": 1
+        },
+        "type": "origins:modify_damage_taken",
+        "bientity_condition": {
+            "type": "origins:and"
+        },
+        "modifier": {
+            "operation": "multiply_total",
+            "value": -0.5
+        }
+    },
+    "fall": {
+        "condition": {
+            "type": "origins:resource",
+            "resource": "poketyped:steel/heavyslam_state",
+            "comparison": "==",
+            "compare_to": 1
+        },
+        "type": "origins:modify_falling",
+        "velocity": 2,
+        "take_fall_damage": true
+    },
+    "slam": {
+        "condition": {
+            "type": "origins:resource",
+            "resource": "poketyped:steel/heavyslam_state",
+            "comparison": "==",
+            "compare_to": 1
+        },
+        "type": "origins:action_on_land",
+        "entity_action": {
+            "type": "origins:and",
+            "actions": [
+                {
+                    "type": "origins:set_resource",
+                    "resource": "poketyped:steel/heavyslam_state",
+                    "value": 0
+                },
+                {
+                    "type": "origins:area_of_effect",
+                    "radius": 8,
+                    "bientity_condition": {
+                        "type": "origins:target_condition",
+                        "condition": {
+                            "type": "origins:on_block"
+                        }
+                    },
+                    "bientity_action": {
+                        "type": "origins:target_action",
+                        "action": {
+                            "type": "origins:and",
+                            "actions": [
+                                {
+                                    "type": "origins:add_velocity",
+                                    "y": 1,
+                                    "space": "local_horizontal",
+                                    "client": true,
+                                    "server": true,
+                                    "set": true
+                                },
+                                {
+                                    "type": "origins:damage",
+                                    "amount": 5,
+                                    "source": {
+                                        "name": "anvil"
+                                    }
+                                }
+                            ]
+                        }
+                    }
+                },
+                {
+                    "type": "origins:spawn_particles",
+                    "particle": {
+                        "type": "minecraft:block",
+                        "params": "minecraft:anvil"
+                    },
+                    "count": 100,
+					"speed": 0,
+                    "spread": {
+                        "x": 3,
+                        "y": 1,
+                        "z": 3
+                    },
+                    "offset_y": -0.25
+                },
+                {
+                    "type": "origins:play_sound",
+                    "sound": "minecraft:block.anvil.land",
+                    "volume": 1,
+                    "pitch": 0.9
+                }
+            ]
+        }
+    }
+}
