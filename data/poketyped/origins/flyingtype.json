@@ -5,8 +5,10 @@
         "item": "minecraft:feather"
     },
 	"powers": [
-        "poketyped:fire_immunity",
-        "poketyped:flamethrower"
+        "poketyped:flying/winged",
+        "poketyped:flying/acrobatics",
+        "poketyped:flying/claustrophobia",
+		"poketyped:flying/brittlebones"
     ],
     "unchoosable": true,
     "impact": 0

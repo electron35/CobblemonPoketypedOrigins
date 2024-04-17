@@ -1,0 +1,21 @@
+{
+    "name": "Winged",
+    "description": "You can fly as if you were wearing elytra. You can't do it if you wear a chestplate",
+    "type": "origins:multiple",
+    "fly": {
+        "type": "origins:elytra_flight",
+        "render_elytra": true,
+        "texture_location": "minecraft:textures/entity/elytra.png"
+    },
+    "prevent": {
+        "condition": {
+            "inverted": true,
+            "type": "origins:equipped_item",
+            "equipment_slot": "chest",
+            "item_condition": {
+                "type": "origins:empty"
+            }
+        },
+        "type": "origins:prevent_elytra_flight"
+    }
+}
