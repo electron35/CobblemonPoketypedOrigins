@@ -74,11 +74,7 @@
     },
     "duration": {
         "type": "origins:cooldown",
-        "cooldown": 20,
-        "hud_render": {
-            "should_render": true,
-            "bar_index": 0
-        }
+        "cooldown": 20
     },
     "hit": {
         "condition": {
