@@ -5,8 +5,9 @@
         "item": "minecraft:grass"
     },
 	"powers": [
-        "poketyped:fire_immunity",
-        "poketyped:flamethrower"
+        "poketyped:grass/chlorophyll",
+        "poketyped:grass/gigadrain",
+		"poketyped:grass/fireweakness"
     ],
     "unchoosable": true,
     "impact": 0
