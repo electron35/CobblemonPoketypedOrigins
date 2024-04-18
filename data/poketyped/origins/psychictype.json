@@ -1,13 +1,11 @@
 {
     "powers": [
-        "poketyped:psychic/psystance1",
-        "poketyped:psychic/psystance2",
-        "poketyped:psychic/psystance3",
         "poketyped:psychic/powerswap",
         "poketyped:psychic/extrasensory",
         "poketyped:psychic/psyshock",
         "poketyped:psychic/teleport",
-        "poketyped:psychic/weak"
+        "poketyped:psychic/weak",
+		"poketyped:psychic/stance"
     ],
     "icon": {
         "item": "minecraft:ender_eye"

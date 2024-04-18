@@ -1,7 +1,7 @@
 {
     "condition": {
         "type": "origins:resource",
-        "resource": "poketyped:psychic/psystance2",
+        "resource": "poketyped:psychic/stance_ps",
         "comparison": "==",
         "compare_to": 1
     },
@@ -16,651 +16,642 @@
             {
                 "type": "origins:delay",
                 "action": {
-                    "type": "origins:chance",
-                    "chance": 0.6,
-                    "action": {
-                        "type": "apugli:custom_projectile",
-                        "entity_id": "example:realistic_brick",
-                        "texture_location": "minecraft:textures/item/brick.png",
-                        "bientity_action_on_miss": {
-                            "type": "apoli:target_action",
-                            "action": {
-                                "type": "apoli:and",
-                                "actions": [
-                                    {
-                                        "type": "apoli:execute_command",
-                                        "command": "playsound minecraft:block.stone.break player @a ~ ~ ~ 1 0.8"
-                                    },
-                                    {
-                                        "type": "apoli:spawn_particles",
-                                        "particle": {
-                                            "type": "minecraft:item",
-                                            "params": "minecraft:brick"
-                                        },
-                                        "count": 8,
-                                        "speed": 0.1,
-                                        "spread": {
-                                            "x": 2,
-                                            "y": 0,
-                                            "z": 2
-                                        }
+                    "type": "origins:choice",
+                    "actions": [
+                        {
+                            "weight": 60,
+                            "element": {
+                                "type": "apugli:custom_projectile",
+                                "entity_id": "example:realistic_brick",
+                                "texture_location": "minecraft:textures/item/brick.png",
+                                "bientity_action_on_miss": {
+                                    "type": "apoli:target_action",
+                                    "action": {
+                                        "type": "apoli:and",
+                                        "actions": [
+                                            {
+                                                "type": "apoli:execute_command",
+                                                "command": "playsound minecraft:block.stone.break player @a ~ ~ ~ 1 0.8"
+                                            },
+                                            {
+                                                "type": "apoli:spawn_particles",
+                                                "particle": {
+                                                    "type": "minecraft:item",
+                                                    "params": "minecraft:brick"
+                                                },
+                                                "count": 8,
+                                                "speed": 0.1,
+                                                "spread": {
+                                                    "x": 2,
+                                                    "y": 0,
+                                                    "z": 2
+                                                }
+                                            }
+                                        ]
                                     }
-                                ]
+                                },
+                                "owner_target_bientity_action_on_hit": {
+                                    "type": "origins:target_action",
+                                    "action": {
+                                        "type": "origins:and",
+                                        "actions": [
+                                            {
+                                                "type": "origins:damage",
+                                                "amount": 5,
+                                                "source": {
+                                                    "name": "player"
+                                                }
+                                            },
+                                            {
+                                                "type": "apoli:execute_command",
+                                                "command": "playsound minecraft:block.stone.break player @a ~ ~ ~ 1 0.8"
+                                            },
+                                            {
+                                                "type": "origins:spawn_particles",
+                                                "particle": "minecraft:enchanted_hit",
+                                                "count": 15,
+                                                "speed": 1,
+                                                "spread": {
+                                                    "x": 0,
+                                                    "y": 0,
+                                                    "z": 0
+                                                }
+                                            }
+                                        ]
+                                    }
+                                },
+                                "count": 1,
+                                "divergence": 1.1,
+                                "speed": 1.5,
+                                "sound": "minecraft:entity.witch.throw"
                             }
                         },
-                        "owner_target_bientity_action_on_hit": {
-                            "type": "origins:target_action",
-                            "action": {
-                                "type": "origins:and",
-                                "actions": [
-                                    {
-                                        "type": "origins:damage",
-                                        "amount": 5,
-                                        "source": {
-                                            "name": "player"
-                                        }
-                                    },
-                                    {
-                                        "type": "apoli:execute_command",
-                                        "command": "playsound minecraft:block.stone.break player @a ~ ~ ~ 1 0.8"
-                                    },
-                                    {
-                                        "type": "origins:spawn_particles",
-                                        "particle": "minecraft:enchanted_hit",
-                                        "count": 15,
-                                        "speed": 1,
-                                        "spread": {
-                                            "x": 0,
-                                            "y": 0,
-                                            "z": 0
-                                        }
+                        {
+                            "weight": 35,
+                            "element": {
+                                "type": "apugli:custom_projectile",
+                                "entity_id": "example:realistic_brick",
+                                "texture_location": "minecraft:textures/item/quartz.png",
+                                "bientity_action_on_miss": {
+                                    "type": "apoli:target_action",
+                                    "action": {
+                                        "type": "apoli:and",
+                                        "actions": [
+                                            {
+                                                "type": "apoli:execute_command",
+                                                "command": "playsound minecraft:block.glass.break player @a ~ ~ ~ 1 0.5"
+                                            },
+                                            {
+                                                "type": "apoli:spawn_particles",
+                                                "particle": {
+                                                    "type": "minecraft:item",
+                                                    "params": "minecraft:brick"
+                                                },
+                                                "count": 8,
+                                                "speed": 0.1,
+                                                "spread": {
+                                                    "x": 2,
+                                                    "y": 0,
+                                                    "z": 2
+                                                }
+                                            }
+                                        ]
                                     }
-                                ]
+                                },
+                                "owner_target_bientity_action_on_hit": {
+                                    "type": "origins:target_action",
+                                    "action": {
+                                        "type": "origins:and",
+                                        "actions": [
+                                            {
+                                                "type": "origins:damage",
+                                                "amount": 3,
+                                                "source": {
+                                                    "name": "player",
+                                                    "bypasses_armor": true,
+                                                    "magic": true
+                                                }
+                                            },
+                                            {
+                                                "type": "apoli:execute_command",
+                                                "command": "playsound minecraft:block.glass.break player @a ~ ~ ~ 1 0.5"
+                                            },
+                                            {
+                                                "type": "origins:spawn_particles",
+                                                "particle": "minecraft:enchanted_hit",
+                                                "count": 15,
+                                                "speed": 1,
+                                                "spread": {
+                                                    "x": 0,
+                                                    "y": 0,
+                                                    "z": 0
+                                                }
+                                            }
+                                        ]
+                                    }
+                                }
                             }
                         },
-                        "count": 1,
-                        "divergence": 1.1,
-                        "speed": 1.5,
-                        "sound": "minecraft:entity.witch.throw"
-                    },
-                    "fail_action": {
-                        "type": "origins:chance",
-                        "chance": 0.8,
-                        "action": {
-                            "type": "apugli:custom_projectile",
-                            "entity_id": "example:realistic_brick",
-                            "texture_location": "minecraft:textures/item/quartz.png",
-                            "bientity_action_on_miss": {
-                                "type": "apoli:target_action",
-                                "action": {
-                                    "type": "apoli:and",
-                                    "actions": [
-                                        {
-                                            "type": "apoli:execute_command",
-                                            "command": "playsound minecraft:block.glass.break player @a ~ ~ ~ 1 0.5"
-                                        },
-                                        {
-                                            "type": "apoli:spawn_particles",
-                                            "particle": {
-                                                "type": "minecraft:item",
-                                                "params": "minecraft:brick"
+                        {
+                            "weight": 5,
+                            "element": {
+                                "type": "apugli:custom_projectile",
+                                "entity_id": "example:realistic_brick",
+                                "texture_location": "minecraft:textures/item/raw_iron.png",
+                                "bientity_action_on_miss": {
+                                    "type": "apoli:target_action",
+                                    "action": {
+                                        "type": "apoli:and",
+                                        "actions": [
+                                            {
+                                                "type": "apoli:execute_command",
+                                                "command": "playsound minecraft:block.anvil.land player @a ~ ~ ~ 1 0.9"
                                             },
-                                            "count": 8,
-                                            "speed": 0.1,
-                                            "spread": {
-                                                "x": 2,
-                                                "y": 0,
-                                                "z": 2
+                                            {
+                                                "type": "apoli:spawn_particles",
+                                                "particle": {
+                                                    "type": "minecraft:item",
+                                                    "params": "minecraft:anvil"
+                                                },
+                                                "count": 8,
+                                                "speed": 0.1,
+                                                "spread": {
+                                                    "x": 2,
+                                                    "y": 0,
+                                                    "z": 2
+                                                }
                                             }
-                                        }
-                                    ]
-                                }
-                            },
-                            "owner_target_bientity_action_on_hit": {
-                                "type": "origins:target_action",
-                                "action": {
-                                    "type": "origins:and",
-                                    "actions": [
-                                        {
-                                            "type": "origins:damage",
-                                            "amount": 3,
-                                            "source": {
-                                                "name": "player",
-                                                "bypasses_armor": true,
-                                                "magic": true
-                                            }
-                                        },
-                                        {
-                                            "type": "apoli:execute_command",
-                                            "command": "playsound minecraft:block.glass.break player @a ~ ~ ~ 1 0.5"
-                                        },
-                                        {
-                                            "type": "origins:spawn_particles",
-                                            "particle": "minecraft:enchanted_hit",
-                                            "count": 15,
-                                            "speed": 1,
-                                            "spread": {
-                                                "x": 0,
-                                                "y": 0,
-                                                "z": 0
-                                            }
-                                        }
-                                    ]
-                                }
-                            },
-                            "count": 1,
-                            "divergence": 1,
-                            "speed": 2.5,
-                            "sound": "minecraft:entity.witch.throw"
-                        },
-                        "fail_action": {
-                            "type": "apugli:custom_projectile",
-                            "entity_id": "example:realistic_brick",
-                            "texture_location": "minecraft:textures/item/raw_iron.png",
-                            "bientity_action_on_miss": {
-                                "type": "apoli:target_action",
-                                "action": {
-                                    "type": "apoli:and",
-                                    "actions": [
-                                        {
-                                            "type": "apoli:execute_command",
-                                            "command": "playsound minecraft:block.anvil.land player @a ~ ~ ~ 1 0.9"
-                                        },
-                                        {
-                                            "type": "apoli:spawn_particles",
-                                            "particle": {
-                                                "type": "minecraft:item",
-                                                "params": "minecraft:anvil"
+                                        ]
+                                    }
+                                },
+                                "owner_target_bientity_action_on_hit": {
+                                    "type": "origins:target_action",
+                                    "action": {
+                                        "type": "origins:and",
+                                        "actions": [
+                                            {
+                                                "type": "origins:damage",
+                                                "amount": 8,
+                                                "source": {
+                                                    "name": "player"
+                                                }
                                             },
-                                            "count": 8,
-                                            "speed": 0.1,
-                                            "spread": {
-                                                "x": 2,
-                                                "y": 0,
-                                                "z": 2
+                                            {
+                                                "type": "apoli:execute_command",
+                                                "command": "playsound minecraft:block.anvil.land player @a ~ ~ ~ 1 0.7"
+                                            },
+                                            {
+                                                "type": "origins:spawn_particles",
+                                                "particle": "minecraft:enchanted_hit",
+                                                "count": 15,
+                                                "speed": 1,
+                                                "spread": {
+                                                    "x": 0,
+                                                    "y": 0,
+                                                    "z": 0
+                                                }
                                             }
-                                        }
-                                    ]
-                                }
-                            },
-                            "owner_target_bientity_action_on_hit": {
-                                "type": "origins:target_action",
-                                "action": {
-                                    "type": "origins:and",
-                                    "actions": [
-                                        {
-                                            "type": "origins:damage",
-                                            "amount": 8,
-                                            "source": {
-                                                "name": "player"
-                                            }
-                                        },
-                                        {
-                                            "type": "apoli:execute_command",
-                                            "command": "playsound minecraft:block.anvil.land player @a ~ ~ ~ 1 0.7"
-                                        },
-                                        {
-                                            "type": "origins:spawn_particles",
-                                            "particle": "minecraft:enchanted_hit",
-                                            "count": 15,
-                                            "speed": 1,
-                                            "spread": {
-                                                "x": 0,
-                                                "y": 0,
-                                                "z": 0
-                                            }
-                                        }
-                                    ]
-                                }
-                            },
-                            "count": 1,
-                            "divergence": 1,
-                            "speed": 2.5,
-                            "sound": "minecraft:entity.witch.throw"
+                                        ]
+                                    }
+                                },
+                                "count": 1,
+                                "divergence": 1,
+                                "speed": 2.5,
+                                "sound": "minecraft:entity.witch.throw"
+                            }
                         }
-                    }
+                    ]
                 },
                 "ticks": 12
             },
             {
                 "type": "origins:delay",
                 "action": {
-                    "type": "origins:chance",
-                    "chance": 0.6,
-                    "action": {
-                        "type": "apugli:custom_projectile",
-                        "entity_id": "example:realistic_brick",
-                        "texture_location": "minecraft:textures/item/brick.png",
-                        "bientity_action_on_miss": {
-                            "type": "apoli:target_action",
-                            "action": {
-                                "type": "apoli:and",
-                                "actions": [
-                                    {
-                                        "type": "apoli:execute_command",
-                                        "command": "playsound minecraft:block.stone.break player @a ~ ~ ~ 1 0.7"
-                                    },
-                                    {
-                                        "type": "apoli:spawn_particles",
-                                        "particle": {
-                                            "type": "minecraft:item",
-                                            "params": "minecraft:brick"
-                                        },
-                                        "count": 8,
-                                        "speed": 0.1,
-                                        "spread": {
-                                            "x": 2,
-                                            "y": 0,
-                                            "z": 2
-                                        }
+                    "type": "origins:choice",
+                    "actions": [
+                        {
+                            "weight": 60,
+                            "element": {
+                                "type": "apugli:custom_projectile",
+                                "entity_id": "example:realistic_brick",
+                                "texture_location": "minecraft:textures/item/brick.png",
+                                "bientity_action_on_miss": {
+                                    "type": "apoli:target_action",
+                                    "action": {
+                                        "type": "apoli:and",
+                                        "actions": [
+                                            {
+                                                "type": "apoli:execute_command",
+                                                "command": "playsound minecraft:block.stone.break player @a ~ ~ ~ 1 0.8"
+                                            },
+                                            {
+                                                "type": "apoli:spawn_particles",
+                                                "particle": {
+                                                    "type": "minecraft:item",
+                                                    "params": "minecraft:brick"
+                                                },
+                                                "count": 8,
+                                                "speed": 0.1,
+                                                "spread": {
+                                                    "x": 2,
+                                                    "y": 0,
+                                                    "z": 2
+                                                }
+                                            }
+                                        ]
                                     }
-                                ]
+                                },
+                                "owner_target_bientity_action_on_hit": {
+                                    "type": "origins:target_action",
+                                    "action": {
+                                        "type": "origins:and",
+                                        "actions": [
+                                            {
+                                                "type": "origins:damage",
+                                                "amount": 5,
+                                                "source": {
+                                                    "name": "player"
+                                                }
+                                            },
+                                            {
+                                                "type": "apoli:execute_command",
+                                                "command": "playsound minecraft:block.stone.break player @a ~ ~ ~ 1 0.8"
+                                            },
+                                            {
+                                                "type": "origins:spawn_particles",
+                                                "particle": "minecraft:enchanted_hit",
+                                                "count": 15,
+                                                "speed": 1,
+                                                "spread": {
+                                                    "x": 0,
+                                                    "y": 0,
+                                                    "z": 0
+                                                }
+                                            }
+                                        ]
+                                    }
+                                },
+                                "count": 1,
+                                "divergence": 1.1,
+                                "speed": 1.5,
+                                "sound": "minecraft:entity.witch.throw"
                             }
                         },
-                        "owner_target_bientity_action_on_hit": {
-                            "type": "origins:target_action",
-                            "action": {
-                                "type": "origins:and",
-                                "actions": [
-                                    {
-                                        "type": "origins:damage",
-                                        "amount": 8,
-                                        "source": {
-                                            "name": "player",
-                                            "magic": true
-                                        }
-                                    },
-                                    {
-                                        "type": "apoli:execute_command",
-                                        "command": "playsound minecraft:block.stone.break player @a ~ ~ ~ 1 0.7"
-                                    },
-                                    {
-                                        "type": "origins:spawn_particles",
-                                        "particle": "minecraft:enchanted_hit",
-                                        "count": 15,
-                                        "speed": 1,
-                                        "spread": {
-                                            "x": 0,
-                                            "y": 0,
-                                            "z": 0
-                                        }
+                        {
+                            "weight": 35,
+                            "element": {
+                                "type": "apugli:custom_projectile",
+                                "entity_id": "example:realistic_brick",
+                                "texture_location": "minecraft:textures/item/quartz.png",
+                                "bientity_action_on_miss": {
+                                    "type": "apoli:target_action",
+                                    "action": {
+                                        "type": "apoli:and",
+                                        "actions": [
+                                            {
+                                                "type": "apoli:execute_command",
+                                                "command": "playsound minecraft:block.glass.break player @a ~ ~ ~ 1 0.5"
+                                            },
+                                            {
+                                                "type": "apoli:spawn_particles",
+                                                "particle": {
+                                                    "type": "minecraft:item",
+                                                    "params": "minecraft:brick"
+                                                },
+                                                "count": 8,
+                                                "speed": 0.1,
+                                                "spread": {
+                                                    "x": 2,
+                                                    "y": 0,
+                                                    "z": 2
+                                                }
+                                            }
+                                        ]
                                     }
-                                ]
+                                },
+                                "owner_target_bientity_action_on_hit": {
+                                    "type": "origins:target_action",
+                                    "action": {
+                                        "type": "origins:and",
+                                        "actions": [
+                                            {
+                                                "type": "origins:damage",
+                                                "amount": 3,
+                                                "source": {
+                                                    "name": "player",
+                                                    "bypasses_armor": true,
+                                                    "magic": true
+                                                }
+                                            },
+                                            {
+                                                "type": "apoli:execute_command",
+                                                "command": "playsound minecraft:block.glass.break player @a ~ ~ ~ 1 0.5"
+                                            },
+                                            {
+                                                "type": "origins:spawn_particles",
+                                                "particle": "minecraft:enchanted_hit",
+                                                "count": 15,
+                                                "speed": 1,
+                                                "spread": {
+                                                    "x": 0,
+                                                    "y": 0,
+                                                    "z": 0
+                                                }
+                                            }
+                                        ]
+                                    }
+                                }
                             }
                         },
-                        "count": 1,
-                        "divergence": 1.5,
-                        "speed": 2,
-                        "sound": "minecraft:entity.witch.throw"
-                    },
-                    "fail_action": {
-                        "type": "origins:chance",
-                        "chance": 0.8,
-                        "action": {
-                            "type": "apugli:custom_projectile",
-                            "entity_id": "example:realistic_brick",
-                            "texture_location": "minecraft:textures/item/quartz.png",
-                            "bientity_action_on_miss": {
-                                "type": "apoli:target_action",
-                                "action": {
-                                    "type": "apoli:and",
-                                    "actions": [
-                                        {
-                                            "type": "apoli:execute_command",
-                                            "command": "playsound minecraft:block.glass.break player @a ~ ~ ~ 1 0.5"
-                                        },
-                                        {
-                                            "type": "apoli:spawn_particles",
-                                            "particle": {
-                                                "type": "minecraft:block",
-                                                "params": "minecraft:quartz_block"
+                        {
+                            "weight": 5,
+                            "element": {
+                                "type": "apugli:custom_projectile",
+                                "entity_id": "example:realistic_brick",
+                                "texture_location": "minecraft:textures/item/raw_iron.png",
+                                "bientity_action_on_miss": {
+                                    "type": "apoli:target_action",
+                                    "action": {
+                                        "type": "apoli:and",
+                                        "actions": [
+                                            {
+                                                "type": "apoli:execute_command",
+                                                "command": "playsound minecraft:block.anvil.land player @a ~ ~ ~ 1 0.9"
                                             },
-                                            "count": 8,
-                                            "speed": 0.1,
-                                            "spread": {
-                                                "x": 2,
-                                                "y": 0,
-                                                "z": 2
+                                            {
+                                                "type": "apoli:spawn_particles",
+                                                "particle": {
+                                                    "type": "minecraft:item",
+                                                    "params": "minecraft:anvil"
+                                                },
+                                                "count": 8,
+                                                "speed": 0.1,
+                                                "spread": {
+                                                    "x": 2,
+                                                    "y": 0,
+                                                    "z": 2
+                                                }
                                             }
-                                        }
-                                    ]
-                                }
-                            },
-                            "owner_target_bientity_action_on_hit": {
-                                "type": "origins:target_action",
-                                "action": {
-                                    "type": "origins:and",
-                                    "actions": [
-                                        {
-                                            "type": "origins:damage",
-                                            "amount": 3,
-                                            "source": {
-                                                "name": "player",
-                                                "bypasses_armor": true
-                                            }
-                                        },
-                                        {
-                                            "type": "apoli:execute_command",
-                                            "command": "playsound minecraft:block.glass.break player @a ~ ~ ~ 1 0.5"
-                                        },
-                                        {
-                                            "type": "origins:spawn_particles",
-                                            "particle": "minecraft:enchanted_hit",
-                                            "count": 15,
-                                            "speed": 1,
-                                            "spread": {
-                                                "x": 0,
-                                                "y": 0,
-                                                "z": 0
-                                            }
-                                        }
-                                    ]
-                                }
-                            },
-                            "count": 1,
-                            "divergence": 1.5,
-                            "speed": 2,
-                            "sound": "minecraft:entity.witch.throw"
-                        },
-                        "fail_action": {
-                            "type": "apugli:custom_projectile",
-                            "entity_id": "example:realistic_brick",
-                            "texture_location": "minecraft:textures/item/raw_iron.png",
-                            "bientity_action_on_miss": {
-                                "type": "apoli:target_action",
-                                "action": {
-                                    "type": "apoli:and",
-                                    "actions": [
-                                        {
-                                            "type": "apoli:execute_command",
-                                            "command": "playsound minecraft:block.anvil.land player @a ~ ~ ~ 1 1"
-                                        },
-                                        {
-                                            "type": "apoli:spawn_particles",
-                                            "particle": {
-                                                "type": "minecraft:item",
-                                                "params": "minecraft:brick"
+                                        ]
+                                    }
+                                },
+                                "owner_target_bientity_action_on_hit": {
+                                    "type": "origins:target_action",
+                                    "action": {
+                                        "type": "origins:and",
+                                        "actions": [
+                                            {
+                                                "type": "origins:damage",
+                                                "amount": 8,
+                                                "source": {
+                                                    "name": "player"
+                                                }
                                             },
-                                            "count": 8,
-                                            "speed": 0.1,
-                                            "spread": {
-                                                "x": 2,
-                                                "y": 0,
-                                                "z": 2
+                                            {
+                                                "type": "apoli:execute_command",
+                                                "command": "playsound minecraft:block.anvil.land player @a ~ ~ ~ 1 0.7"
+                                            },
+                                            {
+                                                "type": "origins:spawn_particles",
+                                                "particle": "minecraft:enchanted_hit",
+                                                "count": 15,
+                                                "speed": 1,
+                                                "spread": {
+                                                    "x": 0,
+                                                    "y": 0,
+                                                    "z": 0
+                                                }
                                             }
-                                        }
-                                    ]
-                                }
-                            },
-                            "owner_target_bientity_action_on_hit": {
-                                "type": "origins:target_action",
-                                "action": {
-                                    "type": "origins:and",
-                                    "actions": [
-                                        {
-                                            "type": "origins:damage",
-                                            "amount": 8,
-                                            "source": {
-                                                "name": "player"
-                                            }
-                                        },
-                                        {
-                                            "type": "apoli:execute_command",
-                                            "command": "playsound minecraft:block.anvil.land player @a ~ ~ ~ 1 1"
-                                        },
-                                        {
-                                            "type": "origins:spawn_particles",
-                                            "particle": "minecraft:enchanted_hit",
-                                            "count": 15,
-                                            "speed": 1,
-                                            "spread": {
-                                                "x": 0,
-                                                "y": 0,
-                                                "z": 0
-                                            }
-                                        }
-                                    ]
-                                }
-                            },
-                            "count": 1,
-                            "divergence": 1.5,
-                            "speed": 2,
-                            "sound": "minecraft:entity.witch.throw"
+                                        ]
+                                    }
+                                },
+                                "count": 1,
+                                "divergence": 1,
+                                "speed": 2.5,
+                                "sound": "minecraft:entity.witch.throw"
+                            }
                         }
-                    }
+                    ]
                 },
                 "ticks": 18
             },
             {
                 "type": "origins:delay",
                 "action": {
-                    "type": "origins:chance",
-                    "chance": 0.6,
-                    "action": {
-                        "type": "apugli:custom_projectile",
-                        "entity_id": "example:realistic_brick",
-                        "texture_location": "minecraft:textures/item/brick.png",
-                        "bientity_action_on_miss": {
-                            "type": "apoli:target_action",
-                            "action": {
-                                "type": "apoli:and",
-                                "actions": [
-                                    {
-                                        "type": "apoli:execute_command",
-                                        "command": "playsound minecraft:block.stone.break player @a ~ ~ ~ 1 0.7"
-                                    },
-                                    {
-                                        "type": "apoli:spawn_particles",
-                                        "particle": {
-                                            "type": "minecraft:item",
-                                            "params": "minecraft:brick"
-                                        },
-                                        "count": 8,
-                                        "speed": 0.1,
-                                        "spread": {
-                                            "x": 2,
-                                            "y": 0,
-                                            "z": 2
-                                        }
+                    "type": "origins:choice",
+                    "actions": [
+                        {
+                            "weight": 60,
+                            "element": {
+                                "type": "apugli:custom_projectile",
+                                "entity_id": "example:realistic_brick",
+                                "texture_location": "minecraft:textures/item/brick.png",
+                                "bientity_action_on_miss": {
+                                    "type": "apoli:target_action",
+                                    "action": {
+                                        "type": "apoli:and",
+                                        "actions": [
+                                            {
+                                                "type": "apoli:execute_command",
+                                                "command": "playsound minecraft:block.stone.break player @a ~ ~ ~ 1 0.8"
+                                            },
+                                            {
+                                                "type": "apoli:spawn_particles",
+                                                "particle": {
+                                                    "type": "minecraft:item",
+                                                    "params": "minecraft:brick"
+                                                },
+                                                "count": 8,
+                                                "speed": 0.1,
+                                                "spread": {
+                                                    "x": 2,
+                                                    "y": 0,
+                                                    "z": 2
+                                                }
+                                            }
+                                        ]
                                     }
-                                ]
+                                },
+                                "owner_target_bientity_action_on_hit": {
+                                    "type": "origins:target_action",
+                                    "action": {
+                                        "type": "origins:and",
+                                        "actions": [
+                                            {
+                                                "type": "origins:damage",
+                                                "amount": 5,
+                                                "source": {
+                                                    "name": "player"
+                                                }
+                                            },
+                                            {
+                                                "type": "apoli:execute_command",
+                                                "command": "playsound minecraft:block.stone.break player @a ~ ~ ~ 1 0.8"
+                                            },
+                                            {
+                                                "type": "origins:spawn_particles",
+                                                "particle": "minecraft:enchanted_hit",
+                                                "count": 15,
+                                                "speed": 1,
+                                                "spread": {
+                                                    "x": 0,
+                                                    "y": 0,
+                                                    "z": 0
+                                                }
+                                            }
+                                        ]
+                                    }
+                                },
+                                "count": 1,
+                                "divergence": 1.1,
+                                "speed": 1.5,
+                                "sound": "minecraft:entity.witch.throw"
                             }
                         },
-                        "owner_target_bientity_action_on_hit": {
-                            "type": "origins:target_action",
-                            "action": {
-                                "type": "origins:and",
-                                "actions": [
-                                    {
-                                        "type": "origins:damage",
-                                        "amount": 8,
-                                        "source": {
-                                            "name": "player",
-                                            "magic": true
-                                        }
-                                    },
-                                    {
-                                        "type": "apoli:execute_command",
-                                        "command": "playsound minecraft:block.stone.break player @a ~ ~ ~ 1 0.7"
-                                    },
-                                    {
-                                        "type": "origins:spawn_particles",
-                                        "particle": "minecraft:enchanted_hit",
-                                        "count": 15,
-                                        "speed": 1,
-                                        "spread": {
-                                            "x": 0,
-                                            "y": 0,
-                                            "z": 0
-                                        }
+                        {
+                            "weight": 35,
+                            "element": {
+                                "type": "apugli:custom_projectile",
+                                "entity_id": "example:realistic_brick",
+                                "texture_location": "minecraft:textures/item/quartz.png",
+                                "bientity_action_on_miss": {
+                                    "type": "apoli:target_action",
+                                    "action": {
+                                        "type": "apoli:and",
+                                        "actions": [
+                                            {
+                                                "type": "apoli:execute_command",
+                                                "command": "playsound minecraft:block.glass.break player @a ~ ~ ~ 1 0.5"
+                                            },
+                                            {
+                                                "type": "apoli:spawn_particles",
+                                                "particle": {
+                                                    "type": "minecraft:item",
+                                                    "params": "minecraft:brick"
+                                                },
+                                                "count": 8,
+                                                "speed": 0.1,
+                                                "spread": {
+                                                    "x": 2,
+                                                    "y": 0,
+                                                    "z": 2
+                                                }
+                                            }
+                                        ]
                                     }
-                                ]
+                                },
+                                "owner_target_bientity_action_on_hit": {
+                                    "type": "origins:target_action",
+                                    "action": {
+                                        "type": "origins:and",
+                                        "actions": [
+                                            {
+                                                "type": "origins:damage",
+                                                "amount": 3,
+                                                "source": {
+                                                    "name": "player",
+                                                    "bypasses_armor": true,
+                                                    "magic": true
+                                                }
+                                            },
+                                            {
+                                                "type": "apoli:execute_command",
+                                                "command": "playsound minecraft:block.glass.break player @a ~ ~ ~ 1 0.5"
+                                            },
+                                            {
+                                                "type": "origins:spawn_particles",
+                                                "particle": "minecraft:enchanted_hit",
+                                                "count": 15,
+                                                "speed": 1,
+                                                "spread": {
+                                                    "x": 0,
+                                                    "y": 0,
+                                                    "z": 0
+                                                }
+                                            }
+                                        ]
+                                    }
+                                }
                             }
                         },
-                        "count": 1,
-                        "divergence": 2,
-                        "speed": 1.5,
-                        "sound": "minecraft:entity.witch.throw"
-                    },
-                    "fail_action": {
-                        "type": "origins:chance",
-                        "chance": 0.8,
-                        "action": {
-                            "type": "apugli:custom_projectile",
-                            "entity_id": "example:realistic_brick",
-                            "texture_location": "minecraft:textures/item/quartz.png",
-                            "bientity_action_on_miss": {
-                                "type": "apoli:target_action",
-                                "action": {
-                                    "type": "apoli:and",
-                                    "actions": [
-                                        {
-                                            "type": "apoli:execute_command",
-                                            "command": "playsound minecraft:block.glass.break player @a ~ ~ ~ 1 0.5"
-                                        },
-                                        {
-                                            "type": "apoli:spawn_particles",
-                                            "particle": {
-                                                "type": "minecraft:block",
-                                                "params": "minecraft:quartz_block"
+                        {
+                            "weight": 5,
+                            "element": {
+                                "type": "apugli:custom_projectile",
+                                "entity_id": "example:realistic_brick",
+                                "texture_location": "minecraft:textures/item/raw_iron.png",
+                                "bientity_action_on_miss": {
+                                    "type": "apoli:target_action",
+                                    "action": {
+                                        "type": "apoli:and",
+                                        "actions": [
+                                            {
+                                                "type": "apoli:execute_command",
+                                                "command": "playsound minecraft:block.anvil.land player @a ~ ~ ~ 1 0.9"
                                             },
-                                            "count": 8,
-                                            "speed": 0.1,
-                                            "spread": {
-                                                "x": 2,
-                                                "y": 0,
-                                                "z": 2
+                                            {
+                                                "type": "apoli:spawn_particles",
+                                                "particle": {
+                                                    "type": "minecraft:item",
+                                                    "params": "minecraft:anvil"
+                                                },
+                                                "count": 8,
+                                                "speed": 0.1,
+                                                "spread": {
+                                                    "x": 2,
+                                                    "y": 0,
+                                                    "z": 2
+                                                }
                                             }
-                                        }
-                                    ]
-                                }
-                            },
-                            "owner_target_bientity_action_on_hit": {
-                                "type": "origins:target_action",
-                                "action": {
-                                    "type": "origins:and",
-                                    "actions": [
-                                        {
-                                            "type": "origins:damage",
-                                            "amount": 3,
-                                            "source": {
-                                                "name": "player",
-                                                "bypasses_armor": true
-                                            }
-                                        },
-                                        {
-                                            "type": "apoli:execute_command",
-                                            "command": "playsound minecraft:block.glass.break player @a ~ ~ ~ 1 0.5"
-                                        },
-                                        {
-                                            "type": "apoli:spawn_particles",
-                                            "particle": {
-                                                "type": "minecraft:block",
-                                                "params": "minecraft:quartz_block"
+                                        ]
+                                    }
+                                },
+                                "owner_target_bientity_action_on_hit": {
+                                    "type": "origins:target_action",
+                                    "action": {
+                                        "type": "origins:and",
+                                        "actions": [
+                                            {
+                                                "type": "origins:damage",
+                                                "amount": 8,
+                                                "source": {
+                                                    "name": "player"
+                                                }
                                             },
-                                            "count": 8,
-                                            "speed": 0.1,
-                                            "spread": {
-                                                "x": 2,
-                                                "y": 0,
-                                                "z": 2
-                                            }
-                                        }
-                                    ]
-                                }
-                            },
-                            "count": 1,
-                            "divergence": 2,
-                            "speed": 1.5,
-                            "sound": "minecraft:entity.witch.throw"
-                        },
-                        "fail_action": {
-                            "type": "apugli:custom_projectile",
-                            "entity_id": "example:realistic_brick",
-                            "texture_location": "minecraft:textures/item/raw_iron.png",
-                            "bientity_action_on_miss": {
-                                "type": "apoli:target_action",
-                                "action": {
-                                    "type": "apoli:and",
-                                    "actions": [
-                                        {
-                                            "type": "apoli:execute_command",
-                                            "command": "playsound minecraft:block.anvil.land player @a ~ ~ ~ 1 1"
-                                        },
-                                        {
-                                            "type": "apoli:spawn_particles",
-                                            "particle": {
-                                                "type": "minecraft:block",
-                                                "params": "minecraft:anvil"
+                                            {
+                                                "type": "apoli:execute_command",
+                                                "command": "playsound minecraft:block.anvil.land player @a ~ ~ ~ 1 0.7"
                                             },
-                                            "count": 8,
-                                            "speed": 0.1,
-                                            "spread": {
-                                                "x": 2,
-                                                "y": 0,
-                                                "z": 2
+                                            {
+                                                "type": "origins:spawn_particles",
+                                                "particle": "minecraft:enchanted_hit",
+                                                "count": 15,
+                                                "speed": 1,
+                                                "spread": {
+                                                    "x": 0,
+                                                    "y": 0,
+                                                    "z": 0
+                                                }
                                             }
-                                        }
-                                    ]
-                                }
-                            },
-                            "owner_target_bientity_action_on_hit": {
-                                "type": "origins:target_action",
-                                "action": {
-                                    "type": "origins:and",
-                                    "actions": [
-                                        {
-                                            "type": "origins:damage",
-                                            "amount": 8,
-                                            "source": {
-                                                "name": "player"
-                                            }
-                                        },
-                                        {
-                                            "type": "apoli:execute_command",
-                                            "command": "playsound minecraft:block.anvil.land player @a ~ ~ ~ 1 1"
-                                        },
-                                        {
-                                            "type": "apoli:spawn_particles",
-                                            "particle": {
-                                                "type": "minecraft:block",
-                                                "params": "minecraft:anvil"
-                                            },
-                                            "count": 8,
-                                            "speed": 0.1,
-                                            "spread": {
-                                                "x": 2,
-                                                "y": 0,
-                                                "z": 2
-                                            }
-                                        }
-                                    ]
-                                }
-                            },
-                            "count": 1,
-                            "divergence": 2,
-                            "speed": 1.5,
-                            "sound": "minecraft:entity.witch.throw"
+                                        ]
+                                    }
+                                },
+                                "count": 1,
+                                "divergence": 1,
+                                "speed": 2.5,
+                                "sound": "minecraft:entity.witch.throw"
+                            }
                         }
-                    }
+                    ]
                 },
                 "ticks": 20
             }
         ]
     },
-    "cooldown": 100,
+    "cooldown": 60,
     "hud_render": {
         "should_render": true,
         "sprite_location": "origins:textures/gui/community/huang/resource_bar_02.png",
-        "bar_index": 0,
-        "condition": {
-            "type": "origins:resource",
-            "resource": "poketyped:psychic/psystance2",
-            "comparison": "==",
-            "compare_to": 1
-        }
-    },
-    "key": {
-        "key": "key.origins.primary_active"
+        "bar_index": 0
     }
 }

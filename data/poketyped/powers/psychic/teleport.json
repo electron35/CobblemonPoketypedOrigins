@@ -1,7 +1,7 @@
 {
     "condition": {
         "type": "origins:resource",
-        "resource": "poketyped:psychic/psystance3",
+        "resource": "poketyped:psychic/stance_tp",
         "comparison": "==",
         "compare_to": 1
     },

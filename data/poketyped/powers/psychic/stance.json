@@ -1,0 +1,55 @@
+{
+    "hidden": true,
+    "type": "origins:multiple",
+    "es": {
+        "type": "origins:resource",
+        "min": 0,
+        "max": 1,
+        "start_value": 1,
+        "hud_render": {
+            "should_render": true,
+            "sprite_location": "origins:textures/gui/community/spiderkolo/resource_bar_03.png",
+            "bar_index": 17,
+            "condition": {
+                "type": "origins:resource",
+                "resource": "poketyped:psychic/stance_es",
+                "comparison": "==",
+                "compare_to": 1
+            }
+        }
+    },
+    "ps": {
+        "type": "origins:resource",
+        "min": 0,
+        "max": 1,
+        "start_value": 0,
+        "hud_render": {
+            "should_render": true,
+            "sprite_location": "origins:textures/gui/community/huang/resource_bar_02.png",
+            "bar_index": 0,
+            "condition": {
+                "type": "origins:resource",
+                "resource": "poketyped:psychic/stance_ps",
+                "comparison": "==",
+                "compare_to": 1
+            }
+        }
+    },
+    "tp": {
+        "type": "origins:resource",
+        "min": 0,
+        "max": 1,
+        "start_value": 0,
+        "hud_render": {
+            "should_render": true,
+            "sprite_location": "origins:textures/gui/resource_bar.png",
+            "bar_index": 6,
+            "condition": {
+                "type": "origins:resource",
+                "resource": "poketyped:psychic/stance_tp",
+                "comparison": "==",
+                "compare_to": 1
+            }
+        }
+    }
+}
