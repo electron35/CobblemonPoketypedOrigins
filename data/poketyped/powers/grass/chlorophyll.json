@@ -1,29 +1,52 @@
 {
-    "condition": {
-        "type": "origins:and",
-        "conditions": [
+    "type": "origins:multiple",
+    "strength": {
+        "condition": {
+            "type": "origins:and",
+            "conditions": [
+                {
+                    "type": "origins:exposed_to_sun"
+                },
+                {
+                    "inverted": true,
+                    "type": "origins:in_rain"
+                }
+            ]
+        },
+        "type": "origins:conditioned_attribute",
+        "modifiers": [
             {
-                "type": "origins:exposed_to_sun"
+                "attribute": "minecraft:generic.movement_speed",
+                "operation": "addition",
+                "value": 0.05
             },
             {
-                "inverted": true,
-                "type": "origins:in_rain"
+                "attribute": "minecraft:generic.attack_speed",
+                "operation": "addition",
+                "value": 0.2
             }
-        ]
+        ],
+        "tick_rate": 20,
+        "update_health": true
     },
-    "type": "origins:conditioned_attribute",
-    "modifiers": [
-        {
-            "attribute": "minecraft:generic.movement_speed",
-            "operation": "addition",
-            "value": 0.05
+    "regeneration": {
+        "condition": {
+            "type": "origins:and",
+            "conditions": [
+                {
+                    "type": "origins:exposed_to_sun"
+                },
+                {
+                    "inverted": true,
+                    "type": "origins:in_rain"
+                }
+            ]
         },
-        {
-            "attribute": "minecraft:generic.attack_speed",
-            "operation": "addition",
-            "value": 0.2
+        "type": "origins:modify_status_effect_amplifier",
+        "status_effect": "minecraft:regeneration",
+        "modifier": {
+            "operation": "add_base_early",
+            "value": 1
         }
-    ],
-    "tick_rate": 20,
-    "update_health": true
+    }
 }
