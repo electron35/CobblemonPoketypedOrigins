@@ -1,9 +1,9 @@
 {
     "condition": {
         "type": "origins:resource",
-        "resource": "poketyped:psychic/stance_es",
+        "resource": "poketyped:psychic/stance_curr",
         "comparison": "==",
-        "compare_to": 1
+        "compare_to": 0
     },
     "type": "origins:active_self",
     "entity_action": {

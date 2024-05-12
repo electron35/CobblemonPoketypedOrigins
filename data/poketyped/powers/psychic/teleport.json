@@ -1,9 +1,9 @@
 {
     "condition": {
         "type": "origins:resource",
-        "resource": "poketyped:psychic/stance_tp",
+        "resource": "poketyped:psychic/stance_curr",
         "comparison": "==",
-        "compare_to": 1
+        "compare_to": 2
     },
     "type": "origins:fire_projectile",
     "entity_type": "origins:enderian_pearl",
@@ -22,4 +22,5 @@
     "key": {
         "key": "key.origins.primary_active"
     }
+}
 }
