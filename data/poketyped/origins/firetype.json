@@ -6,7 +6,7 @@
         "poketyped:fire/flamefuel"
     ],
     "icon": {
-        "item": "minecraft:campfire"
+        "id": "minecraft:campfire"
     },
     "unchoosable": true,
     "impact": 2

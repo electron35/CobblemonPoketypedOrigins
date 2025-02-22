@@ -8,7 +8,7 @@
         "poketyped:flying/brittlebones"
     ],
     "icon": {
-        "item": "minecraft:feather"
+        "id": "minecraft:feather"
     },
     "unchoosable": true,
     "impact": 0

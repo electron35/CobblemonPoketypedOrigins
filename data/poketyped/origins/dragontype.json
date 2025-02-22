@@ -5,7 +5,7 @@
         "poketyped:dragon/dragonsize"
     ],
     "icon": {
-        "item": "minecraft:dragon_egg"
+        "id": "minecraft:dragon_egg"
     },
     "unchoosable": true,
     "impact": 0

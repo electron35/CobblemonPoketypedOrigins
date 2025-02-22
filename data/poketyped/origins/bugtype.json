@@ -8,7 +8,7 @@
         "poketyped:bug/bughurt"
     ],
     "icon": {
-        "item": "minecraft:spider_eye"
+        "id": "minecraft:spider_eye"
     },
     "unchoosable": true,
     "impact": 2

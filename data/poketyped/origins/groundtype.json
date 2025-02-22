@@ -7,7 +7,7 @@
         "poketyped:ground/vertigo"
     ],
     "icon": {
-        "item": "minecraft:sand"
+        "id": "minecraft:sand"
     },
     "unchoosable": true,
     "impact": 0

@@ -5,7 +5,7 @@
         "poketyped:grass/fireweakness"
     ],
     "icon": {
-        "item": "minecraft:grass"
+        "id": "minecraft:grass"
     },
     "unchoosable": true,
     "impact": 0

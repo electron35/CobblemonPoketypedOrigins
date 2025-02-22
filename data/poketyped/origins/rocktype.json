@@ -6,7 +6,7 @@
         "poketyped:rock/broken"
     ],
     "icon": {
-        "item": "minecraft:stone"
+        "id": "minecraft:stone"
     },
     "unchoosable": true,
     "impact": 0

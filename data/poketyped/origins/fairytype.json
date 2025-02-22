@@ -7,7 +7,7 @@
         "poketyped:fairy/purity"
     ],
     "icon": {
-        "item": "minecraft:poppy"
+        "id": "minecraft:poppy"
     },
     "unchoosable": true,
     "impact": 1

@@ -20,7 +20,7 @@
         "poketyped:typeobtain/getwater"
     ],
     "icon": {
-        "item": "cobblemon:poke_ball"
+        "id": "cobblemon:poke_ball"
     },
     "upgrades": [
         {

@@ -5,10 +5,10 @@
         "poketyped:psychic/psyshock",
         "poketyped:psychic/teleport",
         "poketyped:psychic/weak",
-		"poketyped:psychic/stance"
+        "poketyped:psychic/stance"
     ],
     "icon": {
-        "item": "minecraft:ender_eye"
+        "id": "minecraft:ender_eye"
     },
     "unchoosable": true,
     "impact": 2
