@@ -20,6 +20,7 @@
         "poketyped:fairytype",
         "poketyped:dragontype"
     ],
+	"order": 1,
     "enabled": true,
     "replace": true
 }
