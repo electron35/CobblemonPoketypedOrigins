@@ -1,23 +1,35 @@
 {
-    "type": "origins:attribute",
-		"modifiers": [
-			{
-				"attribute": "minecraft:generic.scale",
-				"operation": "ADD_VALUE",
-				"amount": 0.2,
-				"id": "poketyped.fightersize"
-			},
-            {
-                "attribute": "minecraft:generic.attack_damage",
-				"operation": "ADD_VALUE",
-				"id": "poketyped.fightingpunch",
-                "amount": 2
-            },
-            {
+    "hidden": true,
+    "type": "origins:multiple",
+    "size": {
+        "type": "origins:attribute",
+        "modifier": {
+            "attribute": "minecraft:generic.scale",
+            "operation": "ADD_VALUE",
+            "amount": 0.2,
+            "id": "poketyped.fightsize"
+        },
+        "update_health": true
+    },
+    "punchforce": {
+        "type": "origins:attribute",
+        "modifier": {
+            "attribute": "minecraft:generic.attack_damage",
+			"operation": "ADD_VALUE",
+			"id": "poketyped.fightingpunch",
+               "amount": 2
+        },
+        "update_health": true
+    },
+	"punchspeed": {
+        "type": "origins:attribute",
+        "modifier": {
                 "attribute": "minecraft:generic.attack_speed",
                 "operation": "ADD_VALUE",
                 "amount": 0.2,
 				"id": "poketyped.fightingpunchspeed"
-            }
-        ]
+            },
+        "update_health": true
+    }
 }
+
