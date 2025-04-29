@@ -96,9 +96,7 @@
                                         {
                                             "type": "origins:damage",
                                             "amount": 4,
-                                            "source": {
-                                                "name": "player"
-                                            }
+											"damage_type":"player_attack"
                                         },
                                         {
                                             "type": "origins:spawn_particles",

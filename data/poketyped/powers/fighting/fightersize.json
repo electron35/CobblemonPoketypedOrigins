@@ -1,35 +1,23 @@
 {
-    "type": "origins:multiple",
-    "scale": {
-        "type": "origins:action_over_time",
-        "interval": 20,
-        "entity_action": {
-            "type": "origins:execute_command",
-            "command": "function poketyped:largesize"
-        }
-    },
-    "reset": {
-        "type": "origins:action_on_callback",
-        "execute_chosen_when_orb": true,
-        "entity_action_lost": {
-            "type": "origins:execute_command",
-            "command": "scale reset"
-        }
-    },
-    "damage": {
-        "type": "origins:attribute",
-        "modifiers": [
+    "type": "origins:attribute",
+		"modifiers": [
+			{
+				"attribute": "minecraft:generic.scale",
+				"operation": "ADD_VALUE",
+				"amount": 0.2,
+				"id": "poketyped.fightersize"
+			},
             {
                 "attribute": "minecraft:generic.attack_damage",
-                "operation": "addition",
-                "value": 1
+				"operation": "ADD_VALUE",
+				"id": "poketyped.fightingpunch",
+                "amount": 2
             },
             {
                 "attribute": "minecraft:generic.attack_speed",
-                "operation": "addition",
-                "value": 0.2
+                "operation": "ADD_VALUE",
+                "amount": 0.2,
+				"id": "poketyped.fightingpunchspeed"
             }
-        ],
-        "update_health": true
-    }
+        ]
 }
