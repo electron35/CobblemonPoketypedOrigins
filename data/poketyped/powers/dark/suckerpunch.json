@@ -52,7 +52,8 @@
                         "source": {
                             "name": "player",
                             "bypasses_armor": true
-                        }
+                        },
+						"damage_type":"minecraft:player_attack"
                     }
                 },
                 {

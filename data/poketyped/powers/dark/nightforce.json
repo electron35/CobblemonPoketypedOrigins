@@ -14,8 +14,8 @@
         },
         "type": "origins:modify_damage_dealt",
         "modifier": {
-            "operation": "multiply_total",
-            "value": 0.2
+            "operation": "multiply_total_multiplicative",
+            "amount": 0.2
         }
     },
     "weakness": {
@@ -24,8 +24,8 @@
         },
         "type": "origins:modify_damage_dealt",
         "modifier": {
-            "operation": "multiply_total",
-            "value": -0.4
+            "operation": "multiply_total_multiplicative",
+            "amount": -0.4
         }
     }
 }
