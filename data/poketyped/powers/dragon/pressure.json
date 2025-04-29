@@ -19,7 +19,7 @@
                 "action": {
                     "type": "origins:apply_effect",
                     "effect": {
-                        "effect": "minecraft:mining_fatigue",
+                        "id": "minecraft:mining_fatigue",
                         "duration": 30,
                         "amplifier": 1,
                         "show_particles": true,
@@ -36,7 +36,7 @@
             "action": {
                 "type": "origins:apply_effect",
                 "effect": {
-                    "effect": "minecraft:mining_fatigue",
+                    "id": "minecraft:mining_fatigue",
                     "duration": 100,
                     "amplifier": 0,
                     "show_particles": true,
