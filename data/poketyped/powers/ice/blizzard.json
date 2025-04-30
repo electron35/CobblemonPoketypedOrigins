@@ -44,12 +44,10 @@
             "type": "origins:and",
             "actions": [
                 {
-                    "type": "origins:modify_resource",
-                    "resource": "poketyped:ice/blizzard_gauge",
-                    "modifier": {
-                        "operation": "add_base_early",
-                        "value": -1
-                    }
+					"type": "origins:change_resource",
+					"resource": "poketyped:ice/blizzard_gauge",
+					"change": -1,
+					"operation": "add"
                 },
                 {
                     "type": "origins:area_of_effect",
@@ -57,7 +55,7 @@
                     "bientity_condition": {
                         "type": "origins:target_condition",
                         "condition": {
-                            "type": "origins:exists"
+                            "type": "origins:living"
                         }
                     },
                     "bientity_action": {
@@ -73,12 +71,10 @@
                                         "source": "poketyped:blizz"
                                     },
                                     "if_action": {
-                                        "type": "origins:modify_resource",
-                                        "resource": "poketyped:debuff/freezing",
-                                        "modifier": {
-                                            "operation": "add_base_early",
-                                            "value": 5
-                                        }
+                                        "type": "origins:change_resource",
+                                        "resource": "poketyped:debuff/freezing_duration",
+                                        "change": 5,
+										"operation": "add"
                                     },
                                     "else_action": {
                                         "type": "origins:grant_power",
@@ -90,12 +86,10 @@
                             {
                                 "type": "origins:actor_action",
                                 "action": {
-                                    "type": "origins:modify_resource",
-                                    "resource": "poketyped:ice/blizzard_gauge",
-                                    "modifier": {
-                                        "operation": "add_base_early",
-                                        "value": 2
-                                    }
+                                    "type": "origins:change_resource",
+                                        "resource": "*:*_gauge",
+                                        "change": 2,
+										"operation": "add"
                                 }
                             }
                         ]
@@ -118,7 +112,7 @@
         "type": "origins:particle",
         "particle": {
             "type": "minecraft:block",
-            "params": "minecraft:snow_block"
+            "params": "{block_state:\"minecraft:snow_block\"}"
         },
         "frequency": 1,
         "count": 50,

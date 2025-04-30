@@ -36,8 +36,9 @@
         "type": "origins:conditioned_attribute",
         "modifier": {
             "attribute": "minecraft:generic.movement_speed",
-            "operation": "addition",
-            "value": 0.05
+            "operation": "ADD_VALUE",
+            "amount": 0.05,
+			"id":"poketyped:slushrush"
         },
         "tick_rate": 10,
         "update_health": true

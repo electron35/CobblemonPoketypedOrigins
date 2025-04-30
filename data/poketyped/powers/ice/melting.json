@@ -30,8 +30,9 @@
     "type": "origins:conditioned_attribute",
     "modifier": {
         "attribute": "minecraft:generic.movement_speed",
-        "operation": "addition",
-        "value": -0.02
+        "operation": "ADD_VALUE",
+        "amount": -0.02,
+		"id":"poketyped:melting"
     },
     "tick_rate": 20,
     "update_health": true
