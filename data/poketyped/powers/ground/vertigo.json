@@ -31,8 +31,9 @@
     "type": "origins:conditioned_attribute",
     "modifier": {
         "attribute": "minecraft:generic.attack_damage",
-        "operation": "multiply_total",
-        "value": -0.5
+        "operation": "ADD_MULTIPLIED_TOTAL",
+        "amount": -0.5,
+		"id":"poketyped:vertigo"
     },
     "tick_rate": 20,
     "update_health": true
