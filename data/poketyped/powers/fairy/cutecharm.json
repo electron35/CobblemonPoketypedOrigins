@@ -2,13 +2,13 @@
     "type": "origins:action_when_hit",
     "bientity_action": {
         "type": "origins:chance",
-        "chance": 30,
+        "chance": 0.3,
         "action": {
             "type": "origins:actor_action",
             "action": {
                 "type": "origins:apply_effect",
                 "effect": {
-                    "effect": "minecraft:weakness",
+                    "id": "minecraft:weakness",
                     "duration": 100,
                     "amplifier": 0,
                     "show_particles": true,
