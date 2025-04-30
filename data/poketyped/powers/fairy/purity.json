@@ -6,6 +6,7 @@
     ],
     "modifier": {
         "operation": "add_base_early",
-        "value": 1
+        "amount": 1,
+		"id":"poketyped:purity"
     }
 }
