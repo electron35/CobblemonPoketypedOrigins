@@ -8,12 +8,18 @@
                 {
                     "type": "origins:apply_effect",
                     "effect": {
-                        "effect": "minecraft:resistance",
+                        "id": "minecraft:resistance",
                         "duration": 100,
                         "amplifier": 10,
                         "show_particles": false,
                         "show_icon": true
                     }
+                },
+                {
+                    "type": "origins:play_sound",
+                    "sound": "minecraft:entity.shulker.hurt_closed",
+                    "volume": 1,
+                    "pitch": 0.2
                 }
             ]
         },
@@ -30,8 +36,19 @@
             "effect": "minecraft:resistance",
             "min_amplifier": 10
         },
-        "type": "apugli:energy_swirl",
-        "texture_location": "minecraft:textures/entity/wither/wither_armor.png",
-        "speed": 0.01
+        "type": "origins:particle",
+        "particle": "minecraft:glow",
+        "frequency": 1,
+        "count": 20,
+        "speed": 0,
+        "spread": {
+            "x": 0.5,
+            "y": 1,
+            "z": 0.5
+        },
+        "offset_x": 0,
+        "offset_y": 0.5,
+        "offset_z": 0,
+        "visible_while_invisible": true
     }
 }
