@@ -31,12 +31,10 @@
         "type": "origins:action_over_time",
         "interval": 1,
         "entity_action": {
-            "type": "origins:modify_resource",
-            "resource": "poketyped:water/surfing",
-            "modifier": {
-                "operation": "add_base_early",
-                "value": -1
-            }
+			"type": "origins:change_resource",
+			"resource": "poketyped:water/surfing",
+			"change": -1,
+			"operation": "add"
         }
     },
     "surfparticle": {
@@ -49,7 +47,7 @@
         "type": "origins:particle",
         "particle": {
             "type": "minecraft:block",
-            "params": "minecraft:water"
+            "params": "{block_state:\"minecraft:water\"}"
         },
         "frequency": 1,
         "count": 10,
@@ -67,8 +65,9 @@
         },
         "type": "origins:modify_swim_speed",
         "modifier": {
-            "operation": "multiply_total",
-            "value": 1.3
+            "operation": "ADD_MULTIPLIED_TOTAL",
+            "amount": 1.3,
+			"id":"poketyped:surf"
         }
     }
 }
