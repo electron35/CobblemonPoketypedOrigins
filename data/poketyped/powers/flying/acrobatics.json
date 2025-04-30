@@ -111,9 +111,7 @@
                                 "action": {
                                     "type": "origins:damage",
                                     "amount": 1,
-                                    "source": {
-                                        "name": "player"
-                                    }
+                                    "damage_type":"player_attack"
                                 }
                             },
                             {
@@ -129,9 +127,7 @@
                                 "action": {
                                     "type": "origins:damage",
                                     "amount": 2,
-                                    "source": {
-                                        "name": "player"
-                                    }
+                                    "damage_type":"player_attack"
                                 }
                             },
                             {
@@ -147,9 +143,7 @@
                                 "action": {
                                     "type": "origins:damage",
                                     "amount": 4,
-                                    "source": {
-                                        "name": "player"
-                                    }
+                                    "damage_type":"player_attack"
                                 }
                             },
                             {
@@ -165,9 +159,7 @@
                                 "action": {
                                     "type": "origins:damage",
                                     "amount": 6,
-                                    "source": {
-                                        "name": "player"
-                                    }
+                                    "damage_type":"player_attack"
                                 }
                             },
                             {
@@ -186,9 +178,7 @@
                                         {
                                             "type": "origins:damage",
                                             "amount": 10,
-                                            "source": {
-                                                "name": "player"
-                                            }
+											"damage_type":"player_attack"
                                         },
                                         {
                                             "type": "origins:add_velocity",
@@ -215,9 +205,7 @@
                                         {
                                             "type": "origins:damage",
                                             "amount": 15,
-                                            "source": {
-                                                "name": "player"
-                                            }
+                                            "damage_type":"player_attack"
                                         },
                                         {
                                             "type": "origins:add_velocity",
