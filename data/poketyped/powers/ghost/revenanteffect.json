@@ -9,12 +9,10 @@
         "type": "origins:action_over_time",
         "interval": 1,
         "entity_action": {
-            "type": "origins:modify_resource",
+            "type": "origins:change_resource",
             "resource": "poketyped:ghost/spiritform",
-            "modifier": {
-                "operation": "add_base_early",
-                "value": -1
-            }
+			"change": -1,
+            "operation": "add"
         }
     },
     "rechargespirit": {
@@ -26,12 +24,10 @@
         "type": "origins:action_over_time",
         "interval": 2,
         "entity_action": {
-            "type": "origins:modify_resource",
+            "type": "origins:change_resource",
             "resource": "poketyped:ghost/spiritform",
-            "modifier": {
-                "operation": "add_base_early",
-                "value": 1
-            }
+            "change": 1,
+            "operation": "add"
         }
     },
     "invisibility": {
