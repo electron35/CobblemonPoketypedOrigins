@@ -4,8 +4,9 @@
     "type": "origins:attribute",
     "modifier": {
         "attribute": "minecraft:generic.armor",
-        "operation": "addition",
-        "value": 5
+        "operation": "ADD_VALUE",
+        "amount": 5,
+		"id":"poketyped:iron_defense"
     },
     "update_health": true
 }
