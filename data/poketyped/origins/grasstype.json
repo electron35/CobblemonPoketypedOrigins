@@ -2,7 +2,8 @@
     "powers": [
         "poketyped:grass/gigadrain",
         "poketyped:grass/chlorophyll",
-        "poketyped:grass/fireweakness"
+        "poketyped:grass/fireweakness",
+		"poketyped:grass/seedsower"
     ],
     "icon": {
         "id": "minecraft:short_grass"

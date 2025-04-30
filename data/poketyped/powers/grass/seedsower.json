@@ -1,0 +1,14 @@
+{
+    "name": "Seed sower",
+    "description": "Hitting people put seeds on them.",
+    "type": "origins:action_on_hit",
+    "bientity_action": {
+        "type": "origins:target_action",
+        "action": {
+            "type": "origins:grant_power",
+            "power": "poketyped:debuff/leechseed",
+            "source": "poketyped:seed"
+        }
+    },
+    "cooldown": 1
+}

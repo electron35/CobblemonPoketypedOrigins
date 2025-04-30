@@ -1,0 +1,92 @@
+{
+    "name": "Leech seed",
+    "description": "You have some strange seed on you",
+    "type": "origins:multiple",
+    "duration": {
+        "type": "origins:resource",
+        "min": 0,
+        "max": 300,
+        "start_value": 300,
+        "hud_render": {
+            "should_render": true,
+            "sprite_location": "origins:textures/gui/resource_bar.png",
+            "bar_index": 8
+        },
+        "min_action": {
+            "type": "origins:revoke_power",
+            "power": "*:*",
+			"source": "poketyped:seed"
+        }
+    },
+    "particle": {
+        "type": "origins:particle",
+        "particle": "minecraft:happy_villager",
+        "frequency": 5,
+        "count": 5,
+        "speed": 0,
+        "offset_x": 0.5,
+        "offset_y": 0.5,
+        "offset_z": 0.5
+    },
+    "decay": {
+        "type": "origins:action_over_time",
+        "interval": 1,
+        "entity_action": {
+            "type": "origins:change_resource",
+            "resource": "*:*_duration",
+            "change": -1,
+            "operation": "add"
+        }
+    },
+    "drain": {
+        "type": "origins:resource",
+        "min": 0,
+        "max": 20,
+        "start_value": 0,
+        "max_action": {
+            "type": "origins:and",
+            "actions": [
+                {
+                    "type": "origins:set_resource",
+                    "resource": "*:*_drain",
+                    "value": 0
+                },
+                {
+                    "type": "origins:damage",
+                    "amount": 1,
+                    "damage_type": "magic"
+                },
+                {
+                    "type": "origins:apply_effect",
+                    "effect": {
+                        "id": "slowness",
+                        "duration": 100,
+                        "amplifier": 0,
+                        "show_particles": true,
+                        "show_icon": true
+                    }
+                },
+                {
+                    "type": "origins:area_of_effect",
+                    "radius": 8,
+                    "bientity_condition": {
+                        "type": "origins:target_condition",
+                        "condition": {
+                            "type": "origins:resource",
+                            "resource": "*:grass/gigadrain_pressed",
+                            "comparison": ">",
+                            "compare_to": 0
+                        }
+                    },
+                    "bientity_action": {
+                        "type": "origins:target_action",
+                        "action": {
+                            "type": "origins:heal",
+                            "amount": 2
+                        }
+                    }
+                }
+            ]
+        }
+    }
+}
