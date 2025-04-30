@@ -1,7 +1,7 @@
 {
     "display": {
         "icon": {
-            "item": "cobblemon:ice_stone"
+            "id": "cobblemon:ice_stone"
         },
         "title": "Tis the damn season",
         "description": "You've harnessed the power of the ice type",

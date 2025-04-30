@@ -1,7 +1,7 @@
 {
     "display": {
         "icon": {
-            "item": "cobblemon:dusk_stone"
+            "id": "cobblemon:dusk_stone"
         },
         "title": "A shot in the dark",
         "description": "You've harnessed the power of the dark type",

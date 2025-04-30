@@ -23,6 +23,11 @@
             }
         ]
     },
+	"modifier": {
+            "operation": "add_base_early",
+            "amount": 0,
+			"id":"poketyped:obligatory_bs"
+        },
     "self_action": {
         "type": "origins:execute_command",
         "command": "function poketyped:gettype/getsteel"

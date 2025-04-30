@@ -1,7 +1,7 @@
 {
     "display": {
         "icon": {
-            "item": "cobblemon:spell_tag"
+            "id": "cobblemon:spell_tag"
         },
         "title": "Thriller",
         "description": "You've harnessed the power of the ghost type",

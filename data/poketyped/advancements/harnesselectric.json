@@ -1,7 +1,7 @@
 {
     "display": {
         "icon": {
-            "item": "cobblemon:thunder_stone"
+            "id": "cobblemon:thunder_stone"
         },
         "title": "Thunderstruck",
         "description": "You've harnessed the power of the electric type",

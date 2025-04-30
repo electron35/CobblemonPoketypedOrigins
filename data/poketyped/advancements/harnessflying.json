@@ -1,7 +1,7 @@
 {
     "display": {
         "icon": {
-            "item": "cobblemon:sharp_beak"
+            "id": "cobblemon:sharp_beak"
         },
         "title": "Envole moi",
         "description": "You've harnessed the power of the flying type",

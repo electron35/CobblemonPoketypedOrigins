@@ -1,7 +1,7 @@
 {
     "display": {
         "icon": {
-            "item": "cobblemon:leaf_stone"
+            "id": "cobblemon:leaf_stone"
         },
         "title": "Kiss from a rose",
         "description": "You've harnessed the power of the grass type",

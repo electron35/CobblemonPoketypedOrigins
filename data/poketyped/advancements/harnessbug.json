@@ -1,7 +1,7 @@
 {
     "display": {
         "icon": {
-            "item": "cobblemon:silver_powder"
+            "id": "cobblemon:silver_powder"
         },
         "title": "Numb little bug",
         "description": "You've harnessed the power of the bug type",

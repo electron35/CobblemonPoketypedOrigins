@@ -1,7 +1,7 @@
 {
     "display": {
         "icon": {
-            "item": "cobblemon:metal_coat"
+            "id": "cobblemon:metal_coat"
         },
         "title": "Unbreakable",
         "description": "You've harnessed the power of the steel type",

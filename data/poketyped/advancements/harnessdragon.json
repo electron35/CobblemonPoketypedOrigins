@@ -1,7 +1,7 @@
 {
     "display": {
         "icon": {
-            "item": "cobblemon:dragon_scale"
+            "id": "cobblemon:dragon_scale"
         },
         "title": "Enemy",
         "description": "You've harnessed the power of the dragon type",

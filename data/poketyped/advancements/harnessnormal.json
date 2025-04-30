@@ -1,7 +1,7 @@
 {
     "display": {
         "icon": {
-            "item": "cobblemon:lucky_egg"
+            "id": "cobblemon:lucky_egg"
         },
         "title": "Born this way",
         "description": "You've harnessed the power of the normal type",

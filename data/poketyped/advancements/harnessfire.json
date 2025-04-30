@@ -1,7 +1,7 @@
 {
     "display": {
         "icon": {
-            "item": "cobblemon:fire_stone"
+            "id": "cobblemon:fire_stone"
         },
         "title": "Through the fire and flame",
         "description": "You harnessed the power of the fire type",

@@ -27,12 +27,10 @@
             "entity_type": "cobblemon:pokemon"
         },
         "entity_action": {
-            "type": "origins:modify_resource",
-            "resource": "poketyped:typeobtain/getfighting_killcount",
-            "modifier": {
-                "operation": "add_base_early",
-                "value": 1
-            }
+			"type": "origins:change_resource",
+            "resource": "*:*_killcount",
+            "change": 1,
+            "operation": "add"
         },
         "cooldown": 1
     }

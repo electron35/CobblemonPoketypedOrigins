@@ -1,7 +1,7 @@
 {
     "display": {
         "icon": {
-            "item": "cobblemon:fairy_feather"
+            "id": "cobblemon:fairy_feather"
         },
         "title": "Somewhere over the rainbow",
         "description": "You've harnessed the power of the fairy type",

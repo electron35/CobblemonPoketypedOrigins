@@ -20,10 +20,6 @@
         "type": "origins:consume",
         "amount": 1
     },
-    "on_item_action": {
-        "type": "origins:modify",
-        "modifier": "minecraft:bucket"
-    },
     "entity_action": {
         "type": "origins:execute_command",
         "command": "function poketyped:gettype/getnormal"

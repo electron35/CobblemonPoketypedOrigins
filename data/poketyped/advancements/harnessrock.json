@@ -1,7 +1,7 @@
 {
     "display": {
         "icon": {
-            "item": "cobblemon:hard_stone"
+            "id": "cobblemon:hard_stone"
         },
         "title": "We will rock you",
         "description": "You've harnessed the power of the rock type",
