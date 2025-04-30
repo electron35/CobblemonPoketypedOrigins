@@ -36,7 +36,7 @@
                                         "action": {
                                             "type": "origins:apply_effect",
                                             "effect": {
-                                                "effect": "poison",
+                                                "id": "poison",
                                                 "duration": 100,
                                                 "amplifier": 1,
                                                 "show_particles": true,
@@ -53,11 +53,6 @@
                         {
                             "type": "origins:damage",
                             "amount": 5,
-                            "source": {
-                                "name": "player",
-                                "bypasses_armor": true,
-                                "magic": true
-                            },
                             "damage_type": "minecraft:magic"
                         },
                         {
