@@ -2,9 +2,9 @@
     "type": "origins:attribute",
     "modifier": {
         "attribute": "generic.movement_speed",
-        "operation": "addition",
-        "value": 0.1,
-        "name": "nimble"
+        "operation": "ADD_VALUE",
+        "amount": 0.05,
+		"id": "poketyped.elec_immunity"
     },
     "update_health": true
 }
