@@ -37,7 +37,9 @@
     "origin.poketyped.watertype.description": "Ayant vu l'étendu des profondeurs, vous avez rejoint le peuple des mers.",
     "origin.poketyped.poketyped.name": "Poketypé",
     "origin.poketyped.poketyped.description": "Cette origine vous permet de maîtriser l'essence même d'un des 18 types, explorez le monde pour évoluer!",
+	
     "balise.poketyped.power": "Power list",
+	
     "power.poketyped.bug.bugbite.name": "Piqure",
     "power.poketyped.bug.bugbite.description": "Pendant 10 secondes, votre prochaine attaque inflige plus de dégâts et restaure votre saturation.",
     "power.poketyped.bug.climbing.name": "Petit insecte",
@@ -54,7 +56,7 @@
     "power.poketyped.dragon.pressure.description": "Vous ralentissez les attaques des monstres proches, cette effet est transmis au joueur quand ils vous frappent.",
     "power.poketyped.electric.hyperactive.name": "Hyperactivité",
     "power.poketyped.electric.hyperactive.description": "Vous avez de plus en plus faim lors de vos déplacement.",
-    "power.poketyped.electric.lightningrod.name": "Para-tonnerre"
+    "power.poketyped.electric.lightningrod.name": "Para-tonnerre",
     "power.poketyped.electric.lightningrod.description": "Vous êtes immunisé à la foudre, si vous êtes touché par un éclair vous gagnez en vitesse et en force.",
     "power.poketyped.electric.quickness.name": "Agile",
     "power.poketyped.electric.quickness.description": "Vous êtes plus rapide.",
@@ -161,7 +163,7 @@
     "power.poketyped.water.aquatic.name": "Peuple des océans",
     "power.poketyped.water.aquatic.description": "Vous avez un effet de conduit.",
     "power.poketyped.water.dryfish.name": "Poisson hors de l'eau",
-    "power.poketyped.water.dryfish.description": "Vous êtes ralenti sur terre"
+    "power.poketyped.water.dryfish.description": "Vous êtes ralenti sur terre",
     "power.poketyped.water.surf.name": "Surf",
     "power.poketyped.water.surf.description": "Foncez vers l'avant et gagnez en vitesse de nage. Vous n'êtes plus ralenti sur terre pour la durée de l'effet.",
 	
