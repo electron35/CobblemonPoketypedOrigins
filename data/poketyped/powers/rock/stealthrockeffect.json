@@ -1,0 +1,87 @@
+{
+    "type": "origins:multiple",
+    "duration": {
+        "type": "origins:resource",
+        "min": 0,
+        "max": 300,
+        "start_value": 300,
+        "hud_render": {
+            "should_render": true
+        },
+        "min_action": {
+            "type": "origins:execute_command",
+            "command": "/kill @s"
+        }
+    },
+    "decay": {
+        "type": "origins:action_over_time",
+        "interval": 1,
+        "entity_action": {
+            "type": "origins:change_resource",
+            "resource": "*:*_duration",
+            "change": -1,
+            "operation": "add"
+        }
+    },
+    "particle": {
+        "type": "origins:particle",
+        "particle": {
+            "type": "minecraft:block",
+            "params": "{block_state:\"minecraft:dripstone_block\"}"
+        },
+        "frequency": 5,
+        "count": 10,
+        "speed": 0,
+        "spread": {
+            "x": 2,
+            "y": 0,
+            "z": 2
+        },
+        "offset_x": 0,
+        "offset_y": 0,
+        "offset_z": 0,
+        "visible_while_invisible": true
+    },
+    "damage": {
+        "type": "origins:action_over_time",
+        "interval": 20,
+        "entity_action": {
+            "type": "origins:and",
+            "actions": [
+                {
+                    "type": "origins:area_of_effect",
+                    "radius": 3,
+                    "bientity_condition": {
+                        "type": "origins:target_condition",
+                        "condition": {
+                            "type": "origins:and",
+                            "conditions": [
+                                {
+                                    "inverted": true,
+                                    "type": "origins:sneaking"
+                                },
+                                {
+                                    "type": "origins:moving"
+                                },
+                                {
+                                    "inverted": true,
+                                    "type": "origins:origin",
+                                    "origin": "poketyped:rocktype"
+                                }
+                            ]
+                        }
+                    },
+                    "bientity_action": {
+                        "type": "origins:damage",
+                        "amount": 3,
+                        "damage_type": "stalagmite"
+                    }
+                },
+                {
+                    "type": "origins:execute_command",
+                    "command": "/particle block{block_state:\"minecraft:dripstone_block\"} ~ ~0.5 ~ 2 0 2 0 10"
+                }
+            ]
+        }
+    }
+}

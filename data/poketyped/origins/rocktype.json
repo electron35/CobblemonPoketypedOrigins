@@ -1,9 +1,9 @@
 {
     "powers": [
-        "poketyped:rock/sturdycd",
         "poketyped:rock/stealthrock",
         "poketyped:rock/sturdy",
-        "poketyped:rock/broken"
+        "poketyped:rock/broken",
+		"poketyped:rock/stoneaxe"
     ],
     "icon": {
         "id": "minecraft:stone"

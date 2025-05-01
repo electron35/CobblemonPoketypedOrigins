@@ -3,14 +3,14 @@
     "particle": {
         "condition": {
             "type": "origins:resource",
-            "resource": "poketyped:rock/sturdycd",
-            "comparison": "<",
-            "compare_to": 300
+            "resource": "poketyped:rock/sturdy_cd",
+            "comparison": "!=",
+            "compare_to": 0
         },
         "type": "origins:particle",
         "particle": {
             "type": "minecraft:block",
-            "params": "minecraft:stone"
+            "params": "{block_state:\"minecraft:stone\"}"
         },
         "frequency": 1,
         "count": 1,
@@ -26,14 +26,14 @@
     "particle2": {
         "condition": {
             "type": "origins:resource",
-            "resource": "poketyped:rock/sturdycd",
-            "comparison": "<",
-            "compare_to": 300
+            "resource": "poketyped:rock/sturdy_cd",
+            "comparison": "!=",
+            "compare_to": 0
         },
         "type": "origins:particle",
         "particle": {
             "type": "minecraft:block",
-            "params": "minecraft:stone"
+            "params": "{block_state:\"minecraft:stone\"}"
         },
         "frequency": 60,
         "count": 30,
@@ -49,9 +49,9 @@
     "effects": {
         "condition": {
             "type": "origins:resource",
-            "resource": "poketyped:rock/sturdycd",
-            "comparison": "<",
-            "compare_to": 300
+            "resource": "poketyped:rock/sturdy_cd",
+            "comparison": "!=",
+            "compare_to": 0
         },
         "type": "origins:action_over_time",
         "interval": 20,
@@ -59,18 +59,18 @@
             "type": "origins:apply_effect",
             "effects": [
                 {
-                    "effect": "minecraft:slowness",
+                    "id": "minecraft:slowness",
                     "duration": 30,
                     "amplifier": 0,
-                    "is_ambient": true,
+                    "ambient": true,
                     "show_particles": false,
                     "show_icon": true
                 },
                 {
-                    "effect": "minecraft:weakness",
+                    "id": "minecraft:weakness",
                     "duration": 30,
                     "amplifier": 0,
-                    "is_ambient": true,
+                    "ambient": true,
                     "show_particles": false,
                     "show_icon": true
                 }
@@ -80,9 +80,9 @@
     "shaking": {
         "condition": {
             "type": "origins:resource",
-            "resource": "poketyped:rock/sturdycd",
-            "comparison": "<",
-            "compare_to": 300
+            "resource": "poketyped:rock/sturdy_cd",
+            "comparison": "!=",
+            "compare_to": 0
         },
         "type": "origins:shaking"
     }
