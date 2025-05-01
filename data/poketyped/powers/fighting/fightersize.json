@@ -2,7 +2,8 @@
     "hidden": true,
     "type": "origins:multiple",
     "size": {
-        "type": "origins:attribute",
+        "type": "origins:conditioned_attribute",
+		"tick_rate": 20,
         "modifier": {
             "attribute": "minecraft:generic.scale",
             "operation": "ADD_VALUE",
@@ -12,7 +13,8 @@
         "update_health": true
     },
     "punchforce": {
-        "type": "origins:attribute",
+        "type": "origins:conditioned_attribute",
+		"tick_rate": 20,
         "modifier": {
             "attribute": "minecraft:generic.attack_damage",
 			"operation": "ADD_VALUE",
@@ -22,7 +24,8 @@
         "update_health": true
     },
 	"punchspeed": {
-        "type": "origins:attribute",
+        "type": "origins:conditioned_attribute",
+		"tick_rate": 20,
         "modifier": {
                 "attribute": "minecraft:generic.attack_speed",
                 "operation": "ADD_VALUE",

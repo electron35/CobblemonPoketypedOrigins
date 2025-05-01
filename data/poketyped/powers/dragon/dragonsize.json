@@ -1,7 +1,8 @@
 {
     "type": "origins:multiple",
     "size": {
-        "type": "origins:attribute",
+        "type": "origins:conditioned_attribute",
+		"tick_rate": 20,
         "modifier": {
             "attribute": "minecraft:generic.scale",
             "operation": "ADD_VALUE",

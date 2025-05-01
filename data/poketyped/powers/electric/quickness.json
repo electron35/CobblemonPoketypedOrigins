@@ -1,5 +1,6 @@
 {
-    "type": "origins:attribute",
+    "type": "origins:conditioned_attribute",
+		"tick_rate": 20,
     "modifier": {
         "attribute": "generic.movement_speed",
         "operation": "ADD_VALUE",

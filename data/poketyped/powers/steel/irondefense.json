@@ -1,7 +1,8 @@
 {
     "name": "Iron Defense",
     "description": "You have passive armor",
-    "type": "origins:attribute",
+    "type": "origins:conditioned_attribute",
+	"tick_rate": 20,
     "modifier": {
         "attribute": "minecraft:generic.armor",
         "operation": "ADD_VALUE",

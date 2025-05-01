@@ -2,7 +2,8 @@
     "hidden": true,
     "type": "origins:multiple",
     "size": {
-        "type": "origins:attribute",
+        "type": "origins:conditioned_attribute",
+		"tick_rate": 20,
         "modifier": {
             "attribute": "minecraft:generic.scale",
             "operation": "ADD_VALUE",
@@ -12,13 +13,14 @@
         "update_health": true
     },
     "health": {
-        "type": "origins:attribute",
+        "type": "origins:conditioned_attribute",
         "modifier": {
             "attribute": "generic.max_health",
             "operation": "ADD_VALUE",
             "amount": -4,
             "id": "poketyped.bughealth"
         },
+		"tick_rate": 20,
         "update_health": true
     }
 }
