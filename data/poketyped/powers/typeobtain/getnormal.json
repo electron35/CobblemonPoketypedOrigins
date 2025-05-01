@@ -14,7 +14,7 @@
         }
     },
     "result": {
-        "item": "melon_slice"
+        "item": "minecraft:melon_slice"
     },
     "using_item_action": {
         "type": "origins:consume",
