@@ -1,18 +1,61 @@
 {
     "hidden": true,
-    "type": "origins:resource",
-    "min": 0,
-    "max": 10,
-    "start_value": 0,
-    "hud_render": {
-        "should_render": true,
-        "sprite_location": "origins:textures/gui/resource_bar.png",
-        "bar_index": 5,
+    "type": "origins:multiple",
+    "detect": {
+        "type": "origins:action_over_time",
+        "interval": 1,
+        "entity_action": {
+            "type": "origins:area_of_effect",
+            "radius": 6,
+            "bientity_condition": {
+                "type": "origins:target_condition",
+                "condition": {
+                    "type": "origins:nbt",
+                    "nbt": "{Tags: [\"MistyTerrain\"]}"
+                }
+            },
+            "bientity_action": {
+                "type": "origins:actor_action",
+                "action": {
+                    "type": "origins:change_resource",
+                    "resource": "*:*_res",
+                    "change": 3,
+                    "operation": "add"
+                }
+            }
+        }
+    },
+    "res": {
+        "type": "origins:resource",
+        "min": 0,
+        "max": 60,
+        "start_value": 0,
+        "hud_render": {
+            "should_render": true,
+            "sprite_location": "origins:textures/gui/resource_bar.png",
+            "bar_index": 5,
+            "condition": {
+                "type": "origins:resource",
+                "resource": "*:*_res",
+                "comparison": ">=",
+                "compare_to": 1
+            }
+        }
+    },
+    "decay": {
         "condition": {
             "type": "origins:resource",
-            "resource": "poketyped:fairy/fairyenergy",
-            "comparison": ">=",
-            "compare_to": 1
+            "resource": "*:*_res",
+            "comparison": ">",
+            "compare_to": 0
+        },
+        "type": "origins:action_over_time",
+        "interval": 1,
+        "entity_action": {
+            "type": "origins:change_resource",
+            "resource": "*:*_res",
+            "change": -1,
+            "operation": "add"
         }
     }
 }

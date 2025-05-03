@@ -1,10 +1,10 @@
 {
     "display": {
         "icon": {
-            "item": "cobblemon:sharp_beak"
+            "id": "cobblemon:dawn_stone"
         },
-        "title": "Envole moi",
-        "description": "You've harnessed the power of the flying type",
+        "title": "Warrior of the mind",
+        "description": "You've harnessed the power of the psychic type",
         "frame": "goal",
         "show_toast": true,
         "announce_to_chat": true,

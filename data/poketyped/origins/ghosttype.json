@@ -9,7 +9,7 @@
         "poketyped:ghost/ghosthurt"
     ],
     "icon": {
-        "item": "minecraft:soul_lantern"
+        "id": "minecraft:soul_lantern"
     },
     "unchoosable": true,
     "impact": 1

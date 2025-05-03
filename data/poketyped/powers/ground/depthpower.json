@@ -35,8 +35,9 @@
     "type": "origins:conditioned_attribute",
     "modifier": {
         "attribute": "minecraft:generic.attack_damage",
-        "operation": "multiply_base",
-        "value": 0.2
+        "operation": "ADD_MULTIPLIED_BASE",
+        "amount": 0.2,
+		"id":"poketyped:depthpower"
     },
     "tick_rate": 20,
     "update_health": true

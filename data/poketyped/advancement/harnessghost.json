@@ -1,10 +1,10 @@
 {
     "display": {
         "icon": {
-            "item": "cobblemon:hard_stone"
+            "id": "cobblemon:spell_tag"
         },
-        "title": "We will rock you",
-        "description": "You've harnessed the power of the rock type",
+        "title": "Thriller",
+        "description": "You've harnessed the power of the ghost type",
         "frame": "goal",
         "show_toast": true,
         "announce_to_chat": true,

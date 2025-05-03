@@ -6,7 +6,7 @@
         "poketyped:electric/hyperactive"
     ],
     "icon": {
-        "item": "minecraft:lightning_rod"
+        "id": "minecraft:lightning_rod"
     },
     "unchoosable": true,
     "impact": 1

@@ -31,12 +31,13 @@
                     "source": {
                         "name": "flyIntoWall",
                         "bypasses_armor": true
-                    }
+                    },
+				"damage_type":"minecraft:fly_into_wall"
                 },
                 {
                     "type": "origins:apply_effect",
                     "effect": {
-                        "effect": "minecraft:slowness",
+                        "id": "minecraft:slowness",
                         "duration": 100,
                         "amplifier": 0,
                         "show_particles": true,
@@ -53,7 +54,12 @@
     },
     "landing": {
         "condition": {
-            "type": "apugli:grounded"
+            "type": "origins:on_block",
+			"block_condition": {
+				"inverted": true,
+				"type": "origins:block",
+				"block": "minecraft:air"
+			}
         },
         "type": "origins:action_over_time",
         "interval": 1,

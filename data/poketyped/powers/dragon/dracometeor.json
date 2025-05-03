@@ -4,22 +4,48 @@
         "type": "origins:and",
         "actions": [
             {
-                "type": "origins:execute_command",
-                "command": "/summon area_effect_cloud ^ ^ ^4 {Particle:\"crit\",Age:-40,Tags:[\"DracoMeteor\"]}"
-            },
-            {
-                "type": "origins:execute_command",
-                "command": "/summon area_effect_cloud ^ ^ ^8 {Particle:\"crit\",Age:-60,Tags:[\"DracoMeteor\"]}"
-            },
-            {
-                "type": "origins:execute_command",
-                "command": "/summon area_effect_cloud ^ ^ ^12 {Particle:\"crit\",Age:-80,Tags:[\"DracoMeteor\"]}"
-            },
-            {
                 "type": "origins:play_sound",
                 "sound": "minecraft:entity.ender_dragon.ambient",
                 "volume": 1,
                 "pitch": 1
+            },
+            {
+                "type": "origins:raycast",
+                "distance": 20,
+                "block": true,
+                "entity": false,
+                "shape_type": "outline",
+                "fluid_handling": "any",
+                "block_action": {
+                    "type": "origins:and",
+                    "actions": [
+                        {
+                            "type": "origins:delay",
+                            "action": {
+                                "type": "origins:execute_command",
+                                "command": "/summon firework_rocket ~ ~5 ~ {Life:0,LifeTime:60,ShotAtAngle:1b,Motion:[0.0,-1.0,0.0],FireworksItem:{id:\"minecraft:firework_rocket\",count:1,components:{\"minecraft:fireworks\":{explosions:[{shape:\"large_ball\",has_trail:true,colors:[I;1638655],fade_colors:[I;16777215,16774915]},{shape:\"small_ball\",has_twinkle:true,colors:[I;16777215]}]}}}}"
+                            },
+                            "ticks": 30
+                        },
+                        {
+                            "type": "origins:delay",
+                            "action": {
+                                "type": "origins:execute_command",
+                                "command": "/summon firework_rocket ~ ~5 ~ {Life:0,LifeTime:60,ShotAtAngle:1b,Motion:[0.0,-1.0,0.0],FireworksItem:{id:\"minecraft:firework_rocket\",count:1,components:{\"minecraft:fireworks\":{explosions:[{shape:\"large_ball\",has_trail:true,colors:[I;1638655],fade_colors:[I;16777215,16774915]},{shape:\"small_ball\",has_twinkle:true,colors:[I;16777215]}]}}}}"
+                            },
+                            "ticks": 40
+                        },
+                        {
+                            "type": "origins:delay",
+                            "action": {
+                                "type": "origins:execute_command",
+                                "command": "/summon firework_rocket ~ ~5 ~ {Life:0,LifeTime:60,ShotAtAngle:1b,Motion:[0.0,-1.0,0.0],FireworksItem:{id:\"minecraft:firework_rocket\",count:1,components:{\"minecraft:fireworks\":{explosions:[{shape:\"large_ball\",has_trail:true,colors:[I;1638655],fade_colors:[I;16777215,16774915]},{shape:\"small_ball\",has_twinkle:true,colors:[I;16777215]}]}}}}"
+                            },
+                            "ticks": 50
+                        }
+                    ]
+                },
+                "space": "world"
             }
         ]
     },

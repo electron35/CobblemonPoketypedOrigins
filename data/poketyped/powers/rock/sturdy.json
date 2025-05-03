@@ -3,9 +3,9 @@
     "deathcancel": {
         "condition": {
             "type": "origins:resource",
-            "resource": "poketyped:rock/sturdycd",
+            "resource": "*:*_cd",
             "comparison": "==",
-            "compare_to": 300
+            "compare_to": 0
         },
         "type": "origins:prevent_death",
         "damage_condition": {
@@ -17,39 +17,39 @@
             "type": "origins:and",
             "actions": [
                 {
-                    "type": "origins:set_resource",
-                    "resource": "poketyped:rock/sturdycd",
-                    "value": 0
+                    "type": "origins:trigger_cooldown",
+                    "power": "*:*_cd"
                 },
                 {
                     "type": "origins:apply_effect",
                     "effect": {
-                        "effect": "minecraft:resistance",
+                        "id": "minecraft:resistance",
                         "duration": 100,
                         "amplifier": 0,
                         "show_particles": true,
                         "show_icon": true
                     }
-                }
+                },
+				{
+                        "type": "origins:spawn_entity",
+                        "entity_type": "minecraft:armor_stand",
+                        "tag": "{Marker:1b,Invisible:1b,Tags:[\"Stealthrock\"]}",
+                        "entity_action": {
+                            "type": "origins:grant_power",
+                            "power": "poketyped:rock/stealthrockeffect",
+							"source": "poketyped:sr"
+						}
+				}
             ]
         }
     },
     "cd": {
-        "condition": {
-            "type": "origins:resource",
-            "resource": "poketyped:rock/sturdycd",
-            "comparison": "<",
-            "compare_to": 300
-        },
-        "type": "origins:action_over_time",
-        "interval": 20,
-        "entity_action": {
-            "type": "origins:modify_resource",
-            "resource": "poketyped:rock/sturdycd",
-            "modifier": {
-                "operation": "add_base_early",
-                "value": 1
-            }
+        "type": "origins:cooldown",
+        "cooldown": 6000,
+        "hud_render": {
+            "should_render": true,
+            "sprite_location": "origins:textures/gui/community/huang/resource_bar_01.png",
+            "bar_index": 13
         }
     }
 }

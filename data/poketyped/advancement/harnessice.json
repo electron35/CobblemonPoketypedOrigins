@@ -1,10 +1,10 @@
 {
     "display": {
         "icon": {
-            "item": "cobblemon:thunder_stone"
+            "id": "cobblemon:ice_stone"
         },
-        "title": "Thunderstruck",
-        "description": "You've harnessed the power of the electric type",
+        "title": "Tis the damn season",
+        "description": "You've harnessed the power of the ice type",
         "frame": "goal",
         "show_toast": true,
         "announce_to_chat": true,

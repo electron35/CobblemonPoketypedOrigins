@@ -1,10 +1,10 @@
 {
     "display": {
         "icon": {
-            "item": "cobblemon:black_sludge"
+            "id": "cobblemon:soft_sand"
         },
-        "title": "With a taste of a poison paradise",
-        "description": "You've harnessed the power of the poison type",
+        "title": "Another one bites the dust",
+        "description": "You've harnessed the power of the ground type",
         "frame": "goal",
         "show_toast": true,
         "announce_to_chat": true,

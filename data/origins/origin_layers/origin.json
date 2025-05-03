@@ -20,6 +20,7 @@
         "poketyped:fairytype",
         "poketyped:dragontype"
     ],
+    "loading_priority": 1,
     "enabled": true,
     "replace": true
 }

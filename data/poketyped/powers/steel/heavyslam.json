@@ -51,7 +51,7 @@
         "duration_per_stack": 2,
         "tick_rate": 1,
         "effect": {
-            "effect": "minecraft:resistance",
+            "id": "minecraft:resistance",
             "duration": 1,
             "amplifier": 5,
             "show_particles": true,
@@ -110,9 +110,7 @@
                                 {
                                     "type": "origins:damage",
                                     "amount": 5,
-                                    "source": {
-                                        "name": "anvil"
-                                    }
+                                    "damage_type":"minecraft:falling_anvil"
                                 }
                             ]
                         }
@@ -122,7 +120,7 @@
                     "type": "origins:spawn_particles",
                     "particle": {
                         "type": "minecraft:block",
-                        "params": "minecraft:anvil"
+                        "params": "{block_state:\"minecraft:anvil\"}"
                     },
                     "count": 100,
                     "speed": 0,

@@ -1,10 +1,10 @@
 {
     "display": {
         "icon": {
-            "item": "cobblemon:leaf_stone"
+            "id": "cobblemon:silver_powder"
         },
-        "title": "Kiss from a rose",
-        "description": "You've harnessed the power of the grass type",
+        "title": "Numb little bug",
+        "description": "You've harnessed the power of the bug type",
         "frame": "goal",
         "show_toast": true,
         "announce_to_chat": true,

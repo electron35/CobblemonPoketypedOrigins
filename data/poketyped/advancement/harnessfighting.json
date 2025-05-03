@@ -1,10 +1,10 @@
 {
     "display": {
         "icon": {
-            "item": "cobblemon:metal_coat"
+            "id": "cobblemon:focus_band"
         },
-        "title": "Unbreakable",
-        "description": "You've harnessed the power of the steel type",
+        "title": "The eye of the tiger",
+        "description": "You've harnessed the power of the fighting type",
         "frame": "goal",
         "show_toast": true,
         "announce_to_chat": true,

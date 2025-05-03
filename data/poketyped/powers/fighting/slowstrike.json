@@ -10,8 +10,9 @@
     "type": "origins:conditioned_attribute",
     "modifier": {
         "attribute": "minecraft:generic.attack_speed",
-        "operation": "multiply_total",
-        "value": -0.5
+        "operation": "ADD_MULTIPLIED_TOTAL",
+        "amount": -0.5,
+		"id":"poketyped:slowstrike"
     },
     "tick_rate": 1,
     "update_health": false

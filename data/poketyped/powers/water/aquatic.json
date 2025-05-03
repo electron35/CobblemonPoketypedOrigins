@@ -1,8 +1,8 @@
 {
     "type": "origins:multiple",
     "aquatic": {
-        "type": "origins:entity_group",
-        "group": "aquatic"
+        "type": "origins:modify_type_tag",
+        "tag": "aquatic"
     },
     "conduit": {
         "type": "origins:action_over_time",
@@ -10,7 +10,7 @@
         "entity_action": {
             "type": "origins:apply_effect",
             "effect": {
-                "effect": "minecraft:conduit_power",
+                "id": "minecraft:conduit_power",
                 "duration": 40,
                 "amplifier": 0,
                 "is_ambient": true,

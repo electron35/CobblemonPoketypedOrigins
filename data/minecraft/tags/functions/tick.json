@@ -1,8 +1,6 @@
 {
     "replace": false,
     "values": [
-        "poketyped:thunder",
-        "poketyped:misty_terrain",
-        "poketyped:dracometeor"
+        "poketyped:misty_terrain"
     ]
 }

@@ -1,10 +1,10 @@
 {
     "display": {
         "icon": {
-            "item": "cobblemon:ice_stone"
+            "id": "cobblemon:hard_stone"
         },
-        "title": "Tis the damn season",
-        "description": "You've harnessed the power of the ice type",
+        "title": "We will rock you",
+        "description": "You've harnessed the power of the rock type",
         "frame": "goal",
         "show_toast": true,
         "announce_to_chat": true,

@@ -1,10 +1,10 @@
 {
     "display": {
         "icon": {
-            "item": "cobblemon:spell_tag"
+            "id": "cobblemon:dusk_stone"
         },
-        "title": "Thriller",
-        "description": "You've harnessed the power of the ghost type",
+        "title": "A shot in the dark",
+        "description": "You've harnessed the power of the dark type",
         "frame": "goal",
         "show_toast": true,
         "announce_to_chat": true,

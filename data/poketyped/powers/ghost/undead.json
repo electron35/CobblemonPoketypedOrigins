@@ -20,7 +20,8 @@
         },
         "modifier": {
             "operation": "multiply_base_additive",
-            "value": 0.25
+            "amount": 0.25,
+			"id":"poketyped:smitable"
         }
     }
 }

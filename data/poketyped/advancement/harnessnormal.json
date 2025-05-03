@@ -1,10 +1,10 @@
 {
     "display": {
         "icon": {
-            "item": "cobblemon:fairy_feather"
+            "id": "cobblemon:lucky_egg"
         },
-        "title": "Somewhere over the rainbow",
-        "description": "You've harnessed the power of the fairy type",
+        "title": "Born this way",
+        "description": "You've harnessed the power of the normal type",
         "frame": "goal",
         "show_toast": true,
         "announce_to_chat": true,

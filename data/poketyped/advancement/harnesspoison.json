@@ -1,10 +1,10 @@
 {
     "display": {
         "icon": {
-            "item": "cobblemon:silver_powder"
+            "id": "cobblemon:black_sludge"
         },
-        "title": "Numb little bug",
-        "description": "You've harnessed the power of the bug type",
+        "title": "With a taste of a poison paradise",
+        "description": "You've harnessed the power of the poison type",
         "frame": "goal",
         "show_toast": true,
         "announce_to_chat": true,

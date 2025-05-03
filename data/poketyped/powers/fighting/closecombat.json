@@ -62,13 +62,11 @@
                 {
                     "type": "origins:actor_action",
                     "action": {
-                        "type": "origins:modify_resource",
-                        "resource": "poketyped:fighting/fightingres_ccstack",
-                        "modifier": {
-                            "operation": "add_base_early",
-                            "value": -1
+						"type": "origins:change_resource",
+						"resource": "poketyped:fighting/fightingres_ccstack",
+						"change": -1,
+						"operation": "add"
                         }
-                    }
                 },
                 {
                     "type": "origins:target_action",
@@ -81,7 +79,8 @@
                                 "source": {
                                     "name": "player",
                                     "bypasses_armor": true
-                                }
+                                },
+								"damage_type":"player_attack"
                             },
                             {
                                 "type": "origins:spawn_particles",

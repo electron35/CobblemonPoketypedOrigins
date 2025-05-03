@@ -40,9 +40,7 @@
                         {
                             "type": "origins:damage",
                             "amount": 3,
-                            "source": {
-                                "name": "player"
-                            }
+							"damage_type":"player_attack"
                         }
                     ]
                 }

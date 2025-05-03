@@ -1,10 +1,10 @@
 {
     "display": {
         "icon": {
-            "item": "cobblemon:lucky_egg"
+            "id": "cobblemon:water_stone"
         },
-        "title": "Born this way",
-        "description": "You've harnessed the power of the normal type",
+        "title": "It's raining men!",
+        "description": "You've harnessed the power of the water type",
         "frame": "goal",
         "show_toast": true,
         "announce_to_chat": true,

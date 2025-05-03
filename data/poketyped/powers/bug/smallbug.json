@@ -1,30 +1,26 @@
 {
     "hidden": true,
     "type": "origins:multiple",
-    "scale": {
-        "type": "origins:action_over_time",
-        "interval": 20,
-        "entity_action": {
-            "type": "origins:execute_command",
-            "command": "function poketyped:bugsize"
-        }
-    },
-    "reset": {
-        "type": "origins:action_on_callback",
-        "execute_chosen_when_orb": true,
-        "entity_action_lost": {
-            "type": "origins:execute_command",
-            "command": "scale reset"
-        }
+    "size": {
+        "type": "origins:conditioned_attribute",
+		"tick_rate": 20,
+        "modifier": {
+            "attribute": "minecraft:generic.scale",
+            "operation": "ADD_VALUE",
+            "amount": -0.6,
+            "id": "poketyped.bugsize"
+        },
+        "update_health": true
     },
     "health": {
-        "type": "origins:attribute",
+        "type": "origins:conditioned_attribute",
         "modifier": {
             "attribute": "generic.max_health",
-            "operation": "addition",
-            "value": -4,
-            "name": "bughealth"
+            "operation": "ADD_VALUE",
+            "amount": -4,
+            "id": "poketyped.bughealth"
         },
+		"tick_rate": 20,
         "update_health": true
     }
 }

@@ -22,6 +22,11 @@
             "compare_to": 2
         },
         "type": "origins:modify_jump",
+        "modifier": {
+            "operation": "add_base_early",
+            "amount": 0,
+			"id":"poketyped:mandatory_bs"
+        },
         "entity_action": {
             "type": "origins:set_resource",
             "resource": "poketyped:typeobtain/getflying_isvalid",

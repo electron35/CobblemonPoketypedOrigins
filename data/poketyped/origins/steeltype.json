@@ -5,7 +5,7 @@
         "poketyped:steel/heavy"
     ],
     "icon": {
-        "item": "minecraft:iron_ingot"
+        "id": "minecraft:iron_ingot"
     },
     "unchoosable": true,
     "impact": 0

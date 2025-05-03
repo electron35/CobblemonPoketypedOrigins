@@ -8,24 +8,32 @@
         },
         "modifier": {
             "operation": "set_total",
-            "value": 0
+            "amount": 0
         },
         "self_action": {
             "type": "origins:apply_effect",
             "effects": [
                 {
-                    "effect": "speed",
+                    "id": "speed",
                     "duration": 12000,
                     "amplifier": 1,
-                    "is_ambient": true,
+                    "ambient": true,
                     "show_particles": true,
                     "show_icon": true
                 },
                 {
-                    "effect": "strength",
+                    "id": "strength",
                     "duration": 12000,
                     "amplifier": 1,
-                    "is_ambient": true,
+                    "ambient": true,
+                    "show_particles": true,
+                    "show_icon": true
+                },
+                {
+                    "id": "fire_resistance",
+                    "duration": 60,
+                    "amplifier": 0,
+                    "ambient": true,
                     "show_particles": true,
                     "show_icon": true
                 }

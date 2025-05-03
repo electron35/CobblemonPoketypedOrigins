@@ -10,7 +10,8 @@
                     "name": "player",
                     "bypasses_armor": true,
                     "magic": true
-                }
+                },
+				"damage_type":"minecraft:magic"
             },
             {
                 "type": "origins:actor_action",
@@ -19,7 +20,7 @@
                     "actions": [
                         {
                             "type": "origins:feed",
-                            "food": 3,
+                            "nutrition": 3,
                             "saturation": 6
                         },
                         {

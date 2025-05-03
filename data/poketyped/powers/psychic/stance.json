@@ -12,13 +12,23 @@
             "bar_index": 17,
             "condition": {
                 "type": "origins:resource",
-                "resource": "poketyped:psychic/stance_es",
+                "resource": "*:*_es",
                 "comparison": "==",
                 "compare_to": 1
             }
+        },
+        "min_action": {
+            "type": "origins:apply_effect",
+            "effect": {
+                "id": "minecraft:slow_falling",
+                "duration": 100,
+                "amplifier": 0,
+                "show_particles": true,
+                "show_icon": true
+            }
         }
     },
-    "ps": {
+    "fs": {
         "type": "origins:resource",
         "min": 0,
         "max": 1,
@@ -29,9 +39,26 @@
             "bar_index": 0,
             "condition": {
                 "type": "origins:resource",
-                "resource": "poketyped:psychic/stance_ps",
+                "resource": "*:*_fs",
                 "comparison": "==",
                 "compare_to": 1
+            }
+        },
+        "min_action": {
+            "type": "origins:area_of_effect",
+            "radius": 6,
+            "bientity_action": {
+                "type": "origins:target_action",
+                "action": {
+                    "type": "origins:apply_effect",
+                    "effect": {
+                        "id": "minecraft:slowness",
+                        "duration": 100,
+                        "amplifier": 0,
+                        "show_particles": true,
+                        "show_icon": true
+                    }
+                }
             }
         }
     },
@@ -46,9 +73,19 @@
             "bar_index": 6,
             "condition": {
                 "type": "origins:resource",
-                "resource": "poketyped:psychic/stance_tp",
+                "resource": "*:*_tp",
                 "comparison": "==",
                 "compare_to": 1
+            }
+        },
+        "min_action": {
+            "type": "origins:apply_effect",
+            "effect": {
+                "id": "minecraft:speed",
+                "duration": 100,
+                "amplifier": 0,
+                "show_particles": true,
+                "show_icon": true
             }
         }
     }

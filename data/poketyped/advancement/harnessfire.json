@@ -1,10 +1,10 @@
 {
     "display": {
         "icon": {
-            "item": "cobblemon:dragon_scale"
+            "id": "cobblemon:fire_stone"
         },
-        "title": "Enemy",
-        "description": "You've harnessed the power of the dragon type",
+        "title": "Through the fire and flame",
+        "description": "You harnessed the power of the fire type",
         "frame": "goal",
         "show_toast": true,
         "announce_to_chat": true,

@@ -1,10 +1,10 @@
 {
     "display": {
         "icon": {
-            "item": "cobblemon:soft_sand"
+            "id": "cobblemon:thunder_stone"
         },
-        "title": "Another one bites the dust",
-        "description": "You've harnessed the power of the ground type",
+        "title": "Thunderstruck",
+        "description": "You've harnessed the power of the electric type",
         "frame": "goal",
         "show_toast": true,
         "announce_to_chat": true,

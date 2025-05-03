@@ -1,10 +1,11 @@
 {
-    "type": "origins:attribute",
+    "type": "origins:conditioned_attribute",
+		"tick_rate": 20,
     "modifier": {
         "attribute": "generic.movement_speed",
-        "operation": "addition",
-        "value": 0.1,
-        "name": "nimble"
+        "operation": "ADD_VALUE",
+        "amount": 0.05,
+		"id": "poketyped.elec_immunity"
     },
     "update_health": true
 }

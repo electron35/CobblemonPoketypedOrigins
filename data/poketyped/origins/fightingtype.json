@@ -9,7 +9,7 @@
         "poketyped:fighting/slowstrike"
     ],
     "icon": {
-        "item": "minecraft:iron_sword"
+        "id": "minecraft:iron_sword"
     },
     "unchoosable": true,
     "impact": 0

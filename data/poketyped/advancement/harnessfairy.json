@@ -1,10 +1,10 @@
 {
     "display": {
         "icon": {
-            "item": "cobblemon:focus_band"
+            "id": "cobblemon:fairy_feather"
         },
-        "title": "The eye of the tiger",
-        "description": "You've harnessed the power of the fighting type",
+        "title": "Somewhere over the rainbow",
+        "description": "You've harnessed the power of the fairy type",
         "frame": "goal",
         "show_toast": true,
         "announce_to_chat": true,

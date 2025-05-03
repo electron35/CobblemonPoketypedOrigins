@@ -2,7 +2,7 @@
     "type": "origins:action_on_block_use",
     "block_condition": {
         "type": "origins:block",
-        "block": "bedrock"
+        "block": "minecraft:bedrock"
     },
     "item_condition": {
         "type": "origins:ingredient",
@@ -14,5 +14,5 @@
         "type": "origins:execute_command",
         "command": "function poketyped:gettype/getground"
     },
-    "action_result": "success"
+    "action_result": "pass"
 }

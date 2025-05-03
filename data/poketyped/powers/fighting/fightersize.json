@@ -1,35 +1,38 @@
 {
+    "hidden": true,
     "type": "origins:multiple",
-    "scale": {
-        "type": "origins:action_over_time",
-        "interval": 20,
-        "entity_action": {
-            "type": "origins:execute_command",
-            "command": "function poketyped:largesize"
-        }
+    "size": {
+        "type": "origins:conditioned_attribute",
+		"tick_rate": 20,
+        "modifier": {
+            "attribute": "minecraft:generic.scale",
+            "operation": "ADD_VALUE",
+            "amount": 0.2,
+            "id": "poketyped.fightsize"
+        },
+        "update_health": true
     },
-    "reset": {
-        "type": "origins:action_on_callback",
-        "execute_chosen_when_orb": true,
-        "entity_action_lost": {
-            "type": "origins:execute_command",
-            "command": "scale reset"
-        }
+    "punchforce": {
+        "type": "origins:conditioned_attribute",
+		"tick_rate": 20,
+        "modifier": {
+            "attribute": "minecraft:generic.attack_damage",
+			"operation": "ADD_VALUE",
+			"id": "poketyped.fightingpunch",
+               "amount": 2
+        },
+        "update_health": true
     },
-    "damage": {
-        "type": "origins:attribute",
-        "modifiers": [
-            {
-                "attribute": "minecraft:generic.attack_damage",
-                "operation": "addition",
-                "value": 1
-            },
-            {
+	"punchspeed": {
+        "type": "origins:conditioned_attribute",
+		"tick_rate": 20,
+        "modifier": {
                 "attribute": "minecraft:generic.attack_speed",
-                "operation": "addition",
-                "value": 0.2
-            }
-        ],
+                "operation": "ADD_VALUE",
+                "amount": 0.2,
+				"id": "poketyped.fightingpunchspeed"
+            },
         "update_health": true
     }
 }
+

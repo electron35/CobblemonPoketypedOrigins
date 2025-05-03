@@ -1,10 +1,10 @@
 {
     "display": {
         "icon": {
-            "item": "cobblemon:dusk_stone"
+            "id": "cobblemon:metal_coat"
         },
-        "title": "A shot in the dark",
-        "description": "You've harnessed the power of the dark type",
+        "title": "Unbreakable",
+        "description": "You've harnessed the power of the steel type",
         "frame": "goal",
         "show_toast": true,
         "announce_to_chat": true,

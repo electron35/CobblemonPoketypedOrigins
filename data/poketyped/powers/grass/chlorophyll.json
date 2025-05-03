@@ -15,13 +15,15 @@
     "modifiers": [
         {
             "attribute": "minecraft:generic.movement_speed",
-            "operation": "addition",
-            "value": 0.05
+            "operation": "ADD_VALUE",
+            "amount": 0.05,
+			"id":"poketyped:chloro_ms"
         },
         {
             "attribute": "minecraft:generic.attack_speed",
-            "operation": "addition",
-            "value": 0.2
+            "operation": "ADD_VALUE",
+            "amount": 0.2,
+			"id":"poketyped:chloro_as"
         }
     ],
     "tick_rate": 20,

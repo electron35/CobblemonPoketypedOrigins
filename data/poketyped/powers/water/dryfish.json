@@ -23,8 +23,9 @@
     "type": "origins:conditioned_attribute",
     "modifier": {
         "attribute": "generic.movement_speed",
-        "operation": "multiply_base",
-        "value": -0.2
+        "operation": "ADD_MULTIPLIED_BASE",
+        "amount": -0.2,
+		"id":"poketyped:dryfish"
     },
     "tick_rate": 20,
     "update_health": false

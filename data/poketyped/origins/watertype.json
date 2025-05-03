@@ -6,7 +6,7 @@
         "poketyped:water/surfing"
     ],
     "icon": {
-        "item": "minecraft:water_bucket"
+        "id": "minecraft:water_bucket"
     },
     "unchoosable": true,
     "impact": 1

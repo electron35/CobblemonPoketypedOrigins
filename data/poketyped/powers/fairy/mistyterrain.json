@@ -3,14 +3,14 @@
     "spawnterrain": {
         "condition": {
             "type": "origins:resource",
-            "resource": "poketyped:fairy/fairyenergy",
+            "resource": "*:fairy/fairyenergy_res",
             "comparison": "==",
             "compare_to": 0
         },
         "type": "origins:active_self",
         "entity_action": {
             "type": "origins:execute_command",
-            "command": "summon area_effect_cloud ~ ~ ~ {Particle:\"dust 1.000 0.639 0.820 1\",Radius:5f,Age:-200,Tags:[\"MistyTerrain\"]}"
+            "command": "summon area_effect_cloud ~ ~ ~ {Particle:\"dust 1.000 0.639 0.820 1\",Radius:10f,Age:-200,Tags:[\"MistyTerrain\"]}"
         },
         "cooldown": 600,
         "hud_render": {
@@ -22,22 +22,10 @@
             "key": "key.origins.primary_active"
         }
     },
-    "terraindecay": {
-        "type": "origins:action_over_time",
-        "interval": 1,
-        "entity_action": {
-            "type": "origins:modify_resource",
-            "resource": "poketyped:fairy/fairyenergy",
-            "modifier": {
-                "operation": "add_base_early",
-                "value": -1
-            }
-        }
-    },
     "cleanse": {
         "condition": {
             "type": "origins:resource",
-            "resource": "poketyped:fairy/fairyenergy",
+            "resource": "*:fairy/fairyenergy_res",
             "comparison": ">",
             "compare_to": 0
         },
@@ -56,7 +44,9 @@
                         "y": 0,
                         "z": 0.2
                     },
-                    "offset_y": -0.5
+                    "offset_x": 0,
+                    "offset_y": -0.5,
+                    "offset_z": 0
                 },
                 {
                     "type": "origins:clear_effect",
